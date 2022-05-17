@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Moulpali&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>A.Gorodov Portfolio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Main</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#acquaintance" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" onclick="termsOpener()">Terms</a>
+            </li>
+          </ul>
+          <button class="button nav-btn" type="button" disabled>Order</button>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="developer">
+          <h1 class="title dev-name">Alexandr Gorodov</h1>
+          <p class="subtitle">junior frontend developer</p>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="portfolio" id="projects">
+        <div class="container">
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <a class="portfolio-image-link" href="https://alexg-23.github.io/Sedona/index.html" target=”_blank”>
+                <div class="portfolio-image-container">
+                  <img src="images/portfolio/sedona.jpg" alt="Sedona" width="221" height="300" class="portfolio-item-image">
+                </div>
+              </a>
+              <h2 class="title portfolio-item-title">Sedona</h2>
+              <p class="subtitle portfolio-item-description">A site about Sedona, search and order a hotel here.</p>
+              <div class="portfolio-links-wrapper">
+                <a href="https://github.com/AlexG-23/Sedona" class="portfolio-item-link github-link" target=”_blank”>
+                  <span class="visually-hidden">To sedona project on github</span>
+                </a>
+                <a href="https://alexg-23.github.io/Sedona/index.html" class="portfolio-item-link project-link" target=”_blank”>
+                  <span class="visually-hidden">To Sedona website</span>
+                </a>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-image-link" href="https://alexg-23.github.io/Barbershop/" target=”_blank”>
+                <div class="portfolio-image-container">
+                  <img src="images/portfolio/barbershop.jpg" alt="Barbershop" width="221" height="300" class="portfolio-item-image">
+                </div>
+              </a>
+              <h2 class="title portfolio-item-title">Borodinski</h2>
+              <p class="subtitle portfolio-item-description">Website of barbershop. With the possibility of ordering a queque and an online store.</p>
+              <div class="portfolio-links-wrapper">
+                <a href="https://github.com/AlexG-23/Barbershop" class="portfolio-item-link github-link" target=”_blank”>
+                  <span class="visually-hidden">To barbershop project on github</span>
+                </a>
+                <a href="https://alexg-23.github.io/Barbershop/" class="portfolio-item-link project-link" target=”_blank”>
+                  <span class="visually-hidden">To barbershop website</span>
+                </a>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-image-link" href="https://alexg-23.github.io/device/" target=”_blank”>
+                <div class="portfolio-image-container">
+                  <img src="images/portfolio/device.jpg" alt="Device" width="221" height="300" class="portfolio-item-image">
+                </div>
+              </a>
+              <h2 class="title portfolio-item-title">Device</h2>
+              <p class="subtitle portfolio-item-description">Gadgets online store. My first project.</p>
+              <div class="portfolio-links-wrapper">
+                <a href="https://alexg-23.github.io/device/" class="portfolio-item-link github-link" target=”_blank”>
+                  <span class="visually-hidden">To Device project on github</span>
+                </a>
+                <a href="https://htmlacademy-htmlcss.github.io/590651-device-33/master/index.html" class="portfolio-item-link project-link" target=”_blank”>
+                  <span class="visually-hidden">To Device website</span>
+                </a>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-image-link" href="https://alexg-23.github.io/Glaccy/" target=”_blank”>
+                <div class="portfolio-image-container">
+                  <img src="images/portfolio/gllacy.jpg" alt="Glaccy" width="221" height="300" class="portfolio-item-image">
+                </div>
+              </a>
+              <h2 class="title portfolio-item-title">Glaccy</h2>
+              <p class="subtitle portfolio-item-description">Ice cream shop website with delivery option.</p>
+              <div class="portfolio-links-wrapper">
+                <a href="https://github.com/AlexG-23/Glaccy" class="portfolio-item-link github-link" target=”_blank”>
+                  <span class="visually-hidden">To Gllacy project on github</span>
+                </a>
+                <a href="https://alexg-23.github.io/Glaccy/" class="portfolio-item-link project-link" target=”_blank”>
+                  <span class="visually-hidden">To Gllacy website</span>
+                </a>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-image-link" href="https://alexg-23.github.io/Haifa-street-food/" target=”_blank”>
+                <div class="portfolio-image-container">
+                  <img src="images/portfolio/Haifa.jpg" alt="Haifa street food" width="221" height="300" class="portfolio-item-image">
+                </div>
+              </a>
+              <h2 class="title portfolio-item-title">Haifa street food</h2>
+              <p class="subtitle portfolio-item-description">Website for Haifa food market.</p>
+              <div class="portfolio-links-wrapper">
+                <a href="https://github.com/AlexG-23/Haifa-street-food" class="portfolio-item-link github-link" target=”_blank”>
+                  <span class="visually-hidden">To Haifa street food project on github</span>
+                </a>
+                <a href="https://alexg-23.github.io/Haifa-street-food/" class="portfolio-item-link project-link" target=”_blank”>
+                  <span class="visually-hidden">To Haifa street food website</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <ul class="services-buttons-list">
+            <!-- by clicking on 1st element of list put active class on 1ts service-item -->
+            <li class="services-btn-item service-btn-active">
+              <button class="service-btn" type="button" onclick="serviceFirst()">I have an idea!</button>
+            </li>
+            <!-- by clicking on 2nd element of list put active class on 2nd service-item -->
+            <li class="services-btn-item">
+              <button class="service-btn" type="button" onclick="serviceSecond()">I have a design!</button>
+            </li>            
+            <!-- by clicking on 3rd element of list put active class on 3rd service-item -->
+            <li class="services-btn-item">
+              <button class="service-btn" type="button" onclick="serviceThird()">I just wanna site</button>
+            </li>
+          </ul>
+          <!-- when the 1st list item is active so this item is active -->
+          <div class="service-item service-idea service-item-active">
+            <h3 class="title service-title">Let's bring your idea to life!</h3>
+            <p class="subtitle service-description">We can jointly create a layout of your future site, based on your ideas and sketches.</p>
+          </div>
+          <!-- when the 2nd list item is active so this item is active -->
+          <div class="service-item service-design">
+            <h3 class="title service-title">Consider it's done!</h3>
+            <p class="subtitle service-description">Just leave it to me. Send me the design of your site and get the result as soon as possible!</p>
+          </div>
+          <!-- when the 3rd list item is active so this item is active -->
+          <div class="service-item service-nothing">
+            <h3 class="title service-title">Leave it to me.</h3>
+            <p class="subtitle service-description">Approximately one week after the order is discussed, you will be provided with 2 design options. If you are not satisfied with any of them, the order for the design will be sent to a professional designer. In this case, the balance of price and lead time will be observed.</p>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="container">
+          <h3 class="title skills-title">My skills</h3>
+          <ul class="skills-list">
+            <li class="skills-item">
+              <span class="skill-name">Html</span>
+              <span class="skill-range">
+                <span class="skill-value">
+                  <span class="visually-hidden">85%</span>
+                </span>
+              </span>
+            </li>
+            <li class="skills-item">
+              <span class="skill-name">Css</span>
+              <span class="skill-range">
+                <span class="skill-value">
+                  <span class="visually-hidden">70%</span>
+                </span>
+              </span>
+            </li>
+            <li class="skills-item">
+              <span class="skill-name">Javascript</span>
+              <span class="skill-range">
+                <span class="skill-value">
+                  <span class="visually-hidden">10%</span>
+                </span>
+              </span>
+            </li>
+          </ul>
+          <ul class="sertificate-list">
+            <li class="sertificate-item">
+              <a class="sertificate-image-link" href="https://assets.htmlacademy.ru/certificates/intensive/263/590651.pdf?1647513022&_ga=2.6994610.1235333456.1648598156-1910638020.1620770427" target="_blank">
+                <img src="images/html-sertificate-1.jpg" alt="HTML&CSS first lvl" width="230" height="322" class="sertificate-image">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="acquaintance" id="acquaintance">
+        <div class="container">
+          <img src="images/developer.png" alt="Hey! It's me! Nice to meet you!" width="322" height="507" class="acquaintance-image">
+          <h2 class="title acquaintance-title">Let's get acquainted</h2>
+          <h3 class="insection-title">A few words about myself</h3>
+          <p class="description acquaintance-description">Hello, business owner, service owner or freelancer! I am a beginner website developer. I have successfully completed the basic HMTL and CSS course. In the near future I want to start an advanced course in HMTL and CSS and learn JavaScript. In parallel, I think it is possible to pump design skills. I love developing websites and start every new project with passion. Here you can help begin to gain experience and build a portfolio for a novice developer.</p>
+          <h3 class="insection-title">How I can help you</h3>
+          <p class="description acquaintance-description">At this stage, I can write a business card site, a small business site, or a portfolio site similar to mine in pure HTML and CSS. I can create a website for your cat, swimming school or bakery.</p>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h2 class="title contact-title">Interested?</h2>
+          <p class="descroption contact-description">Do you think I'm promising? I haven't learned php yet, so this form doesn't work. But you can send a message using the link in the footer.</p>
+          <form action="#" method="post" class="email-form">
+            <label for="email" class="contact-field">
+              <input class="contact-input" id="email" type="email" name="email" placeholder="e-mail" required>
+            </label>
+            <button class="button contact-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="tel:+972543955573" class="footer-link footer-phone">+972 54 3955573</a>
+        </li>
+        <li class="footer-item">
+          <a href="mailto:a.gorodov.22@gmail.com" class="footer-link footer-email">a.gorodov.22@gmail.com</a>
+        </li>
+      </ul>
+    </footer>
+    <div class="modal-container">
+      <div class="modal modal-terms">
+        <button class="modal-close-btn" type="button" onclick="modalClose()">
+          <span class="visually-hidden">Close.</span>
+        </button>
+        <h2 class="modal-title">Terms.</h2>
+        <p class="terms-description">When you contact me, you will receive feedback and we will begin to discuss your project. Depending on the initial data and the complexity of execution, the work can take from a couple days to two months. If necessary, you will receive full support when registering a domain name and connecting hosting. Your site can be executed in one or more of the languages - English, Russian and Hebrew.</p>
+        <h2 class="modal-title">What is required of you?</h2>
+        <ul class="user-req-list">
+          <li class="terms-req-item">At least a rough understanding of what product you need necessary.</li>
+          <li class="terms-req-item">A little patience as you are dealing with a novice but capable developer.</li>
+        </ul>
+        <h2 class="modal-title">What do I guarantee?</h2>
+        <ul class="dev-req-list">
+          <li class="terms-req-item">Modern execution of assigned tasks.</li>
+          <li class="terms-req-item">Prices are much lower than the market average.</li>
+          <li class="terms-req-item">Writing easy-to-read and editable code.</li>
+          <li class="terms-req-item">You don't like the result? We'll fix it until the customer is completely satisfied.</li>
+          <li class="terms-req-item">You didn't like the result and don't want to continue cooperation? Everything is easy to cancel - you save money, I will expand my portfolio. </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="scripts/script.js"> </script>
+  </body>
+</html>
