@@ -46,6 +46,10 @@ body {
   margin: 0 auto;
 }
 
+.page-header * {
+  margin: 0 auto;
+}
+
 .page-header {
   margin: 40px auto 0;
   box-sizing: border-box;
@@ -76,10 +80,6 @@ body {
   z-index: -1;
   
   content: "";
-}
-
-.page-header * {
-  text-align: center;
 }
 
 .page-main {
