@@ -469,13 +469,14 @@ body {
   margin-bottom: 100px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.6fr 0.1fr 0.2fr 0.1fr 0.2fr;
+  justify-items: center;
 }
 
 .acquaintance-image {
   padding: 0;
   margin: 0;
   grid-column: 1/2;
-  grid-row: 2/-1;
+  grid-row: 3/-1;
   justify-self: center;
 }
 
@@ -490,6 +491,7 @@ body {
 }
 
 .insection-title {
+  max-width: 80%;
   padding: 0;
   margin: 30px 0;
   text-align: center;
