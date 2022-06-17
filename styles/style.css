@@ -41,7 +41,6 @@ body {
 }
 
 .container {
-  max-width: 1280px;
   padding: 0 40px;
   margin: 0 auto;
 }
@@ -170,7 +169,7 @@ body {
 
 .portfolio-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 275px);
   justify-content: center;
   padding: 0;
   margin: 0 auto;
@@ -187,7 +186,6 @@ body {
 
 .portfolio-item {
   display: grid;
-  margin: 0 30px;
   grid-template-rows: 1fr 0.1fr 0.1fr 0.5fr;
 }
 
@@ -668,10 +666,6 @@ body {
 }
 
 @media (max-width: 1280px) {
-  .portfolio-list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .services .container {
     padding: 30px;
   }
@@ -811,11 +805,6 @@ body {
 }
 
 @media (max-width: 880px) {
-
-  .portfolio-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .services-buttons-list {
     border: none;
     grid-template-rows: 1fr;
@@ -867,11 +856,6 @@ body {
   .nav-btn {
     margin: 0;
     margin-left: auto;
-  }
-
-  .portfolio-list {
-    grid-template-columns: 1fr;
-    margin: auto;
   }
 
   .services-buttons-list {
