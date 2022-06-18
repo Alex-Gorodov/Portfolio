@@ -180,8 +180,6 @@ body {
 
 .portfolio-image-container {
   display: block;
-  width: 221px;
-  height: 300px;
 }
 
 .portfolio-item {
@@ -638,7 +636,7 @@ body {
   filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.5));
 }
 
-.modal-terms{
+.modal-terms {
   width: 80%;
 }
 
@@ -756,22 +754,17 @@ body {
     padding: 0 40px;
     margin: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr 0.2fr 1fr 0.2fr 1fr;
+    grid-template-rows: 0.1fr 1.5fr 0.2fr 1fr 0.2fr 1fr;
   }
   
   .acquaintance-image {
     grid-column: 1/-1;
     grid-row: 2/3;
     display: block;
-    width: 566px;
-    height: 248px;
+    /* width: 475px;
+    height: 350px; */
     margin: auto;
     object-fit: cover;
-    object-position: 0 -180px;
-    border-radius: 40px;
-    border: 4px solid #2DAED7;
-    border-left: 2px;
-    border-right: 2px;
   }
 
   .acquaintance-title + .insection-title {
@@ -884,9 +877,8 @@ body {
   }
 
   .acquaintance-image {
-    width: 377px;
-    height: 300px;
-    object-position: 0 -130px;
+    width: 317px;
+    height: 404px;
   }
 
   .contact .container {
@@ -973,9 +965,8 @@ body {
   }
 
   .acquaintance-image {
-    width: 283px;
-    height: 224px;
-    object-position: 0 -100px;
+    width: 317px;
+    height: 233px;
   }
 
   .contact {
