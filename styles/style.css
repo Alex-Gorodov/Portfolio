@@ -961,12 +961,12 @@ body {
 
   .acquaintance .container {
     padding: 0 10px;
-    grid-template-rows: 0.4fr 0.6fr 0.2fr 1fr 0.2fr 0.6fr;
+    grid-template-rows: 0.4fr 0.4fr 0.2fr 1fr 0.2fr 0.6fr;
   }
 
   .acquaintance-image {
-    width: 317px;
-    height: 404px;
+    width: 113px;
+    height: 168px;
   }
 
   .contact {
