@@ -185,7 +185,7 @@ body {
 
 .portfolio-item {
   display: grid;
-  grid-template-rows: 1fr 0.1fr 0.1fr 0.5fr;
+  grid-template-rows: 1fr 0.3fr 0.1fr 0.5fr;
 }
 
 .portfolio-image-link {
@@ -199,6 +199,7 @@ body {
 }
 
 .portfolio-item-title {
+  position: relative;
   margin: 10px 0;
   width: 220px;
   text-transform: uppercase;
@@ -210,6 +211,32 @@ body {
 
 .portfolio-links-wrapper {
   grid-row: 3 / 4;
+}
+
+.desktop {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icons/desktop-monitor.png");
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mobile {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icons/cell-phone.png");
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolio-item-link {
