@@ -924,7 +924,7 @@ body {
   }
 
   .acquaintance .container {
-    grid-template-rows: 0.4fr 0.6fr 0.2fr 1fr 0.2fr 0.6fr;
+    grid-template-rows: 0.4fr 0.6fr 0.2fr 0.7fr 0.2fr 0.6fr;
   }
 
   .acquaintance-image {
