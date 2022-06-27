@@ -217,26 +217,49 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  display: block;
+  display: inline-block;
   width: 20px;
   height: 20px;
+  vertical-align: middle;
+  text-align: center;
   background-image: url("../images/icons/desktop-monitor.png");
   background-size: 20px 20px;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: help;
 }
 
 .mobile {
   position: absolute;
   right: 0;
   top: 40px;
-  display: block;
+  display: inline-block;
   width: 20px;
   height: 20px;
+  vertical-align: middle;
+  text-align: center;
   background-image: url("../images/icons/cell-phone.png");
   background-size: 20px 20px;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: help;
+}
+
+.desktop:hover::after,
+.mobile:hover::after {
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  margin-right: -50px;
+  padding: 10px;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color:rgb(227, 227, 227);
+  border-radius: 4px;
+  font-size: 14px;
+  content: attr(data-title);
+  z-index: 2;
 }
 
 .portfolio-item-link {
