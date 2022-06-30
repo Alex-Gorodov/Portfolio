@@ -1,6 +1,7 @@
 html {
   height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -83,6 +84,7 @@ body {
 }
 
 .page-main {
+  position: relative;
   flex-grow: 1;
   z-index: 1;
 }
@@ -185,7 +187,7 @@ body {
 
 .portfolio-item {
   display: grid;
-  grid-template-rows: 1fr 0.3fr 0.1fr 0.5fr;
+  grid-template-rows: 1fr 0.2fr 0.1fr 0.6fr;
 }
 
 .portfolio-image-link {
@@ -201,12 +203,12 @@ body {
 .portfolio-item-title {
   position: relative;
   margin: 10px 0;
-  width: 220px;
+  max-width: 220px;
   text-transform: uppercase;
 }
 
 .portfolio-item-description {
-  width: 220px;
+  max-width: 220px;
 }
 
 .portfolio-links-wrapper {
@@ -216,7 +218,7 @@ body {
 .desktop {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -641,6 +643,17 @@ body {
   color: #288be6;
 }
 
+.to-top-btn {
+  display: inline-block;
+  margin-right: 40px;
+  padding: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #288be6;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .footer-link::before {
   display: inline-block;
   vertical-align: middle;
@@ -812,8 +825,6 @@ body {
     grid-column: 1/-1;
     grid-row: 2/3;
     display: block;
-    /* width: 475px;
-    height: 350px; */
     margin: auto;
     object-fit: cover;
   }
