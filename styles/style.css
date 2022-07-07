@@ -183,6 +183,8 @@ body {
 
 .portfolio-image-container {
   display: block;
+  width: 221px;
+  height: 300px;
 }
 
 .portfolio-item {
