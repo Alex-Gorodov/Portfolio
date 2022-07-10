@@ -920,22 +920,22 @@ body {
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
-    transition: 0s;
   }
-
+  
   .slider-btn:hover {
     opacity: 0.6;
   }
-
+  
   .slider-btn::after {
     position: absolute;
     left: 50%;
     top: 50%;
-
+    
     display: block;
     width: 20px;
     height: 20px;
     border: 10px solid transparent;
+    transition: 0s;
 
     content: "";
   }
