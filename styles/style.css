@@ -182,7 +182,6 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.1s;
-  z-index: 1000;
 }
 
 .burger-line {
@@ -231,7 +230,6 @@ body {
   overflow: hidden;
   transform: translateY(-200%);
   transition: 0.4s;
-  z-index: 1000;
 }
 
 .burger-nav-list.nav-list-opened {
@@ -246,7 +244,6 @@ body {
   list-style-type: none;
   gap: 6vh;
   margin-bottom: 15vh;
-  z-index: 1000;
 }
 
 .burger-nav-list .nav-link {
