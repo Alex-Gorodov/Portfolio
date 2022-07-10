@@ -1,0 +1,412 @@
+@media (max-width: 1280px) {
+    .services .container {
+      padding: 30px;
+    }
+  
+    .services-buttons-list {
+      margin: -65px auto 40px;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  
+  
+    .services-btn-item {
+      margin-bottom: 0;
+    }
+  
+    .service-btn {
+      min-width: 200px;
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .service-title {
+      font-size: 22px;
+    }
+  
+    .service-description {
+      font-size: 16px;
+      padding-right: 33%;
+    }
+  
+    .service-item {
+      padding: 0 45px;
+    }
+  
+    .service-item::after {
+      height: 80px;
+      width: 80px;
+      background-size: 80px 80px;
+      top: -45px;
+      right: 45px;
+    }
+  
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding: 0;
+      margin: 40px auto;
+    }
+  
+    .skills-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  
+    .skills-item::before {
+      width: 25px;
+      height: 25px;
+      background-size: 25px 25px;
+    }
+  
+    .skill-name {
+      font-size: 14px;
+    }
+  
+    .skill-range {
+      width: 250px;
+      margin-bottom: 0;
+    }
+  
+    .skills .container::after {
+      display: none;
+    }
+  
+    .sertificate-list {
+      margin: 0 auto;
+      width: 400px;
+    }
+  
+    .sertificate-image {
+      width: 168px;
+      height: 236px;
+    }
+  
+    .acquaintance .container {
+      display: grid;
+      padding: 0 40px;
+      margin: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1.5fr 0.2fr 1fr 0.2fr 1fr;
+    }
+    
+    .acquaintance-image {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      display: block;
+      margin: auto;
+      object-fit: cover;
+    }
+  
+    .acquaintance-title + .insection-title {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+    }
+  
+    .insection-title:first-of-type + .acquaintance-description {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+    }
+  
+    .acquaintance-description {
+      padding: 0 10%;
+    }
+  
+    .acquaintance-description + .insection-title {
+      grid-column: 1/-1;
+      grid-row: 5/6;
+    }
+  
+    .insection-title:last-of-type + .acquaintance-description {
+      grid-column: 1/-1;
+      grid-row: 6/-1;
+    }
+  
+    .contact .container {
+      width: 600px;
+      padding: 40px 70px;
+    }
+  }
+  
+  @media (max-width: 880px) {
+    .services-buttons-list {
+      border: none;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .service-btn {
+      min-width: 140px;
+    }
+  
+    .service-indicators {
+      right: -20px;
+      bottom: 10px;
+      left:unset;
+      flex-direction: row;
+    }
+  
+    .service-item::after {
+      right: 0;
+    }
+  }
+  
+  @media (min-width: 660px) {
+    .slider-btn {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 660px) {
+    .main-navigation .nav-list {
+      display: none;
+    }
+
+    .nav-burger-container{
+      display: block;
+    }
+  
+    .portfolio-list {
+      gap: 40px;
+    }
+  
+    .portfolio-item:not(:first-child) {
+      display: none;
+    }
+  
+    .slider-btn {
+      position: absolute;
+      top: 150px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    .slider-btn:hover {
+      opacity: 0.6;
+    }
+    
+    .slider-btn::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 10px solid transparent;
+      transition: 0s;
+  
+      content: "";
+    }
+  
+    .slider-btn-prev {
+      left: 5%;
+    }
+    
+    .slider-btn-prev::after {
+      transform: translate(-82.5%, -50%);
+      border-right: 10px solid black;
+    }
+  
+    .slider-btn-prev:active::after {
+      border-right-color: #6CB9FF;
+    }
+  
+    .slider-btn-next {
+      right: 5%;
+    }
+  
+    .slider-btn-next::after {
+      transform: translate(-17.5%, -50%);
+      border-left: 10px solid black;
+    }
+  
+    .slider-btn-next:active::after {
+      border-left-color: #6CB9FF;
+    }
+  
+    .container {
+      padding: 0 20px;
+    }
+  
+    .page-header {
+      margin: 0;
+    }
+  
+    .page-header .container {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .main-navigation {
+      min-width: 100%;
+      margin: 0 auto;
+      padding: 30px 40px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .nav-link {
+      font-size: 12px;
+    }
+  
+    .nav-btn {
+      margin: 0;
+      margin-left: auto;
+    }
+  
+    .service-title {
+      max-width: 300px;
+    }
+  
+    .services-buttons-list {
+      border: none;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .service-indicators {
+      right: -20px;
+      bottom: 10px;
+      left:unset;
+      flex-direction: row;
+    }
+  
+    .service-btn {
+      min-width: 140px;
+    }
+  
+    .skills .container {
+      padding: 0 60px;
+    }
+  
+    .acquaintance .container {
+      grid-template-rows: 0.4fr 0.6fr 0.2fr 0.7fr 0.2fr 0.6fr;
+    }
+  
+    .acquaintance-image {
+      width: 317px;
+      height: 464px;
+    }
+  
+    .contact .container {
+      max-width: 480px;
+      padding: 40px 20px;
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .page-header {
+      margin: 0;
+    }
+  
+    .page-header .container {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .main-navigation {
+      min-width: 400px;
+      margin: 0;
+      padding: 10px 40px;
+    }
+  
+    .nav-link {
+      font-size: 12px;
+    }
+  
+    .portfolio-item-description {
+      margin: 0 0 20px;
+    }
+  
+    .services-buttons-list {
+      border: none;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .service-btn {
+      min-width: 60px;
+      min-height: 70px;
+    }
+  
+    .service-item {
+      padding: 0;
+    }
+  
+    .service-item::after {
+      top: 0;
+      right: 15px;
+    }
+  
+    .service-indicators {
+      flex-direction: column;
+      bottom: 30px;
+      right: -130px;
+    }
+  
+    .skills .container {
+      padding: 0 40px;
+    }
+  
+    .skills-item {
+      max-width: 300px;
+    }
+  
+    .skill-range {
+      width: 150px;
+    }
+  
+    .sertificate-image-link {
+      max-width: 169px;
+      min-height: 237px;
+    }
+  
+    .acquaintance .container {
+      padding: 0 10px;
+      grid-template-rows: 0.4fr 0.4fr 0.2fr 1fr 0.2fr 0.6fr;
+    }
+  
+    .acquaintance-image {
+      width: 113px;
+      height: 168px;
+    }
+  
+    .contact {
+      padding: 0 10px;
+    }
+  
+    .contact .container {
+      max-width: 350px;
+      padding: 20px 0;
+    }
+  
+    .contact-title {
+      margin: 0;
+    }
+  
+    .contact-description {
+      padding: 0 20px;
+    }
+  
+    .contact-input {
+      max-width: 180px;
+    }
+  
+    .footer-link {
+      font-size: 10px;
+    }
+  }
+  

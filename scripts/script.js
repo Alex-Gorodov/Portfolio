@@ -1,3 +1,23 @@
+// Burger menu
+
+let burger = document.querySelector(".nav-burger-container .burger-nav-list");
+
+let firstLine = document.querySelector(".burger-line:nth-of-type(1)");
+let secondLine = document.querySelector(".burger-line:nth-of-type(2)");
+let thirdLine = document.querySelector(".burger-line:nth-of-type(3)");
+
+let developerText = document.querySelector(".developer");
+
+function burgerOpen() {
+    burger.classList.toggle("nav-list-opened");
+
+    firstLine.classList.toggle("burger-open-first-line");
+    secondLine.classList.toggle("burger-open-second-line");
+    thirdLine.classList.toggle("burger-open-third-line");
+
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+}
+
 // Script for scrolling to ahcner links of navigation menu
 $("a[href*=#]").bind("click", function (e) {
 var anchor = $(this);
@@ -66,6 +86,7 @@ function modalClose() {
     termsWindow.classList.remove("modal-open");
 }
 
+// Portfolio slider
 let portfolio = document.getElementsByClassName("portfolio-item");
 let next = document.querySelector(".slider-btn-next");
 let prev = document.querySelector(".slider-btn-prev");
