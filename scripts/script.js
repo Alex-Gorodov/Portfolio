@@ -65,3 +65,43 @@ function termsOpener() {
 function modalClose() {
     termsWindow.classList.remove("modal-open");
 }
+
+let portfolio = document.getElementsByClassName("portfolio-item");
+let next = document.querySelector(".slider-btn-next");
+let prev = document.querySelector(".slider-btn-prev");
+let i = 0;
+let arLength = portfolio.length;
+
+let ww = window.innerWidth;
+
+next.addEventListener("click", moveRight);
+
+function moveRight() {
+  if (ww <= 660) {
+    if(i == arLength-1){
+            portfolio[0].style.display = "block";
+            portfolio[i].style.display = "none";
+            i = 0;
+        } else{
+            portfolio[i+1].style.display = "block";
+            portfolio[i].style.display = "none";
+            i++;
+        }
+  }   
+}
+
+prev.addEventListener("click", moveLeft);
+
+function moveLeft() {
+  if (ww <= 660) {
+    if(i == 0){
+        portfolio[arLength-1].style.display = "block";
+        portfolio[i].style.display = "none";
+        i = arLength-1;
+    } else{
+        portfolio[i-1].style.display = "block";
+        portfolio[i].style.display = "none";
+        i--;
+    }
+  }
+}
