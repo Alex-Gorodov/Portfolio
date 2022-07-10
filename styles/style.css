@@ -169,6 +169,7 @@ body {
 .nav-burger-container{
   display: none;
   margin-right: auto;
+  z-index: 10;
 }
 
 .burger-btn {
