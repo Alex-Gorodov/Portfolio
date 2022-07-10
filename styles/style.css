@@ -222,7 +222,7 @@ body {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   padding: 5vh;
   list-style-type: none;
   flex-direction: column;
@@ -240,6 +240,7 @@ body {
 
 .burger-nav-list .nav-list-burger {
   display: flex;
+  padding: 0;
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
