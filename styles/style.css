@@ -169,7 +169,7 @@ body {
 .nav-burger-container{
   display: none;
   margin-right: auto;
-  z-index: 10;
+  z-index: 1;
 }
 
 .burger-btn {
@@ -183,6 +183,7 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.1s;
+  z-index: 1;
 }
 
 .burger-line {
