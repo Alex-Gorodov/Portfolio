@@ -1,51 +1,63 @@
+// window width
 let ww = window.innerWidth;
 
+// page body
+let body = document.querySelector("body");
+
+// burger items list
 let burger = document.querySelector(".nav-burger-container .burger-nav-list");
 
+// burger menu items
+let burgerLinks = document.querySelectorAll(".burger-nav-list .nav-link");
+
+// burger button's lines
 let firstLine = document.querySelector(".burger-line:nth-of-type(1)");
 let secondLine = document.querySelector(".burger-line:nth-of-type(2)");
 let thirdLine = document.querySelector(".burger-line:nth-of-type(3)");
 
+// developer name
 let developerText = document.querySelector(".developer");
 
-let burgerLinks = document.querySelectorAll(".burger-nav-list .nav-link");
-
-let projectsLink = document.querySelector(".nav-item:first-of-type");
-let projectsList = document.querySelector(".nav-projects-list");
+// projects submenu
 let projectsListBurger = document.querySelector(".burger-nav-list .nav-projects-list");
+let projectsList = document.querySelector(".nav-projects-list");
+let projectsLink = document.querySelector(".nav-item:first-of-type");
 
+// services section's buttons
 let firstButton = document.querySelector(".services-btn-item:first-of-type");
 let firstService = document.querySelector(".service-idea");
-
 let secondButton = document.querySelector(".services-btn-item:nth-of-type(2)");
 let secondService = document.querySelector(".service-design");
-
 let thirdButton = document.querySelector(".services-btn-item:nth-of-type(3)");
 let thirdService = document.querySelector(".service-nothing");
 
+// terms modal window
 let termsWindow = document.querySelector(".modal-container");
 let agreeBtn = document.querySelector(".modal-agree-btn");
-let body = document.querySelector("body");
 
+// portfolio slider
 let portfolio = document.getElementsByClassName("portfolio-item");
 let next = document.querySelector(".slider-btn-next");
 let prev = document.querySelector(".slider-btn-prev");
 let i = 0;
 let arLength = portfolio.length;
 
-// Burger menu
+// Burger menu opening function
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
 
+    // burger lines transform
     firstLine.classList.toggle("burger-open-first-line");
     secondLine.classList.toggle("burger-open-second-line");
     thirdLine.classList.toggle("burger-open-third-line");
 
+    // projects submenu opening and closing
     if (projectsListBurger.style.display === "flex") {
       projectsListBurger.style.transform = "translateX(-100%)";
       projectsListBurger.style.display = "none";
     }
 
+    // developer name hiding on menu's opening
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 }
 
@@ -74,7 +86,6 @@ projectsLink.onclick = function () {
   projectsList.style.display = projectsList.style.display === "flex" ? 'none' : 'flex';
   developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 };
-
 
 // Script for scrolling to ahcner links of navigation menu
 $("a[href*=#]").bind("click", function (e) {
@@ -150,7 +161,6 @@ function moveRight() {
         }
   }   
 }
-
 prev.addEventListener("click", moveLeft);
 function moveLeft() {
   if (ww <= 660) {
