@@ -207,7 +207,7 @@ body {
 
 .burger-open-first-line {
   position: absolute;
-  top: 41px;
+  top: 16px;
   right: 25px;
   transform: rotate(45deg);
 }
@@ -218,7 +218,7 @@ body {
 
 .burger-open-third-line {  
   position: absolute;
-  top: 41px;
+  top: 16px;
   right: 25px;
   transform: rotate(-45deg);
 }
