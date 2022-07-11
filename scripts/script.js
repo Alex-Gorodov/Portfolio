@@ -76,10 +76,12 @@ function serviceThird() {
 }
 
 // Script for terms modal window
-var termsWindow = document.querySelector(".modal-container");
+let termsWindow = document.querySelector(".modal-container");
+let body = document.querySelector("body");
 
 function termsOpener() {
     termsWindow.classList.add("modal-open");
+    body.classList.toggle("locked");
 }
 
 function modalClose() {
