@@ -219,9 +219,9 @@ body {
 
 .nav-burger-container .burger-nav-list {
   display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
+  /* position: fixed;*/
+  /* top: 0;*/
+  /* right: 0;*/
   width: 100vw;
   height: 50vh;
   padding: 5vh;
