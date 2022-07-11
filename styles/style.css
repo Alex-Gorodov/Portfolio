@@ -41,6 +41,12 @@ body {
   overflow: hidden;
 }
 
+/* scroll locking */
+
+.locked {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 40px;
@@ -803,7 +809,8 @@ body {
 
 .modal-terms {
   max-width: 920px;
-  width: 80%;
+  width: 80vw;
+  overflow: auto;
 }
 
 .modal-close-btn {
