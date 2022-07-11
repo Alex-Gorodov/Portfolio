@@ -793,6 +793,7 @@ body {
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
   z-index: 20;
+  overflow: auto;
 }
 
 .modal-open {
@@ -810,7 +811,6 @@ body {
 .modal-terms {
   max-width: 920px;
   width: 80vw;
-  overflow: auto;
 }
 
 .modal-close-btn {
