@@ -168,9 +168,9 @@
     .nav-burger-container{
       display: block;
     }
-  
-    .portfolio-list {
-      gap: 40px;
+
+    .portfolio-item {
+      height: 480px;
     }
   
     .portfolio-item:not(:first-child) {

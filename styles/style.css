@@ -180,7 +180,7 @@ body {
 
 .burger-btn {
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: 25px;
   width: 40px;
   height: 40px;
@@ -677,7 +677,7 @@ body {
 
 .contact {
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .contact .container {
@@ -748,17 +748,6 @@ body {
   vertical-align: middle;
   text-decoration: none;
   color: #288be6;
-}
-
-.to-top-btn {
-  display: inline-block;
-  margin-right: 40px;
-  padding: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  color: #288be6;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 .footer-link::before {

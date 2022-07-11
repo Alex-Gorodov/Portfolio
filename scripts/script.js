@@ -18,6 +18,24 @@ function burgerOpen() {
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 }
 
+let burgerLinks = document.querySelectorAll(".burger-nav-list .nav-link");
+
+for (const link of burgerLinks) {
+  link.onclick = function () {
+    burger.classList.remove("nav-list-opened");
+    firstLine.classList.remove("burger-open-first-line");
+    secondLine.classList.remove("burger-open-second-line");
+    thirdLine.classList.remove("burger-open-third-line");
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    
+    if (link === burgerLinks[burgerLinks.length - 1]) {
+      termsOpener();
+      console.log("sdfjsf");
+    }
+  };
+
+}
+
 // Script for scrolling to ahcner links of navigation menu
 $("a[href*=#]").bind("click", function (e) {
 var anchor = $(this);
