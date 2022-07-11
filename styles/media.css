@@ -176,6 +176,36 @@
     .portfolio-item:not(:first-child) {
       display: none;
     }
+
+    .burger-nav-list {
+      width: 50vw;
+      transform: translateX(100%);
+    }
+
+    .burger-nav-list.nav-list-opened {
+      transform: translateX(0);
+      overflow: visible;
+    }
+
+    .nav-item:first-of-type::after {
+      top: 40%;
+      right: 0;
+      left: -15px;
+      transform: rotate(90deg);
+    }
+
+    .burger-nav-list .nav-projects-list {
+      width: 50vw;
+      top: -37px;
+      right: 34.4vw;
+      display: none;
+      transform: translateX(100%);
+      text-align: right;
+      font-size: 0.9em;
+      padding: 10px 30px;
+      box-shadow: -20px 0px 20px rgb(0 0 0 / 25%);
+      transition: 0.5s;
+    }
   
     .slider-btn {
       position: absolute;

@@ -1,4 +1,4 @@
-// Burger menu
+let ww = window.innerWidth;
 
 let burger = document.querySelector(".nav-burger-container .burger-nav-list");
 
@@ -8,6 +8,32 @@ let thirdLine = document.querySelector(".burger-line:nth-of-type(3)");
 
 let developerText = document.querySelector(".developer");
 
+let burgerLinks = document.querySelectorAll(".burger-nav-list .nav-link");
+
+let projectsLink = document.querySelector(".nav-item:first-of-type");
+let projectsList = document.querySelector(".nav-projects-list");
+let projectsListBurger = document.querySelector(".burger-nav-list .nav-projects-list");
+
+let firstButton = document.querySelector(".services-btn-item:first-of-type");
+let firstService = document.querySelector(".service-idea");
+
+let secondButton = document.querySelector(".services-btn-item:nth-of-type(2)");
+let secondService = document.querySelector(".service-design");
+
+let thirdButton = document.querySelector(".services-btn-item:nth-of-type(3)");
+let thirdService = document.querySelector(".service-nothing");
+
+let termsWindow = document.querySelector(".modal-container");
+let agreeBtn = document.querySelector(".modal-agree-btn");
+let body = document.querySelector("body");
+
+let portfolio = document.getElementsByClassName("portfolio-item");
+let next = document.querySelector(".slider-btn-next");
+let prev = document.querySelector(".slider-btn-prev");
+let i = 0;
+let arLength = portfolio.length;
+
+// Burger menu
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
 
@@ -15,13 +41,22 @@ function burgerOpen() {
     secondLine.classList.toggle("burger-open-second-line");
     thirdLine.classList.toggle("burger-open-third-line");
 
+    if (projectsListBurger.style.display === "flex") {
+      projectsListBurger.style.transform = "translateX(-100%)";
+      projectsListBurger.style.display = "none";
+    }
+
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 }
 
-let burgerLinks = document.querySelectorAll(".burger-nav-list .nav-link");
-
+// Burger menu closing on click on menu item
 for (const link of burgerLinks) {
   link.onclick = function () {
+    if (link === burgerLinks[0]) {
+      projectsListBurger.style.display = projectsListBurger.style.display === "flex" ? 'none' : 'flex';
+      projectsListBurger.style.transform = "translateX(0)";
+      return;
+    }
     burger.classList.remove("nav-list-opened");
     firstLine.classList.remove("burger-open-first-line");
     secondLine.classList.remove("burger-open-second-line");
@@ -30,15 +65,20 @@ for (const link of burgerLinks) {
     
     if (link === burgerLinks[burgerLinks.length - 1]) {
       termsOpener();
-      console.log("sdfjsf");
     }
   };
-
 }
+
+// Opening projects submenu on hover on projects link in navigation
+projectsLink.onclick = function () {
+  projectsList.style.display = projectsList.style.display === "flex" ? 'none' : 'flex';
+  developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+};
+
 
 // Script for scrolling to ahcner links of navigation menu
 $("a[href*=#]").bind("click", function (e) {
-var anchor = $(this);
+let anchor = $(this);
 $("html, body")
     .stop()
     .animate(
@@ -50,16 +90,7 @@ $("html, body")
 e.preventDefault();
 });
 
-// Script for sevrices buttons
-var firstButton = document.querySelector(".services-btn-item:first-of-type");
-var firstService = document.querySelector(".service-idea");
-
-var secondButton = document.querySelector(".services-btn-item:nth-of-type(2)");
-var secondService = document.querySelector(".service-design");
-
-var thirdButton = document.querySelector(".services-btn-item:nth-of-type(3)");
-var thirdService = document.querySelector(".service-nothing");
-
+// Scripts for sevrices buttons
 function serviceFirst() {
     firstButton.classList.add("service-btn-active");
     firstService.classList.add("service-item-active");
@@ -70,7 +101,6 @@ function serviceFirst() {
     thirdButton.classList.remove("service-btn-active");
     thirdService.classList.remove("service-item-active");
 }
-
 function serviceSecond() {
     secondButton.classList.add("service-btn-active");
     secondService.classList.add("service-item-active");
@@ -81,7 +111,6 @@ function serviceSecond() {
     thirdButton.classList.remove("service-btn-active");
     thirdService.classList.remove("service-item-active");
 }
-
 function serviceThird() {
     firstButton.classList.remove("service-btn-active");
     firstService.classList.remove("service-item-active");
@@ -94,35 +123,20 @@ function serviceThird() {
 }
 
 // Script for terms modal window
-let termsWindow = document.querySelector(".modal-container");
-let body = document.querySelector("body");
-let agreeBtn = document.querySelector(".modal-agree-btn");
-
 function termsOpener() {
     termsWindow.classList.add("modal-open");
     body.classList.add("locked");
 }
-
 function modalClose() {
     termsWindow.classList.remove("modal-open");
     body.classList.remove("locked");
 }
-
 agreeBtn.onclick = function () {
   modalClose();
 };
 
 // Portfolio slider
-let portfolio = document.getElementsByClassName("portfolio-item");
-let next = document.querySelector(".slider-btn-next");
-let prev = document.querySelector(".slider-btn-prev");
-let i = 0;
-let arLength = portfolio.length;
-
-let ww = window.innerWidth;
-
 next.addEventListener("click", moveRight);
-
 function moveRight() {
   if (ww <= 660) {
     if(i == arLength-1){
@@ -138,7 +152,6 @@ function moveRight() {
 }
 
 prev.addEventListener("click", moveLeft);
-
 function moveLeft() {
   if (ww <= 660) {
     if(i == 0){

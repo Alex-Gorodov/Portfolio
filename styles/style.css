@@ -53,13 +53,8 @@ body {
   margin: 0 auto;
 }
 
-.page-header * {
-  margin: 0 auto;
-}
-
 .page-header {
   margin: 40px auto 0;
-  box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
   transform-style: inherit;
@@ -111,7 +106,7 @@ body {
 
 .main-navigation {
   display: flex;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 10px 20px;
   background-color: rgba(227, 227, 227, 0.5);
@@ -129,6 +124,7 @@ body {
 }
 
 .nav-item {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -153,6 +149,43 @@ body {
 .nav-btn {
   margin-left: auto;
   padding: 8px 20px;
+}
+
+.nav-projects-list {
+  position: absolute;
+  top: 46px;
+  right: -60px;
+  display: none;
+  padding: 10px;
+  padding-left: 30px;
+  flex-direction: column;
+  list-style-type: none;
+  width: 170px;
+  background-color: rgba(227, 227, 227, 0.3);
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 25%);
+  z-index: 2;
+}
+
+.nav-item:first-of-type::after {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-60%);
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-top: 5px solid #1D69AF;
+  background-color: transparent;
+}
+
+.nav-projects-list .nav-project-item {
+  margin: 0;
+}
+
+.lowercase {
+  text-transform: capitalize;
 }
 
 .button:hover {
@@ -223,7 +256,7 @@ body {
   transform: rotate(-45deg);
 }
 
-.nav-burger-container .burger-nav-list {
+.burger-nav-list {
   display: flex;
   position: absolute;
   top: 0;
@@ -300,6 +333,7 @@ body {
 .portfolio-image-link {
   display: block;
   height: min-content;
+  margin-bottom: 10px;
 }
 
 .portfolio-item-image:hover {
@@ -309,7 +343,7 @@ body {
 
 .portfolio-item-title {
   position: relative;
-  margin: 10px 0;
+  margin: 0;
   max-width: 220px;
   text-transform: uppercase;
 }
