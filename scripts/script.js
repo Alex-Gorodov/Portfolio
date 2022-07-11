@@ -81,11 +81,12 @@ let body = document.querySelector("body");
 
 function termsOpener() {
     termsWindow.classList.add("modal-open");
-    body.classList.toggle("locked");
+    body.classList.add("locked");
 }
 
 function modalClose() {
     termsWindow.classList.remove("modal-open");
+    body.classList.remove("locked");
 }
 
 // Portfolio slider
