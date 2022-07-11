@@ -717,13 +717,16 @@ body {
   background-color: #e8eff8;
 }
 
-.contact-btn {
+.button {
   width: 100px;
-  margin-left: -5px;
   padding: 12px;
   background-color: #6CB9FF;
-  border-radius: 0px 10px 10px 0px;
   cursor: pointer;
+}
+
+.contact-btn {
+  margin-left: -5px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .page-footer {
@@ -786,7 +789,7 @@ body {
 }
 
 .modal-open {
-  display: grid;
+  display: block;
 }
 
 .modal {
@@ -798,8 +801,13 @@ body {
 }
 
 .modal-terms {
+  display: grid;
   max-width: 920px;
-  width: 80vw;
+  width: 96vw;
+}
+
+.modal-title {
+  margin: 0;
 }
 
 .modal-close-btn {
@@ -823,4 +831,8 @@ body {
 
 .modal-close-btn:active {
   opacity: 0.3;
+}
+
+.modal-agree-btn {
+  margin: auto;
 }

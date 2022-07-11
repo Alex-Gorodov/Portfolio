@@ -96,6 +96,7 @@ function serviceThird() {
 // Script for terms modal window
 let termsWindow = document.querySelector(".modal-container");
 let body = document.querySelector("body");
+let agreeBtn = document.querySelector(".modal-agree-btn");
 
 function termsOpener() {
     termsWindow.classList.add("modal-open");
@@ -106,6 +107,10 @@ function modalClose() {
     termsWindow.classList.remove("modal-open");
     body.classList.remove("locked");
 }
+
+agreeBtn.onclick = function () {
+  modalClose();
+};
 
 // Portfolio slider
 let portfolio = document.getElementsByClassName("portfolio-item");
