@@ -188,7 +188,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: 0.1s;
+  transition: 0.4s;
   z-index: 1;
 }
 
