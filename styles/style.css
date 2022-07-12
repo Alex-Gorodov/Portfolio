@@ -151,6 +151,11 @@ body {
   position: relative;
 }
 
+.burger-nav-list .nav-projects-wrapper {
+  width: 50vw;
+  text-align: center;
+}
+
 .nav-projects-list {
   position: absolute;
   top: 46px;

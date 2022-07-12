@@ -1,6 +1,9 @@
 // window width
 let ww = window.innerWidth;
 
+//window height
+let wh = window.innerHeight;
+
 // page body
 let body = document.querySelector("body");
 
@@ -71,6 +74,19 @@ for (const link of burgerLinks) {
     }
   };
 }
+
+function getCoords(elem) {
+  let box = elem.getBoundingClientRect();
+
+  return {
+    top: Math.round(box.top),
+    left: Math.round(box.left)
+  };
+}
+
+// while (getCoords(projectsList).top <= 56) {
+//   projectsList.style.opacity = "0";
+// }
 
 // Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
