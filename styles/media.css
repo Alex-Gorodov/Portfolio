@@ -191,7 +191,7 @@
     .projects-opener::after {
       top: 40%;
       right: 0;
-      left: 75px;
+      left: 10px;
       transform: rotate(90deg);
     }
     
