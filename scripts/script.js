@@ -52,7 +52,6 @@ let arLength = portfolio.length;
 // Burger menu opening function
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
-    projectsListBurger.classList.remove("burger-showed");
 
     // burger lines transform
     firstLine.classList.toggle("burger-open-first-line");
@@ -64,7 +63,6 @@ function burgerOpen() {
 }
 
 // Burger menu closing on click on menu item
-
 for (const link of burgerLinks) {
   link.onclick = function () {
     burger.classList.remove("nav-list-opened");
@@ -72,6 +70,10 @@ for (const link of burgerLinks) {
     secondLine.classList.remove("burger-open-second-line");
     thirdLine.classList.remove("burger-open-third-line");
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+
+    if (projectsListBurger.classList.contains("burger-showed")) {
+      projectsListBurger.classList.remove("burger-showed");
+    }
     
     if (link === burgerLinks[burgerLinks.length - 1]) {
       termsOpener();
