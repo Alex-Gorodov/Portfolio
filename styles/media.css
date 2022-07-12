@@ -186,7 +186,6 @@
     .burger-nav-list.nav-list-opened {
       transform: translateX(0);
       overflow: visible;
-      justify-content: center;
     }
 
     .projects-opener::after {
@@ -196,14 +195,14 @@
     }
     
     .burger-nav-list .nav-projects-list {
-      width: 40vw;
-      top: -66px;
-      left: 10vw;
+      width: 50vw;
+      top: -40px;
+      left: 0;
       display: flex;
       transform: translateX(0);
       opacity: 0;
       text-align: left;
-      font-size: 0.7em;
+      font-size: 0.6em;
       padding: 10px 30px;
       box-shadow: 20px 0px 20px rgb(0 0 0 / 25%);
       z-index: -1;
