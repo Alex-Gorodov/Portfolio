@@ -189,10 +189,13 @@
       width: 50vw;
       padding: 0;
       transform: translateX(-110%);
+      -webkit-transform: translateX(-110%);
+      -moz-transform: translateX(-110%);
     }
 
     .burger-nav-list.nav-list-opened {
       transform: translateX(0);
+      -webkit-transform: translateX(0);
       overflow: visible;
     }
 
@@ -200,6 +203,8 @@
       top: 40%;
       right: 10px;
       transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
     }
     
     .burger-nav-list .nav-projects-list {
@@ -208,6 +213,8 @@
       left: 10vw;
       display: flex;
       transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
       opacity: 0;
       text-align: left;
       font-size: 0.6em;
@@ -218,6 +225,8 @@
 
     .burger-showed {
       transform: translateX(100%) !important;
+      -webkit-transform: translateX(100%) !important;
+      -moz-transform: translateX(100%) !important;
       opacity: 1 !important;
       z-index: 2 !important;
     }
@@ -258,6 +267,8 @@
     
     .slider-btn-prev::after {
       transform: translate(-82.5%, -50%);
+      -webkit-transform: translate(-82.5%, -50%);
+      -moz-transform: translate(-82.5%, -50%);
       border-right: 10px solid black;
     }
   
@@ -271,6 +282,8 @@
   
     .slider-btn-next::after {
       transform: translate(-17.5%, -50%);
+      -webkit-transform: translate(-17.5%, -50%);
+      -moz-transform: translate(-17.5%, -50%);
       border-left: 10px solid black;
     }
   
