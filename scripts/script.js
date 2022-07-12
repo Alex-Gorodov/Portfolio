@@ -19,9 +19,10 @@ let thirdLine = document.querySelector(".burger-line:nth-of-type(3)");
 let developerText = document.querySelector(".developer");
 
 // projects submenu
-let projectsListBurger = document.querySelector(".burger-nav-list .nav-projects-list");
+let projectsListBurger = document.querySelector(".burger-nav-projects-list");
 let projectsList = document.querySelector(".nav-projects-list");
-let projectsLink = document.querySelector(".nav-item:first-of-type");
+let projectsLink = document.querySelector(".projects-opener");
+let projectsLinkBurger = document.querySelector(".nav-list-burger .projects-opener");
 
 // services section's buttons
 let firstButton = document.querySelector(".services-btn-item:first-of-type");
@@ -45,17 +46,12 @@ let arLength = portfolio.length;
 // Burger menu opening function
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
+    projectsListBurger.classList.remove("burger-showed");
 
     // burger lines transform
     firstLine.classList.toggle("burger-open-first-line");
     secondLine.classList.toggle("burger-open-second-line");
     thirdLine.classList.toggle("burger-open-third-line");
-
-    // projects submenu opening and closing
-    if (projectsListBurger.style.display === "flex") {
-      projectsListBurger.style.transform = "translateX(-100%)";
-      projectsListBurger.style.display = "none";
-    }
 
     // developer name hiding on menu's opening
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
@@ -64,11 +60,6 @@ function burgerOpen() {
 // Burger menu closing on click on menu item
 for (const link of burgerLinks) {
   link.onclick = function () {
-    if (link === burgerLinks[0]) {
-      projectsListBurger.style.display = projectsListBurger.style.display === "flex" ? 'none' : 'flex';
-      projectsListBurger.style.transform = "translateX(0)";
-      return;
-    }
     burger.classList.remove("nav-list-opened");
     firstLine.classList.remove("burger-open-first-line");
     secondLine.classList.remove("burger-open-second-line");
@@ -81,10 +72,14 @@ for (const link of burgerLinks) {
   };
 }
 
-// Opening projects submenu on hover on projects link in navigation
+// Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
-  projectsList.style.display = projectsList.style.display === "flex" ? 'none' : 'flex';
+  projectsList.classList.toggle("showed");
   developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+};
+
+projectsLinkBurger.onclick = function () {
+  projectsListBurger.classList.toggle("burger-showed");
 };
 
 // Script for scrolling to ahcner links of navigation menu

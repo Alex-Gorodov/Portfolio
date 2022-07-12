@@ -49,12 +49,12 @@ body {
 
 .container {
   max-width: 1230px;
-  padding: 0 40px;
+  padding: 0;
   margin: 0 auto;
 }
 
 .page-header {
-  margin: 40px auto 0;
+  margin: 0 auto;
   min-height: 100vh;
   width: 100vw;
   transform-style: inherit;
@@ -80,6 +80,7 @@ body {
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
+  transition: 0.5s;
   
   content: "";
 }
@@ -106,11 +107,12 @@ body {
 
 .main-navigation {
   display: flex;
-  max-width: 400px;
+  width: 100%;
   margin: 0 auto;
   padding: 10px 20px;
   background-color: rgba(227, 227, 227, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
 }
 
 .nav-list {
@@ -124,7 +126,6 @@ body {
 }
 
 .nav-item {
-  position: relative;
   margin: 0 auto;
 }
 
@@ -146,28 +147,34 @@ body {
   opacity: 0.6;
 }
 
-.nav-btn {
-  margin-left: auto;
-  padding: 8px 20px;
+.nav-projects-wrapper {
+  position: relative;
 }
 
 .nav-projects-list {
   position: absolute;
   top: 46px;
   right: -60px;
-  display: none;
+  display: flex;
+  transform: translateY(-100%);
   padding: 10px;
   padding-left: 30px;
   flex-direction: column;
   list-style-type: none;
   width: 170px;
   background-color: rgba(227, 227, 227, 0.3);
+  opacity: 0;
   box-shadow: 0px 10px 20px rgb(0 0 0 / 25%);
-  z-index: 2;
-  transition: 0.5s;
+  z-index: -1;
 }
 
-.nav-item:first-of-type::after {
+.showed {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.projects-opener::after {
   position: absolute;
   top: 50%;
   right: -15px;
@@ -201,8 +208,6 @@ body {
   background-color: #a8a8a8;
   cursor: not-allowed;
 }
-
-
 
 /* Burger menu */
 
