@@ -24,6 +24,7 @@ body {
 *::after {
   box-sizing: border-box;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 
 .visually-hidden {
@@ -81,6 +82,7 @@ body {
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
   
   content: "";
 }
@@ -111,6 +113,7 @@ body {
   margin: 0 auto;
   padding: 10px 20px;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .nav-list {
@@ -231,6 +234,7 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
   z-index: 1;
 }
 
@@ -241,6 +245,7 @@ body {
   border-radius: 4px;
   background-color: #1D69AF;
   transition: 0.2s;
+  -webkit-transition: 0.2s;
 }
 
 .burger-line:not(:last-child) {
@@ -273,6 +278,7 @@ body {
   width: 100vw;
   height: 50vh;
   padding: 5vh;
+  -webkit-padding: 5vh;
   list-style-type: none;
   flex-direction: column;
   justify-content: center;
@@ -281,6 +287,7 @@ body {
   overflow: hidden;
   transform: translateY(-200%);
   transition: 0.4s;
+  -webkit-transition: 0.4s;
 }
 
 .burger-nav-list.nav-list-opened {
@@ -295,6 +302,10 @@ body {
   justify-content: center;
   list-style-type: none;
   gap: 6vh;
+}
+
+.burger-nav-list .nav-item:not(:last-child) {
+  -webkit-margin-after: 5vh;
 }
 
 .burger-nav-list .nav-link {
