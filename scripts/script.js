@@ -53,6 +53,10 @@ let arLength = portfolio.length;
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
 
+    if (projectsListBurger.classList.contains("burger-showed")) {
+      projectsListBurger.classList.remove("burger-showed");
+    }
+
     // burger lines transform
     firstLine.classList.toggle("burger-open-first-line");
     secondLine.classList.toggle("burger-open-second-line");
