@@ -301,10 +301,10 @@ body {
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
-  gap: 6vh;
 }
 
 .burger-nav-list .nav-item:not(:last-child) {
+  margin-bottom: 5vh;
   -webkit-margin-after: 5vh;
 }
 
