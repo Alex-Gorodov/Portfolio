@@ -10,6 +10,9 @@ let body = document.querySelector("body");
 // burger items list
 let burger = document.querySelector(".nav-burger-container .burger-nav-list");
 
+// menu items
+let menuLinks = document.querySelectorAll(".nav-list .nav-item");
+
 // burger menu items
 let burgerLinks = document.querySelectorAll(".burger-nav-list .nav-link");
 
@@ -61,6 +64,7 @@ function burgerOpen() {
 }
 
 // Burger menu closing on click on menu item
+
 for (const link of burgerLinks) {
   link.onclick = function () {
     burger.classList.remove("nav-list-opened");
@@ -75,19 +79,6 @@ for (const link of burgerLinks) {
   };
 }
 
-function getCoords(elem) {
-  let box = elem.getBoundingClientRect();
-
-  return {
-    top: Math.round(box.top),
-    left: Math.round(box.left)
-  };
-}
-
-// while (getCoords(projectsList).top <= 56) {
-//   projectsList.style.opacity = "0";
-// }
-
 // Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
@@ -96,6 +87,15 @@ projectsLink.onclick = function () {
 
 projectsLinkBurger.onclick = function () {
   projectsListBurger.classList.toggle("burger-showed");
+};
+
+// Closing projects submenu by clicking on 'About' link
+menuLinks[1].onclick = function () {
+  console.log("fsdsfsf");
+  if (projectsList.classList.contains("showed")) {
+    projectsList.classList.remove("showed");
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+  }
 };
 
 // Script for scrolling to ahcner links of navigation menu
@@ -146,12 +146,16 @@ function serviceThird() {
 
 // Script for terms modal window
 function termsOpener() {
-    termsWindow.classList.add("modal-open");
-    body.classList.add("locked");
+  if (projectsList.classList.contains("showed")) {
+    projectsList.classList.remove("showed");
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+  }
+  termsWindow.classList.add("modal-open");
+  body.classList.add("locked");
 }
 function modalClose() {
-    termsWindow.classList.remove("modal-open");
-    body.classList.remove("locked");
+  termsWindow.classList.remove("modal-open");
+  body.classList.remove("locked");
 }
 agreeBtn.onclick = function () {
   modalClose();
