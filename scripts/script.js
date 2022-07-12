@@ -91,7 +91,6 @@ projectsLinkBurger.onclick = function () {
 
 // Closing projects submenu by clicking on 'About' link
 menuLinks[1].onclick = function () {
-  console.log("fsdsfsf");
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
