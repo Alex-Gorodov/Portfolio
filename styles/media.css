@@ -188,7 +188,7 @@
     .burger-nav-list {
       width: 50vw;
       padding: 0;
-      transform: translateX(-100%);
+      transform: translateX(-110%);
     }
 
     .burger-nav-list.nav-list-opened {
