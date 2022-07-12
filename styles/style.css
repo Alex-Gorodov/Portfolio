@@ -225,7 +225,7 @@ body {
 .burger-btn {
   position: absolute;
   top: 15px;
-  right: 25px;
+  left: 25px;
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -252,7 +252,7 @@ body {
 .burger-open-first-line {
   position: absolute;
   top: 16px;
-  right: 5px;
+  left: 5px;
   transform: rotate(45deg);
 }
 
@@ -263,7 +263,7 @@ body {
 .burger-open-third-line {  
   position: absolute;
   top: 16px;
-  right: 5px;
+  left: 5px;
   transform: rotate(-45deg);
 }
 
@@ -271,7 +271,7 @@ body {
   display: flex;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100vw;
   height: 50vh;
   padding: 5vh;
@@ -291,11 +291,11 @@ body {
 .burger-nav-list .nav-list-burger {
   display: flex;
   padding: 0;
+  margin: 0;
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
   gap: 6vh;
-  margin-bottom: 15vh;
 }
 
 .burger-nav-list .nav-link {
