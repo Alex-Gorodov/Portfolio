@@ -203,9 +203,9 @@
     }
     
     .burger-nav-list .nav-projects-list {
-      width: 50vw;
+      width: 40vw;
       top: -40px;
-      left: 0;
+      left: 10vw;
       display: flex;
       transform: translateX(0);
       opacity: 0;
