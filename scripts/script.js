@@ -86,14 +86,15 @@ for (const link of burgerLinks) {
 }
 
 // Burger menu closing by click outside
-
-document.addEventListener('click', (e) => {
-  const click = e.composedPath().includes(burger);
-  if ( !click ) {
-    burger.style.display = 'none';
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-  }
-})
+if (burger.classList.contains("nav-list-opened) {
+  document.addEventListener('click', (e) => {
+    const click = e.composedPath().includes(burger);
+    if ( !click ) {
+      burger.style.display = 'none';
+      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    }
+  });
+}
 
 // Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
