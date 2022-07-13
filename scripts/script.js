@@ -85,6 +85,10 @@ for (const link of burgerLinks) {
   };
 }
 
+// Burger menu closing by click outside
+
+
+
 // Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
