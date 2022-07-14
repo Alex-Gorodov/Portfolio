@@ -1,5 +1,5 @@
 # Site-portfolio
-technologies used:
+Technologies used:
 - HTML, CSS, JavaScript
 - flex
 - grid
