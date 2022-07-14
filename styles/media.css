@@ -177,6 +177,11 @@
       display: block;
     }
 
+    .developer .subtitle {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
     .developer .social-links {
       display: none;
     }
