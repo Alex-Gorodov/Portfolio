@@ -73,7 +73,9 @@ for (const link of burgerLinks) {
     firstLine.classList.remove("burger-open-first-line");
     secondLine.classList.remove("burger-open-second-line");
     thirdLine.classList.remove("burger-open-third-line");
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    if (ww < 661) {
+      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    }
 
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
@@ -95,7 +97,9 @@ let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
   projectsListArrow.classList.toggle("rotated");
-  developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+  if (ww < 661) {
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+  }
 };
 
 projectsLinkBurger.onclick = function () {
