@@ -197,7 +197,7 @@ body {
 }
 
 .rotated {
-  transform: translateX(50%) rotate(180deg);
+  transform: translateX(50%) translateY(-50%) rotate(180deg);
 }
 
 .nav-projects-list .nav-project-item {

@@ -213,7 +213,7 @@
     }
 
     .burger-rotated {
-      transform: translateX(50%) rotate(90deg);
+      transform: translateX(-50%) rotate(90deg);
     }
     
     .burger-nav-list .nav-projects-list {
