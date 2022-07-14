@@ -184,6 +184,7 @@ body {
 
 .projects-opener {
   border: none;
+  background: none;
   font-size: inherit;
   font-family: inherit;
   cursor: pointer;
