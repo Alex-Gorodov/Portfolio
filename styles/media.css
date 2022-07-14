@@ -204,12 +204,16 @@
       overflow: visible;
     }
 
-    .projects-opener::after {
+    .projects-opener-arrow {
       top: 40%;
       right: 10px;
       transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
+    }
+
+    .burger-rotated {
+      transform: translateX(50%) rotate(90deg);
     }
     
     .burger-nav-list .nav-projects-list {

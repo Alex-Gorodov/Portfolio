@@ -85,18 +85,22 @@ for (const link of burgerLinks) {
   };
 }
 
-// Burger menu closing by click outside
+// projects arrow
+let projectsListArrow = document.querySelector(".projects-opener-arrow");
+let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects-opener-arrow");
 
 
 
 // Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
+  projectsListArrow.classList.toggle("rotated");
   developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 };
 
 projectsLinkBurger.onclick = function () {
   projectsListBurger.classList.toggle("burger-showed");
+  projectsListBurgerArrow.classList.toggle("burger-rotated");
 };
 
 // Closing projects submenu by clicking on 'About' link
@@ -106,20 +110,6 @@ menuLinks[1].onclick = function () {
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
   }
 };
-
-// Script for scrolling to ahcner links of navigation menu
-$("a[href*=#]").bind("click", function (e) {
-let anchor = $(this);
-$("html, body")
-    .stop()
-    .animate(
-    {
-        scrollTop: $(anchor.attr("href")).offset().top,
-    },
-    700
-    );
-e.preventDefault();
-});
 
 // Scripts for sevrices buttons
 function serviceFirst() {
