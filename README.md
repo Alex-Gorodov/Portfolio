@@ -3,7 +3,6 @@ technologies used:
 - HTML, CSS, JavaScript
 - flex
 - grid
-- pseudo-elements
 - adaptive layout
 
 You will find links to 6 other projects inside.
