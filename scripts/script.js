@@ -77,6 +77,7 @@ for (const link of burgerLinks) {
 
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
+      projectsListBurgerArrow.classList.remove("burger-rotated");
     }
     
     if (link === burgerLinks[burgerLinks.length - 1]) {
@@ -88,7 +89,6 @@ for (const link of burgerLinks) {
 // projects arrow
 let projectsListArrow = document.querySelector(".projects-opener-arrow");
 let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects-opener-arrow");
-
 
 
 // Opening projects submenu on click on projects link in navigation
@@ -107,6 +107,7 @@ projectsLinkBurger.onclick = function () {
 menuLinks[1].onclick = function () {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
+    projectsListArrow.classList.remove("rotated");
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
   }
 };
@@ -147,6 +148,7 @@ function serviceThird() {
 function termsOpener() {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
+    projectsListArrow.classList.remove("rotated");
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
   }
   termsWindow.classList.add("modal-open");
