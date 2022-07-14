@@ -63,7 +63,9 @@ function burgerOpen() {
     thirdLine.classList.toggle("burger-open-third-line");
 
     // developer name hiding on menu's opening
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    if (ww < 661) {
+      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    }
 
     if (!burger.classList.contains("burger-showed")) {
       projectsListBurgerArrow.classList.remove("burger-rotated");
@@ -87,6 +89,9 @@ for (const link of burgerLinks) {
     }
     
     if (link === burgerLinks[burgerLinks.length - 1]) {
+      // if (ww < 661) {
+      //   developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+      // }
       termsOpener();
     }
   };
@@ -116,7 +121,9 @@ menuLinks[1].onclick = function () {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    if (ww < 661) {
+      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    }
   }
 };
 
@@ -157,7 +164,9 @@ function termsOpener() {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    if (ww < 661) {
+      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    }
   }
   termsWindow.classList.add("modal-open");
   body.classList.add("locked");
