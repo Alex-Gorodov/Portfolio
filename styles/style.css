@@ -1,7 +1,6 @@
 html {
   height: 100%;
   overflow: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -181,6 +180,13 @@ body {
   -webkit-transform: translateY(0);
   opacity: 1;
   z-index: 2;
+}
+
+.projects-opener {
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .projects-opener-arrow {
