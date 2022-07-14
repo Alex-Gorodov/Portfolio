@@ -413,13 +413,13 @@ body {
   right: 0;
   top: 40px;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   text-align: center;
-  background-image: url("../images/icons/cell-phone.png");
+  background-image: url("../images/icons/iphone.svg");
   background-size: 20px 20px;
-  background-position: center;
+  background-position: 100% center;
   background-repeat: no-repeat;
   cursor: help;
 }
@@ -815,6 +815,11 @@ body {
   list-style-type: none;
 }
 
+.footer-item {
+  display: flex;
+  align-items: center;
+}
+
 .footer-link {
   display: inline-block;
   margin-right: 40px;
@@ -835,17 +840,17 @@ body {
   content: "";
 }
 
-.footer-phone::before {
-  width: 18px;
-  height: 19px;
-  background-image: url("../images/icons/icon-phone.svg");
-}
+/* .footer-phone::before {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/phone-icon.svg");
+} */
 
-.footer-email::before {
-  width: 20px;
-  height: 14px;
-  background-image: url("../images/icons/icon-email.svg");
-}
+/* .footer-email::before {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/email-icon.svg");
+} */
 
 .modal-container {
   position: fixed;
