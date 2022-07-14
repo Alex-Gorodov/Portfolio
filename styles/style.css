@@ -122,9 +122,9 @@ body {
 .nav-list {
   display: flex;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   max-width: 800px;
-  width: 420px;
+  width: 30vw;
   flex-wrap: wrap;
   list-style-type: none;
 }
@@ -809,8 +809,10 @@ body {
 
 .footer-list {
   display: flex;
-  justify-content: end;
-  -webkit-justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-justify-content: flex-start;
   margin: 0;
   list-style-type: none;
 }
@@ -821,23 +823,20 @@ body {
 }
 
 .footer-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-right: 40px;
   padding: 0;
-  vertical-align: middle;
   text-decoration: none;
-  color: #288be6;
+  color: #1e212c;
 }
 
-.footer-link::before {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
+.footer-link:hover {
+  opacity: 0.6;
+}
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: initial;
-  content: "";
+.footer-item:nth-child(4) svg {
+  margin-right: 5px;
 }
 
 .modal-container {
