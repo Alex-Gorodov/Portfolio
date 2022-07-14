@@ -89,7 +89,7 @@
       padding: 0 40px;
       margin: auto;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.1fr 1.5fr 0.2fr 1fr 0.2fr 1fr;
+      grid-template-rows: 0.1fr 1.5fr 0.2fr 0.6fr 0.2fr 0.4fr;
     }
     
     .acquaintance-image {
@@ -175,6 +175,10 @@
 
     .nav-burger-container{
       display: block;
+    }
+
+    .developer .social-links {
+      display: none;
     }
 
     .portfolio-item {
@@ -348,7 +352,7 @@
     }
   
     .acquaintance .container {
-      grid-template-rows: 0.4fr 0.6fr 0.2fr 0.7fr 0.2fr 0.6fr;
+      grid-template-rows: 0.4fr 0.6fr 0.2fr 0.7fr 0.2fr 0.4fr;
     }
   
     .acquaintance-image {
