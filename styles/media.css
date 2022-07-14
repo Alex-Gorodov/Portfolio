@@ -74,12 +74,12 @@
       display: none;
     }
   
-    .sertificate-list {
+    .certificate-list {
       margin: 0 auto;
       width: 400px;
     }
   
-    .sertificate-image {
+    .certificate-image {
       width: 168px;
       height: 236px;
     }
@@ -187,6 +187,7 @@
 
     .burger-nav-list {
       width: 50vw;
+      height: 60vh;
       padding: 0;
       transform: translateX(-110%);
       -webkit-transform: translateX(-110%);
@@ -359,6 +360,10 @@
       max-width: 480px;
       padding: 40px 20px;
     }
+
+    .footer-link-label {
+      display: none;
+    }
   }
   
   @media (max-width: 440px) {
@@ -418,18 +423,37 @@
     .skills .container {
       padding: 0 40px;
     }
+
+    .skills-list {
+      width: auto;
+      justify-content: center;
+    }
+
+    .skills-item::before {
+      margin-right: 10px;
+    }
   
     .skills-item {
+      justify-content: center;
       max-width: 300px;
+    }
+
+    .skill-name {
+      display: none;
     }
   
     .skill-range {
       width: 150px;
     }
   
-    .sertificate-image-link {
+    .certificate-image-link {
       max-width: 169px;
       min-height: 237px;
+    }
+
+    .certificate-list {
+      width: auto;
+      justify-content: center;
     }
   
     .acquaintance .container {
