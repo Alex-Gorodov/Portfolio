@@ -64,6 +64,10 @@ function burgerOpen() {
 
     // developer name hiding on menu's opening
     developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+
+    if (!burger.classList.contains("burger-showed")) {
+      projectsListBurgerArrow.classList.remove("burger-rotated");
+    }
 }
 
 // Burger menu closing on click on menu item
