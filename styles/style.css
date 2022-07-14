@@ -410,16 +410,16 @@ body {
 
 .mobile {
   position: absolute;
-  right: 0;
+  right: -2px;
   top: 40px;
   display: inline-block;
   width: 24px;
   height: 24px;
   vertical-align: middle;
   text-align: center;
-  background-image: url("../images/icons/iphone.svg");
+  background-image: url("../images/icons/iPhone.svg");
   background-size: 20px 20px;
-  background-position: 100% center;
+  background-position: center;
   background-repeat: no-repeat;
   cursor: help;
 }
@@ -839,18 +839,6 @@ body {
   background-size: initial;
   content: "";
 }
-
-/* .footer-phone::before {
-  width: 24px;
-  height: 24px;
-  background-image: url("../images/icons/phone-icon.svg");
-} */
-
-/* .footer-email::before {
-  width: 24px;
-  height: 24px;
-  background-image: url("../images/icons/email-icon.svg");
-} */
 
 .modal-container {
   position: fixed;
