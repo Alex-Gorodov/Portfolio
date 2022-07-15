@@ -383,6 +383,14 @@
     .nav-link {
       font-size: 12px;
     }
+
+    .dev-name {
+      font-size: 1.2rem;
+    }
+
+    .dev-name + .title {
+      font-size: 2rem;
+    }
   
     .portfolio-item-description {
       margin: 0 0 20px;
