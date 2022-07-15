@@ -63,7 +63,7 @@ function burgerOpen() {
     thirdLine.classList.toggle("burger-open-third-line");
 
     // developer name hiding on menu's opening
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
 
     if (!burger.classList.contains("burger-showed")) {
       projectsListBurgerArrow.classList.remove("burger-rotated");
@@ -77,7 +77,7 @@ for (const link of burgerLinks) {
     firstLine.classList.remove("burger-open-first-line");
     secondLine.classList.remove("burger-open-second-line");
     thirdLine.classList.remove("burger-open-third-line");
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
 
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
@@ -99,7 +99,7 @@ let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
   projectsListArrow.classList.toggle("rotated");
-  developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+  developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
 };
 
 projectsLinkBurger.onclick = function () {
@@ -112,7 +112,7 @@ menuLinks[1].onclick = function () {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
   }
 };
 
@@ -153,7 +153,7 @@ function termsOpener() {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
+    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
   }
   termsWindow.classList.add("modal-open");
   body.classList.add("locked");
