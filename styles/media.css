@@ -8,11 +8,6 @@
       grid-template-rows: repeat(3, 1fr);
     }
   
-  
-    .services-btn-item {
-      margin-bottom: 0;
-    }
-  
     .service-btn {
       min-width: 200px;
       font-size: 12px;
@@ -76,7 +71,9 @@
   
     .certificate-list {
       margin: 0 auto;
-      width: 400px;
+      max-width: 400px;
+      width: auto;
+      justify-content: center;
     }
   
     .certificate-image {
@@ -122,11 +119,6 @@
     .insection-title:last-of-type + .acquaintance-description {
       grid-column: 1/-1;
       grid-row: 6/-1;
-    }
-  
-    .contact .container {
-      max-width: 600px;
-      padding: 40px 70px;
     }
   }
   
@@ -364,11 +356,6 @@
       width: 317px;
       height: 464px;
     }
-  
-    .contact .container {
-      max-width: 480px;
-      padding: 40px 20px;
-    }
 
     .footer-link-label {
       display: none;
@@ -459,11 +446,6 @@
       max-width: 169px;
       min-height: 237px;
     }
-
-    .certificate-list {
-      width: auto;
-      justify-content: center;
-    }
   
     .acquaintance .container {
       padding: 0 10px;
@@ -473,27 +455,6 @@
     .acquaintance-image {
       width: 113px;
       height: 168px;
-    }
-  
-    .contact {
-      padding: 0 10px;
-    }
-  
-    .contact .container {
-      max-width: 350px;
-      padding: 20px 0;
-    }
-  
-    .contact-title {
-      margin: 0;
-    }
-  
-    .contact-description {
-      padding: 0 20px;
-    }
-  
-    .contact-input {
-      max-width: 180px;
     }
   }
   
