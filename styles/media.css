@@ -283,11 +283,11 @@
       transform: translate(-82.5%, -50%);
       -webkit-transform: translate(-82.5%, -50%);
       -moz-transform: translate(-82.5%, -50%);
-      border-right: 10px solid black;
+      border-right: 10px solid var(--secondary-font-color);
     }
   
     .slider-btn-prev:active::after {
-      border-right-color: #6CB9FF;
+      border-right-color: var(--main-font-color);
     }
   
     .slider-btn-next {
@@ -298,11 +298,11 @@
       transform: translate(-17.5%, -50%);
       -webkit-transform: translate(-17.5%, -50%);
       -moz-transform: translate(-17.5%, -50%);
-      border-left: 10px solid black;
+      border-left: 10px solid var(--secondary-font-color);
     }
   
     .slider-btn-next:active::after {
-      border-left-color: #6CB9FF;
+      border-left-color: var(--main-font-color);
     }
   
     .container {
