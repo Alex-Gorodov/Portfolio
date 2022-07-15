@@ -188,7 +188,7 @@ body {
 .nav-projects-list {
   position: absolute;
   top: calc(100% + 5px);
-  right: 20px;
+  right: 50%;
   display: flex;
   width: 20vw;
   height: 60vh;
@@ -336,7 +336,7 @@ body {
 
 .burger-nav-list .nav-list-burger {
   display: flex;
-  height: 100%;
+  height: 80%;
   padding: 0;
   margin: 0;
   flex-direction: column;

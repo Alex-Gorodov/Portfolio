@@ -188,7 +188,7 @@
 
     .burger-nav-list {
       width: 50vw;
-      height: 80vh;
+      height: 100vh;
       padding: 0;
       transform: translateX(-110%);
       -webkit-transform: translateX(-110%);
