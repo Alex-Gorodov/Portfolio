@@ -64,6 +64,7 @@ function burgerOpen() {
 
     // developer name hiding on menu's opening
     developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
 
     if (!burger.classList.contains("burger-showed")) {
       projectsListBurgerArrow.classList.remove("burger-rotated");
@@ -78,6 +79,7 @@ for (const link of burgerLinks) {
     secondLine.classList.remove("burger-open-second-line");
     thirdLine.classList.remove("burger-open-third-line");
     developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
 
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
@@ -90,6 +92,7 @@ for (const link of burgerLinks) {
   };
 }
 
+
 // projects arrow
 let projectsListArrow = document.querySelector(".projects-opener-arrow");
 let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects-opener-arrow");
@@ -100,6 +103,7 @@ projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
   projectsListArrow.classList.toggle("rotated");
   developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+  developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
 };
 
 projectsLinkBurger.onclick = function () {
@@ -113,8 +117,28 @@ menuLinks[1].onclick = function () {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
     developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
   }
 };
+
+// window.onclick = function(event) {
+//   if (projectsList.classList.contains("showed") && event.target.closest != projectsList) {
+//     projectsList.classList.remove("showed");
+//     projectsListArrow.classList.remove("rotated");
+//     developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+//   }
+// };
+
+// document.addEventListener(
+//   "click",
+//   function(event) {
+//     if (!event.target(projectsList)) {
+//       projectsList.classList.remove("showed");
+//       projectsListArrow.classList.remove("rotated");
+//       developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+//     }
+//   }
+// );
 
 // Scripts for sevrices buttons
 function serviceFirst() {
@@ -154,6 +178,7 @@ function termsOpener() {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
     developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
   }
   termsWindow.classList.add("modal-open");
   body.classList.add("locked");
