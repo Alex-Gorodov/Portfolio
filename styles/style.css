@@ -356,7 +356,6 @@ body {
 .lowercase {
   text-transform: capitalize;
   font-size: 1.2em;
-  font-weight: 800;
 }
 
 .social-links {
