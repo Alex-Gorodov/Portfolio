@@ -188,7 +188,7 @@
 
     .burger-nav-list {
       width: 50vw;
-      height: 90vh;
+      height: 80vh;
       padding: 0;
       transform: translateX(-110%);
       -webkit-transform: translateX(-110%);
@@ -216,7 +216,7 @@
     .burger-nav-list .nav-projects-list {
       width: 50vw;
       height: 40vh;
-      top: 0;
+      top: 15vh;
       left: 0;
       display: flex;
       justify-content: space-around;
@@ -232,7 +232,7 @@
     }
 
     .nav-projects-list .lowercase {
-      font-size: 2em;
+      font-size: 1.8em;
     }
 
     .burger-showed {

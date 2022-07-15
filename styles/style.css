@@ -172,7 +172,7 @@ body {
     right: 20px;
     display: flex;
     width: 20vw;
-    height: 40vh;
+    height: 60vh;
     padding: 0;
     transform: translateY(-100%) translateX(50%);
     -webkit-transform: translateY(-100%) translateX(50%);
