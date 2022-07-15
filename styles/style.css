@@ -1,3 +1,10 @@
+:root {
+  --main-font-color: #1d69af;
+  --secondary-font-color: #1e212c;
+
+  --white: #ffffff;
+}
+
 html {
   height: 100%;
   overflow: hidden;
@@ -100,7 +107,7 @@ body {
   margin: 0;
   border: none;
   text-transform: uppercase;
-  color: white;
+  /* color: white; */
   background-color: #6CB9FF;
   border-radius: 4px;
 }
@@ -142,7 +149,7 @@ body {
   vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1D69AF;
+  color: var(--main-font-color);
 }
 
 .nav-link:hover {
@@ -199,7 +206,7 @@ body {
   width: 10px;
   height: 10px;
   border: 5px solid transparent;
-  border-top: 5px solid #1D69AF;
+  border-top: 5px solid var(--main-font-color);
   background-color: transparent;
 }
 
@@ -216,7 +223,7 @@ body {
 }
 
 .button:hover {
-  background-color: #1D69AF;
+  background-color: var(--main-font-color);
 }
 
 .button:active {
@@ -262,7 +269,7 @@ body {
   width: 30px;
   height: 3px;
   border-radius: 4px;
-  background-color: #1D69AF;
+  background-color: var(--main-font-color);
   transition: 0.2s;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -330,7 +337,7 @@ body {
 }
 
 .burger-nav-list .nav-link {
-  color: #1D69AF;
+  color: var(--main-font-color);
   font-size: 1.6em;
 }
 
@@ -342,7 +349,7 @@ body {
   justify-content: space-around;
   align-items: center;
   align-self: flex-end;
-  border-top: 1px dashed #1D69AF;
+  border-top: 1px dashed var(--main-font-color);
 }
 
 .header-social-link {
@@ -351,11 +358,19 @@ body {
   height: 24px;
 }
 
+.header-social-link:hover {
+  opacity: 0.6;
+}
+
+.header-social-link:active {
+  opacity: 0.3;
+}
+
 .developer {
   text-align: center;
   padding: 100px 0;
   margin-bottom: 100px;
-  color: #1D69AF;
+  color: var(--main-font-color);
   line-height: 8vh;
 }
 
@@ -373,6 +388,7 @@ body {
 
 .portfolio {
   position: relative;
+  color: var(--secondary-font-color);
 }
 
 .portfolio-list {
@@ -527,10 +543,10 @@ body {
   display: block;
   min-width: 300px;
   padding: 14px 10px;
-  background-color: #c0e0ff;
+  background-color: #C6E0FB;
   font-size: 22px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-font-color);
   border: none;
   cursor: pointer;
 }
@@ -830,6 +846,7 @@ body {
 .contact-btn {
   margin-left: -5px;
   border-radius: 0px 10px 10px 0px;
+  color: var(--white);
 }
 
 .page-footer {
@@ -869,6 +886,10 @@ body {
 
 .footer-link:hover {
   opacity: 0.6;
+}
+
+.footer-link:active {
+  opacity: 0.3;
 }
 
 .footer-item:nth-child(4) svg {
