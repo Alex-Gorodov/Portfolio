@@ -63,9 +63,7 @@ function burgerOpen() {
     thirdLine.classList.toggle("burger-open-third-line");
 
     // developer name hiding on menu's opening
-    if (ww < 661) {
-      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-    }
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 
     if (!burger.classList.contains("burger-showed")) {
       projectsListBurgerArrow.classList.remove("burger-rotated");
@@ -79,9 +77,7 @@ for (const link of burgerLinks) {
     firstLine.classList.remove("burger-open-first-line");
     secondLine.classList.remove("burger-open-second-line");
     thirdLine.classList.remove("burger-open-third-line");
-    if (ww < 661) {
-      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-    }
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
@@ -89,9 +85,6 @@ for (const link of burgerLinks) {
     }
     
     if (link === burgerLinks[burgerLinks.length - 1]) {
-      // if (ww < 661) {
-      //   developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-      // }
       termsOpener();
     }
   };
@@ -106,9 +99,7 @@ let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
   projectsListArrow.classList.toggle("rotated");
-  if (ww < 661) {
-    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-  }
+  developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
 };
 
 projectsLinkBurger.onclick = function () {
@@ -121,9 +112,7 @@ menuLinks[1].onclick = function () {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    if (ww < 661) {
-      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-    }
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
   }
 };
 
@@ -164,9 +153,7 @@ function termsOpener() {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    if (ww < 661) {
-      developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
-    }
+    developerText.style.opacity = developerText.style.opacity === '0.1' ? '' : '0.1';
   }
   termsWindow.classList.add("modal-open");
   body.classList.add("locked");

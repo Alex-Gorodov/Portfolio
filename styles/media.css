@@ -151,7 +151,7 @@
       margin: 0;
       max-width: 100%;
       width: 100%;
-      background-color: rgba(227, 227, 227, 0.5);
+      background-color: rgba(227, 227, 227, 0.1);
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     }
 
@@ -188,7 +188,7 @@
 
     .burger-nav-list {
       width: 50vw;
-      height: 60vh;
+      height: 90vh;
       padding: 0;
       transform: translateX(-110%);
       -webkit-transform: translateX(-110%);
@@ -215,12 +215,14 @@
     
     .burger-nav-list .nav-projects-list {
       width: 50vw;
-      top: -40px;
+      height: 40vh;
+      top: 0;
       left: 0;
       display: flex;
-      transform: translateX(0);
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
+      justify-content: space-around;
+      transform: translateX(0) translateY(-40%);
+      -webkit-transform: translateX(0) translateY(-40%);
+      -moz-transform: translateX(0) translateY(-40%);
       opacity: 0;
       text-align: left;
       font-size: 0.6em;
@@ -229,10 +231,14 @@
       z-index: -1;
     }
 
+    .nav-projects-list .lowercase {
+      font-size: 2em;
+    }
+
     .burger-showed {
-      transform: translateX(100%) !important;
-      -webkit-transform: translateX(100%) !important;
-      -moz-transform: translateX(100%) !important;
+      transform: translateX(100%) translateY(-40%) !important;
+      -webkit-transform: translateX(100%) translateY(-40%) !important;
+      -moz-transform: translateX(100%) translateY(-40%) !important;
       opacity: 1 !important;
       z-index: 2 !important;
     }
@@ -275,13 +281,9 @@
       transform: translate(-82.5%, -50%);
       -webkit-transform: translate(-82.5%, -50%);
       -moz-transform: translate(-82.5%, -50%);
-      border-right: 10px solid var(--secondary-font-color);
+      border-right: 10px solid var(--main-font-color);
     }
-  
-    .slider-btn-prev:active::after {
-      border-right-color: var(--main-font-color);
-    }
-  
+
     .slider-btn-next {
       right: 5%;
     }
@@ -290,11 +292,7 @@
       transform: translate(-17.5%, -50%);
       -webkit-transform: translate(-17.5%, -50%);
       -moz-transform: translate(-17.5%, -50%);
-      border-left: 10px solid var(--secondary-font-color);
-    }
-  
-    .slider-btn-next:active::after {
-      border-left-color: var(--main-font-color);
+      border-left: 10px solid var(--main-font-color);
     }
   
     .container {
