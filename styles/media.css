@@ -347,10 +347,6 @@
     .skills .container {
       padding: 0 60px;
     }
-
-    .acquaintance {
-      margin-bottom: 20px;
-    }
   
     .acquaintance .container {
       grid-template-rows: 0.4fr 0.6fr 0.2fr 0.7fr 0.2fr 0.4fr;
