@@ -165,6 +165,14 @@ function termsOpener() {
   body.classList.add("locked");
 }
 
+document.addEventListener('keydown', function(e) {
+  let keyCode = e.keyCode;
+  // document.getElementById("result").innerHTML = "Key Code: "+keyCode+"<br/> Key: "+e.key+"<br/>";
+  if (keyCode === 27) {//keycode is an Integer, not a String
+    modalClose();
+  }
+});
+
 agreeBtn.onclick = function () {
   modalClose();
 };
