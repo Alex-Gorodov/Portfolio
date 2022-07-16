@@ -114,7 +114,7 @@ body {
   border: none;
   text-transform: uppercase;
   background-color: #6CB9FF;
-  color: var(--white);
+  color: var(--main-font-color);
   border-radius: 4px;
 }
 
@@ -242,6 +242,7 @@ body {
 
 .button:hover {
   background-color: var(--main-font-color);
+  color: var(--white);
 }
 
 .button:active {

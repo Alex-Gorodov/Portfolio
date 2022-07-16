@@ -1,9 +1,6 @@
 // window width
 let ww = window.innerWidth;
 
-//window height
-let wh = window.innerHeight;
-
 // page body
 let body = document.querySelector("body");
 
@@ -25,10 +22,10 @@ let thirdLine = document.querySelector(".burger-line:nth-of-type(3)");
 let developerText = document.querySelector(".developer");
 
 // projects submenu
-let projectsListBurger = document.querySelector(".burger-nav-projects-list");
-let projectsList = document.querySelector(".nav-projects-list");
 let projectsLink = document.querySelector(".projects-opener");
 let projectsLinkBurger = document.querySelector(".nav-list-burger .projects-opener");
+let projectsList = document.querySelector(".nav-projects-list");
+let projectsListBurger = document.querySelector(".burger-nav-projects-list");
 
 // services section's buttons
 let firstButton = document.querySelector(".services-btn-item:first-of-type");
@@ -39,7 +36,7 @@ let thirdButton = document.querySelector(".services-btn-item:nth-of-type(3)");
 let thirdService = document.querySelector(".service-nothing");
 
 // terms modal window
-let termsWindow = document.querySelector(".modal-container");
+let modalContainer = document.querySelector(".modal-container");
 let agreeBtn = document.querySelector(".modal-agree-btn");
 
 // portfolio slider
@@ -49,6 +46,29 @@ let prev = document.querySelector(".slider-btn-prev");
 let i = 0;
 let arLength = portfolio.length;
 
+// projects arrow
+let projectsListArrow = document.querySelector(".projects-opener-arrow");
+let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects-opener-arrow");
+
+// burger lines transform
+function rotateBurgerLines() {
+  firstLine.classList.toggle("burger-open-first-line");
+  secondLine.classList.toggle("burger-open-second-line");
+  thirdLine.classList.toggle("burger-open-third-line");
+}
+
+// hiding text and links under menu blocks
+function hideContent() {
+  developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
+  developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
+}
+
+// close modal windows
+function modalClose() {
+  modalContainer.classList.remove("modal-open");
+  body.classList.remove("locked");
+}
+
 // Burger menu opening function
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
@@ -56,56 +76,38 @@ function burgerOpen() {
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
     }
-
-    // burger lines transform
-    firstLine.classList.toggle("burger-open-first-line");
-    secondLine.classList.toggle("burger-open-second-line");
-    thirdLine.classList.toggle("burger-open-third-line");
-
-    // developer name hiding on menu's opening
-    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
-
     if (!burger.classList.contains("burger-showed")) {
       projectsListBurgerArrow.classList.remove("burger-rotated");
     }
+    rotateBurgerLines();
+    hideContent();
 }
 
 // Burger menu closing on click on menu item
 for (const link of burgerLinks) {
   link.onclick = function () {
     burger.classList.remove("nav-list-opened");
-    firstLine.classList.remove("burger-open-first-line");
-    secondLine.classList.remove("burger-open-second-line");
-    thirdLine.classList.remove("burger-open-third-line");
-    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
-
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
       projectsListBurgerArrow.classList.remove("burger-rotated");
     }
-    
     if (link === burgerLinks[burgerLinks.length - 1]) {
       termsOpener();
     }
+
+    rotateBurgerLines();
+    hideContent();
   };
 }
-
-
-// projects arrow
-let projectsListArrow = document.querySelector(".projects-opener-arrow");
-let projectsListBurgerArrow = document.querySelector(".burger-nav-list .projects-opener-arrow");
-
 
 // Opening projects submenu on click on projects link in navigation
 projectsLink.onclick = function () {
   projectsList.classList.toggle("showed");
   projectsListArrow.classList.toggle("rotated");
-  developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-  developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
+  hideContent();
 };
 
+// also for burger menu
 projectsLinkBurger.onclick = function () {
   projectsListBurger.classList.toggle("burger-showed");
   projectsListBurgerArrow.classList.toggle("burger-rotated");
@@ -116,29 +118,9 @@ menuLinks[1].onclick = function () {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
+    hideContent();
   }
 };
-
-// window.onclick = function(event) {
-//   if (projectsList.classList.contains("showed") && event.target.closest != projectsList) {
-//     projectsList.classList.remove("showed");
-//     projectsListArrow.classList.remove("rotated");
-//     developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-//   }
-// };
-
-// document.addEventListener(
-//   "click",
-//   function(event) {
-//     if (!event.target(projectsList)) {
-//       projectsList.classList.remove("showed");
-//       projectsListArrow.classList.remove("rotated");
-//       developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-//     }
-//   }
-// );
 
 // Scripts for sevrices buttons
 function serviceFirst() {
@@ -177,16 +159,12 @@ function termsOpener() {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    developerText.style.filter = developerText.style.filter === 'blur(10px)' ? '' : 'blur(10px)';
-    developerText.style.pointerEvents = developerText.style.pointerEvents === 'none' ? '' : 'none';
+    hideContent();
   }
-  termsWindow.classList.add("modal-open");
+  modalContainer.classList.add("modal-open");
   body.classList.add("locked");
 }
-function modalClose() {
-  termsWindow.classList.remove("modal-open");
-  body.classList.remove("locked");
-}
+
 agreeBtn.onclick = function () {
   modalClose();
 };
