@@ -70,8 +70,6 @@ body {
 
 .theme-btn {
   position: relative;
-  top: 5px;
-  right: -5px;
   display: block;
   width: 60px;
   height: 30px;
@@ -165,6 +163,7 @@ body {
 
 .main-navigation {
   display: flex;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
   padding: 5px 20px;

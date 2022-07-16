@@ -220,8 +220,6 @@ themeButton.onclick = function () {
   for (const image of images) {
     image.classList.toggle('dark-theme-images');
   }
-  themeButton.classList.toggle('dark-theme-images');
-  toggleBtn.classList.toggle('dark-theme-images');
   
   // images.classList.contains == images.classList.contains('dark-theme') ? '' : images.classList.toggle('dark-theme');
 };
