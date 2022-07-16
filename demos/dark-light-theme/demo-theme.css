@@ -1,0 +1,83 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+.theme-btn {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: tomato;
+  z-index: 2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10%;
+  top: 5px;
+  background-color: rgb(113, 180, 239);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.theme-on {
+  left: 90%;
+  transform: translateX(-100%);
+  background-color:rgb(49, 59, 69);
+}
+
+.theme-bg {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+
+.container-light {
+  background-image: url("images/light.jpg");
+  opacity: 1;
+  color: black;
+}
+
+.container-dark {
+  background-image: url("images/dark.jpg");
+  opacity: 0;
+  color: white;
+}
+
+.text {
+  display: block;
+  max-width: 60vw;
+  margin: 80px auto;
+
+  font-size: 2em;
+}
+
+.is-opacity {
+  opacity: 1;
+}
+
+.is-not-opacity {
+  opacity: 0;
+}
