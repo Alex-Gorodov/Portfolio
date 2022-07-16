@@ -2,7 +2,7 @@
 let ww = window.innerWidth;
 
 // page body
-let body = document.querySelector("body");
+let pageBody = document.querySelector("body");
 
 // burger items list
 let burger = document.querySelector(".nav-burger-container .burger-nav-list");
@@ -66,7 +66,7 @@ function hideContent() {
 // close modal windows
 function modalClose() {
   modalContainer.classList.remove("modal-open");
-  body.classList.remove("locked");
+  pageBody.classList.remove("locked");
 }
 
 // Burger menu opening function
@@ -162,7 +162,7 @@ function termsOpener() {
     hideContent();
   }
   modalContainer.classList.add("modal-open");
-  body.classList.add("locked");
+  pageBody.classList.add("locked");
 }
 
 document.addEventListener('keydown', function(e) {
