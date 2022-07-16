@@ -10,7 +10,6 @@
   
     .service-btn {
       min-width: 200px;
-      font-size: 14px;
     }
   
     .service-title {
@@ -134,11 +133,13 @@
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
       border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      
     }
 
     .service-btn-active .service-btn {
       transform: translateY(15px);
-      -webkit-transform: translateY(13px);
+      /* -webkit-transform: translateY(13px); */
     }
   
     .service-indicators {

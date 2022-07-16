@@ -70,6 +70,7 @@ body {
   padding: 10px 12px;
   background-color: var(--tomato);
   border: none;
+  font-size: 16px;
   color: var(--main-color);
   border-radius: 4px;
   cursor: pointer;
@@ -629,17 +630,11 @@ body {
 }
 
 .service-btn {
-  display: block;
   min-width: 300px;
   padding: 14px 10px;
-  background-color: var(--tomato);
-  font-size: px;
-  text-transform: uppercase;
-  color: var(--main-color);
-  border: none;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  cursor: pointer;
+
 }
 
 .service-btn-active .service-btn {
