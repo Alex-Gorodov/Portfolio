@@ -292,7 +292,7 @@
       transform: translate(-82.5%, -50%);
       -webkit-transform: translate(-82.5%, -50%);
       -moz-transform: translate(-82.5%, -50%);
-      border-right: 10px solid var(--main-font-color);
+      border-right: 10px solid var(--main-color);
     }
 
     .slider-btn-next {
@@ -303,7 +303,7 @@
       transform: translate(-17.5%, -50%);
       -webkit-transform: translate(-17.5%, -50%);
       -moz-transform: translate(-17.5%, -50%);
-      border-left: 10px solid var(--main-font-color);
+      border-left: 10px solid var(--main-color);
     }
   
     .container {
