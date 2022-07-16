@@ -316,7 +316,7 @@ body {
 .burger-btn {
   position: absolute;
   top: 25px;
-  left: 10px;
+  left: 35px;
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -353,8 +353,8 @@ body {
 }
 
 .burger-open-second-line {
-  transform: translateX(-50px);
-  -webkit-transform: translateX(-50px);
+  transform: translateX(-150px);
+  -webkit-transform: translateX(-150px);
 }
 
 .burger-open-third-line {  
