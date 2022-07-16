@@ -545,53 +545,6 @@ body {
   background-image: url("../images/icons/link-icon.svg");
 }
 
-/* Demo section */
-
-.demos {
-  margin-bottom: 160px;
-}
-
-.demos .title {
-  text-align: center;
-}
-
-.demo-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.demo-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20vw;
-  height: 140px;
-  background-color:rgba(147, 204, 235, 0.5);
-  border-radius: 12px;
-}
-
-.demo-theme {
-  background-image: url("/demos/dark-light-theme/images/light.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.demo-link {
-  display: block; /* Ссылка как блочный элемент */
-  text-align: center; /* Выравнивание по центру */
-  height: 100%; /* Высота на весь слой */
-  width: 100%;
-}
-
-.demo-description {
-  pointer-events: none;
-}
-
 /* Services section */
 
 .services {
