@@ -1,5 +1,6 @@
 :root {
   --main-font-color: #1e212c;
+  --tomato: #ff6347;
 
   --white: #ffffff;
 }
@@ -73,7 +74,7 @@ body {
   display: block;
   width: 60px;
   height: 30px;
-  background-color: tomato;
+  background-color: var(--tomato);
   z-index: 2;
   border: none;
   border-radius: 20px;
@@ -288,11 +289,6 @@ body {
 
 .button:hover {
   background-color: var(--main-font-color);
-  color: var(--white);
-}
-
-.button:active {
-  color: #c0e0ff;
 }
 
 .button:disabled {
@@ -627,7 +623,7 @@ body {
   display: block;
   min-width: 300px;
   padding: 14px 10px;
-  background-color: #4269de;
+  background-color: var(--tomato);
   font-size: 22px;
   text-transform: uppercase;
   color: var(--white);
@@ -883,7 +879,8 @@ body {
 .button {
   width: 100px;
   padding: 12px;
-  background-color: #6CB9FF;
+  background-color: var(--tomato);
+  color: var(--white);
   cursor: pointer;
 }
 
