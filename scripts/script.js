@@ -206,3 +206,22 @@ function moveLeft() {
     }
   }
 }
+
+
+// variables for theme changing
+let fullPage = document.querySelector("*");
+let images = document.querySelectorAll("img");
+let themeButton = document.querySelector(".theme-btn");
+let toggleBtn = document.querySelector(".btn-toggle");
+
+themeButton.onclick = function () {
+  toggleBtn.classList.toggle('theme-on');
+  fullPage.classList.toggle('dark-theme');
+  for (const image of images) {
+    image.classList.toggle('dark-theme-images');
+  }
+  themeButton.classList.toggle('dark-theme-images');
+  toggleBtn.classList.toggle('dark-theme-images');
+  
+  // images.classList.contains == images.classList.contains('dark-theme') ? '' : images.classList.toggle('dark-theme');
+};

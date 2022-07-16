@@ -66,6 +66,50 @@ body {
   margin: 0 auto;
 }
 
+/* Change theme */
+
+.theme-btn {
+  position: relative;
+  top: 5px;
+  right: -5px;
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: tomato;
+  z-index: 2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10%;
+  top: 5px;
+  background-color: rgb(113, 180, 239);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.theme-on {
+  left: 90%;
+  transform: translateX(-100%);
+  background-color:rgb(49, 59, 69);
+}
+
+.dark-theme {
+  filter: invert(1) saturate(0.5);
+}
+
+.dark-theme-images {
+  filter: invert(1) saturate(2);
+}
+
+/* page header */
+
 .page-header {
   margin: 0 auto;
   min-height: 100vh;
