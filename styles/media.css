@@ -160,8 +160,8 @@
       width: 100%;
       background-color: rgba(138, 217, 251, 0.5);
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
 
     .slider-btn {
@@ -208,6 +208,8 @@
       transform: translateX(0);
       -webkit-transform: translateX(0);
       overflow: visible;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
 
     .projects-opener-arrow {
@@ -376,6 +378,8 @@
   
     .page-header {
       margin: 0;
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
     }
   
     .page-header .container {
