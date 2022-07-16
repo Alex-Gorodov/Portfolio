@@ -16,7 +16,7 @@
           <ul class="nav-list">
             <li class="nav-item">
               <div class="nav-projects-wrapper">
-                <button class="nav-link projects-opener" type="button">
+                <button class="nav-link projects-opener" type="button" aria-label="Open project's list">
                   <span class="projects-opener-arrow"></span>
                   Projects
                 </button>
@@ -38,7 +38,7 @@
             </li>
           </ul>
           <div class="nav-burger-container">
-            <button class="burger-btn" onclick="burgerOpen()" aria-label="Navigation.">
+            <button class="burger-btn" onclick="burgerOpen()" aria-label="Navigation menu">
               <span class="burger-line"></span>
               <span class="burger-line"></span>
               <span class="burger-line"></span>
@@ -47,7 +47,7 @@
               <ul class="nav-list-burger">
                 <li class="nav-item">
                   <div class="nav-projects-wrapper">
-                    <button class="nav-link projects-opener" type="button" aria-label="List of projects.">
+                    <button class="nav-link projects-opener" type="button" aria-label="Open project's list">
                       <span class="projects-opener-arrow"></span>
                       Projects
                     </button>
@@ -133,10 +133,10 @@
       <section class="portfolio" id="projects">
         <h2 class="visually-hidden">Portfolio.</h2>
         <div class="container">
-          <button class="slider-btn slider-btn-prev" type="button">
+          <button class="slider-btn slider-btn-prev" type="button" aria-label="To previous project item">
             <span class="visually-hidden">Previous slide</span>
           </button>
-          <button class="slider-btn slider-btn-next" type="button">
+          <button class="slider-btn slider-btn-next" type="button" aria-label="To next project item">
             <span class="visually-hidden">Next slide</span>
           </button>
           <ul class="portfolio-list">
@@ -272,15 +272,15 @@
           <ul class="services-buttons-list">
             <!-- by clicking on 1st element of list put active class on 1ts service-item -->
             <li class="services-btn-item service-btn-active">
-              <button class="service-btn" type="button" onclick="serviceFirst()">I have an idea!</button>
+              <button class="service-btn" type="button" onclick="serviceFirst()" aria-current="Service - you bring idea">I have an idea!</button>
             </li>
             <!-- by clicking on 2nd element of list put active class on 2nd service-item -->
             <li class="services-btn-item">
-              <button class="service-btn" type="button" onclick="serviceSecond()">I have a design!</button>
+              <button class="service-btn" type="button" onclick="serviceSecond()" aria-current="Service - you bring design">I have a design!</button>
             </li>            
             <!-- by clicking on 3rd element of list put active class on 3rd service-item -->
             <li class="services-btn-item">
-              <button class="service-btn" type="button" onclick="serviceThird()">I just wanna site</button>
+              <button class="service-btn" type="button" onclick="serviceThird()" aria-current="Service - you bring nothing">I just wanna site</button>
             </li>
           </ul>
           <!-- when the 1st list item is active so this item is active -->
@@ -390,7 +390,7 @@
     </footer>
     <div class="modal-container" aria-hidden="true">
       <div class="modal modal-terms" role="dialog" aria-modal="true">
-        <button class="modal-close-btn" type="button" onclick="modalClose()">
+        <button class="modal-close-btn" type="button" onclick="modalClose()" aria-label="Press to close terms window or press esc">
           <span class="visually-hidden">Close.</span>
         </button>
         <h2 class="modal-title">Terms.</h2>
@@ -408,7 +408,7 @@
           <li class="terms-req-item">You don't like the result? We'll fix it until the customer is completely satisfied.</li>
           <li class="terms-req-item">You didn't like the result and don't want to continue cooperation? Everything is easy to cancel - you save money, I will expand my portfolio. </li>
         </ul>
-        <button class="button modal-agree-btn" type="button">Ok</button>
+        <button class="button modal-agree-btn" type="button" aria-label="Ok - press to close terms window or press esc">Ok</button>
       </div>
     </div>
     <script src="scripts/script.js"></script>
