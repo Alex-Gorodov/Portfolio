@@ -138,6 +138,7 @@
 
     .service-btn-active .service-btn {
       transform: translateY(15px);
+      -webkit-transform: translateY(13px);
     }
   
     .service-indicators {
@@ -160,6 +161,7 @@
       background-color: rgba(138, 217, 251, 0.5);
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
     }
 
     .slider-btn {
