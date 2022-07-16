@@ -80,6 +80,7 @@ body {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-toggle {
