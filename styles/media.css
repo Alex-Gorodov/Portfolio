@@ -4,14 +4,13 @@
     }
   
     .services-buttons-list {
-      margin: -65px auto 40px;
+      margin: -75px auto 20px;
       grid-template-rows: repeat(3, 1fr);
     }
   
     .service-btn {
       min-width: 200px;
       font-size: 12px;
-      padding: 10px;
     }
   
     .service-title {
@@ -135,6 +134,10 @@
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
       border-top-left-radius: 0;
+    }
+
+    .service-btn-active .service-btn {
+      margin-top: 15px;
     }
   
     .service-indicators {
