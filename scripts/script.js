@@ -73,6 +73,8 @@ function modalClose() {
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
 
+    pageBody.classList.toggle("locked");
+
     if (projectsListBurger.classList.contains("burger-showed")) {
       projectsListBurger.classList.remove("burger-showed");
     }

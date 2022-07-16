@@ -189,7 +189,6 @@
 
     .portfolio-item {
       height: 480px;
-      -webkit-overflow-scrolling: touch;
     }
   
     .portfolio-item:not(:first-child) {

@@ -11,6 +11,8 @@
   to {width: 100%;}
 }
 
+/* Global styles */
+
 html {
   height: 100%;
   overflow: hidden;
@@ -56,16 +58,36 @@ body {
   overflow: hidden;
 }
 
-/* scroll locking */
-
-.locked {
-  overflow: hidden;
-}
-
 .container {
   max-width: 1230px;
   padding: 0;
   margin: 0 auto;
+}
+
+.button {
+  text-transform: uppercase;
+  width: 100px;
+  padding: 10px 12px;
+  background-color: var(--tomato);
+  border: none;
+  color: var(--main-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--main-color);
+}
+
+.button:disabled {
+  background-color: #a8a8a8;
+  cursor: not-allowed;
+}
+
+/* scroll locking */
+
+.locked {
+  overflow: hidden;
 }
 
 /* Change theme */
@@ -107,7 +129,7 @@ body {
   filter: invert(1) saturate(2);
 }
 
-/* page header */
+/* Page header */
 
 .page-header {
   margin: 0 auto;
@@ -145,20 +167,12 @@ body {
   content: "";
 }
 
+/* Page main */
+
 .page-main {
   position: relative;
   flex-grow: 1;
   z-index: 1;
-}
-
-.button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  text-transform: uppercase;
-  background-color: #6CB9FF;
-  color: var(--main-color);
-  border-radius: 4px;
 }
 
 .main-navigation {
@@ -284,15 +298,6 @@ body {
 
 .nav-projects-list .nav-project-item {
   margin: 0;
-}
-
-.button:hover {
-  background-color: var(--main-color);
-}
-
-.button:disabled {
-  background-color: #a8a8a8;
-  cursor: not-allowed;
 }
 
 /* Burger menu */
@@ -880,14 +885,6 @@ body {
   margin-bottom: 0;
 }
 
-.button {
-  width: 100px;
-  padding: 12px;
-  background-color: var(--tomato);
-  color: var(--white);
-  cursor: pointer;
-}
-
 .page-footer {
   padding: 5px;
   margin: 0;
@@ -1001,5 +998,5 @@ body {
 }
 
 .modal-agree-btn {
-  margin: auto;
+  margin: 0 auto;
 }
