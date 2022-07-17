@@ -68,6 +68,7 @@ body {
   text-transform: uppercase;
   width: 100px;
   padding: 10px 12px;
+  margin: 0;
   background-color: var(--tomato);
   border: none;
   font-size: 16px;
@@ -631,7 +632,6 @@ body {
 .service-btn {
   min-width: 300px;
   padding: 14px 10px;
-  margin: 0;
   border-top-left-radius: 12px;
   border-top-right-radius: 0;
   border-bottom-left-radius: 12px;
