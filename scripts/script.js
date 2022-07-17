@@ -95,6 +95,8 @@ for (const link of burgerLinks) {
     }
     if (link === burgerLinks[burgerLinks.length - 1]) {
       termsOpener();
+    } else if (pageBody.classList.contains("locked")) {
+      pageBody.classList.remove("locked");
     }
 
     rotateBurgerLines();
@@ -222,6 +224,4 @@ themeButton.onclick = function () {
   for (const image of images) {
     image.classList.toggle('dark-theme-images');
   }
-  
-  // images.classList.contains == images.classList.contains('dark-theme') ? '' : images.classList.toggle('dark-theme');
 };

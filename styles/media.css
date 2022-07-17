@@ -208,8 +208,6 @@
       transform: translateX(0);
       -webkit-transform: translateX(0);
       overflow: visible;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
     }
 
     .projects-opener-arrow {
@@ -240,6 +238,7 @@
       padding: 10px 30px;
       box-shadow: 20px 0px 20px rgb(0 0 0 / 25%);
       z-index: -1;
+      pointer-events: none;
     }
 
     .nav-projects-list .lowercase {
@@ -250,6 +249,7 @@
       transform: translateX(100%) translateY(-40%) !important;
       -webkit-transform: translateX(100%) translateY(-40%) !important;
       -moz-transform: translateX(100%) translateY(-40%) !important;
+      pointer-events:fill !important;
       opacity: 1 !important;
       z-index: 2 !important;
     }
@@ -312,8 +312,6 @@
   
     .page-header {
       margin: 0;
-      backdrop-filter: blur(0px);
-      -webkit-backdrop-filter: blur(0px);
     }
   
     .page-header .container {
