@@ -631,6 +631,7 @@ body {
 .service-btn {
   min-width: 300px;
   padding: 14px 10px;
+  margin: 0;
   border-top-left-radius: 12px;
   border-top-right-radius: 0;
   border-bottom-left-radius: 12px;
