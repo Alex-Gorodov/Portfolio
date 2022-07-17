@@ -129,6 +129,7 @@
     }
   
     .service-btn {
+      margin: 0;
       min-width: 140px;
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
@@ -137,7 +138,7 @@
       
     }
 
-    .service-btn-active .service-btn {
+    .service-btn-active {
       transform: translateY(25px);
     }
   
