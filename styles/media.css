@@ -212,7 +212,7 @@
 
     .projects-opener-arrow {
       top: 40%;
-      right: -20px;
+      right: 0;
       transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
@@ -224,9 +224,9 @@
     
     .burger-nav-list .nav-projects-list {
       width: 50vw;
-      height: 40vh;
-      top: 15vh;
-      left: 0;
+      height: 60vh;
+      top: 25vh;
+      right: 0;
       display: flex;
       justify-content: space-around;
       transform: translateX(0) translateY(-40%);
@@ -243,6 +243,7 @@
 
     .nav-projects-list .lowercase {
       font-size: 1.8em;
+      padding: 0.5rem;
     }
 
     .burger-showed {
