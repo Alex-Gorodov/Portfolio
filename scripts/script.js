@@ -105,11 +105,11 @@ for (const link of burgerLinks) {
 }
 
 // Opening projects submenu on click on projects link in navigation
-projectsLink.onclick = function () {
-  projectsList.classList.toggle("showed");
-  projectsListArrow.classList.toggle("rotated");
-  hideContent();
-};
+// projectsLink.onclick = function () {
+//   projectsList.classList.toggle("showed");
+//   projectsListArrow.classList.toggle("rotated");
+//   hideContent();
+// };
 
 // also for burger menu
 projectsLinkBurger.onclick = function () {
