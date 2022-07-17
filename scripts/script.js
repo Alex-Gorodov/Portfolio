@@ -69,6 +69,27 @@ function modalClose() {
   pageBody.classList.remove("locked");
 }
 
+menuLinks[0].onmouseenter = function () {
+  hideContent();
+};
+
+menuLinks[0].onmouseleave = function () {
+  hideContent();
+};
+
+document.querySelector(".nav-projects-wrapper").addEventListener('focus', (e) => {
+  e = developerText.style.filter = 'blur(10px)';
+  e = developerText.style.pointerEvents = 'none';
+}, true);
+
+document.querySelector(".nav-projects-wrapper").addEventListener('focusout', (e) => {
+  hideContent();
+}, true);
+
+// form.addEventListener('focus', (event) => {
+//   event.target.style.background = 'pink';
+// }, true);
+
 // Burger menu opening function
 function burgerOpen() {
     burger.classList.toggle("nav-list-opened");
