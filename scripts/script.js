@@ -86,9 +86,7 @@ document.querySelector(".nav-projects-wrapper").addEventListener('focusout', (e)
   hideContent();
 }, true);
 
-// form.addEventListener('focus', (event) => {
-//   event.target.style.background = 'pink';
-// }, true);
+
 
 // Burger menu opening function
 function burgerOpen() {
