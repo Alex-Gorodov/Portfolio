@@ -13,14 +13,14 @@
     <header class="page-header">
       <div class="container">
         <nav class="main-navigation">
-          <ul class="nav-list">
-            <li class="nav-item">
+          <ul class="nav-list" role="menubar">
+            <li class="nav-item" role="menuitem" aria-haspopup="true">
               <div class="nav-projects-wrapper">
-                <button class="nav-link projects-opener" type="button" aria-label="Open project's list">
+                <a class="nav-link projects-opener" href="#" aria-label="Open project's list">
                   <span class="projects-opener-arrow"></span>
                   Projects
-                </button>
-                <ul class="nav-projects-list">
+                </a>
+                <ul class="nav-projects-list" aria-hidden="true">
                   <li class="nav-project-item"><a class="nav-link lowercase" href="https://alex-gorodov.github.io/Sedona/" target="_blank" rel="noopener nofollow">Sedona</a></li>
                   <li class="nav-project-item"><a class="nav-link lowercase" href="https://alex-gorodov.github.io/Barbershop/" target="_blank" rel="noopener nofollow">Borodinski</a></li>
                   <li class="nav-project-item"><a class="nav-link lowercase" href="https://alex-gorodov.github.io/Device/" target="_blank" rel="noopener nofollow">Device</a></li>
@@ -30,10 +30,10 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" role="menuitem">
               <a href="#acquaintance" class="nav-link">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" role="menuitem">
               <a href="#" class="nav-link" onclick="termsOpener()">Terms</a>
             </li>
           </ul>
@@ -44,14 +44,14 @@
               <span class="burger-line"></span>
             </button>
             <div class="burger-nav-list">
-              <ul class="nav-list-burger">
-                <li class="nav-item">
+              <ul class="nav-list-burger" role="menubar">
+                <li class="nav-item" role="menuitem" aria-haspopup="true">
                   <div class="nav-projects-wrapper">
-                    <button class="nav-link projects-opener" type="button" aria-label="Open project's list">
+                    <a class="nav-link projects-opener" hfer="#" aria-label="Open project's list">
                       <span class="projects-opener-arrow"></span>
                       Projects
-                    </button>
-                    <ul class="nav-projects-list burger-nav-projects-list">
+                    </a>
+                    <ul class="nav-projects-list burger-nav-projects-list" aria-hidden="true">
                       <li class="nav-project-item"><a class="nav-link lowercase" href="https://alex-gorodov.github.io/Sedona/" target="_blank" rel="noopener nofollow">Sedona</a></li>
                       <li class="nav-project-item"><a class="nav-link lowercase" href="https://alex-gorodov.github.io/Barbershop/" target="_blank" rel="noopener nofollow">Borodinski</a></li>
                       <li class="nav-project-item"><a class="nav-link lowercase" href="https://alex-gorodov.github.io/Device/" target="_blank" rel="noopener nofollow">Device</a></li>
@@ -61,10 +61,10 @@
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                   <a href="#acquaintance" class="nav-link">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                   <a href="#" class="nav-link" onclick="termsOpener()">Terms</a>
                 </li>
                 <li class="nav-item social-links">
@@ -95,7 +95,7 @@
               </ul>
             </div>
           </div>
-          <button class="theme-btn" type="button" aria-labelledby="Change theme">
+          <button class="theme-btn" type="button">
             <span class="btn-toggle"></span>
           </button>
         </nav>
@@ -275,15 +275,15 @@
           <ul class="services-buttons-list">
             <!-- by clicking on 1st element of list put active class on 1ts service-item -->
             <li class="services-btn-item service-btn-active">
-              <button class="button service-btn" type="button" onclick="serviceFirst()" aria-current="Service - you bring idea">I have an idea!</button>
+              <button class="button service-btn" type="button" onclick="serviceFirst()">I have an idea!</button>
             </li>
             <!-- by clicking on 2nd element of list put active class on 2nd service-item -->
             <li class="services-btn-item">
-              <button class="button service-btn" type="button" onclick="serviceSecond()" aria-current="Service - you bring design">I have a design!</button>
+              <button class="button service-btn" type="button" onclick="serviceSecond()">I have a design!</button>
             </li>            
             <!-- by clicking on 3rd element of list put active class on 3rd service-item -->
             <li class="services-btn-item">
-              <button class="button service-btn" type="button" onclick="serviceThird()" aria-current="Service - you bring nothing">Make me a site!</button>
+              <button class="button service-btn" type="button" onclick="serviceThird()">Make me a site!</button>
             </li>
           </ul>
           <!-- when the 1st list item is active so this item is active -->
