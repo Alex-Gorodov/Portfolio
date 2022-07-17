@@ -633,7 +633,9 @@ body {
   min-width: 300px;
   padding: 14px 10px;
   border-top-left-radius: 12px;
+  border-top-right-radius: 0;
   border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 0;
 
 }
 
@@ -658,7 +660,7 @@ body {
 }
 
 .service-title {
-  margin-top: -46px;
+  margin-top: -36px;
   font-size: 28px;
   text-transform: uppercase;
 }

@@ -1,6 +1,6 @@
 @media (max-width: 1280px) {
     .services .container {
-      padding: 30px;
+      padding: 20px;
     }
   
     .services-buttons-list {
@@ -138,8 +138,7 @@
     }
 
     .service-btn-active .service-btn {
-      transform: translateY(15px);
-      /* -webkit-transform: translateY(13px); */
+      transform: translateY(25px);
     }
   
     .service-indicators {
