@@ -943,7 +943,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 20;
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   overflow: auto;
   transition: 0.8s;
   transition-timing-function: cubic-bezier(0,0.43, 0.31, 1.56);
