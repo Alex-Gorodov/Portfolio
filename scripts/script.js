@@ -67,6 +67,7 @@ function hideContent() {
 function modalClose() {
   modalContainer.classList.remove("modal-open");
   pageBody.classList.remove("locked");
+  hideContent();
 }
 
 menuLinks[0].onmouseenter = function () {
@@ -123,26 +124,10 @@ for (const link of burgerLinks) {
   };
 }
 
-// Opening projects submenu on click on projects link in navigation
-// projectsLink.onclick = function () {
-//   projectsList.classList.toggle("showed");
-//   projectsListArrow.classList.toggle("rotated");
-//   hideContent();
-// };
-
-// also for burger menu
+// also for projects submenu
 projectsLinkBurger.onclick = function () {
   projectsListBurger.classList.toggle("burger-showed");
   projectsListBurgerArrow.classList.toggle("burger-rotated");
-};
-
-// Closing projects submenu by clicking on 'About' link
-menuLinks[1].onclick = function () {
-  if (projectsList.classList.contains("showed")) {
-    projectsList.classList.remove("showed");
-    projectsListArrow.classList.remove("rotated");
-    hideContent();
-  }
 };
 
 // Scripts for sevrices buttons
@@ -182,16 +167,15 @@ function termsOpener() {
   if (projectsList.classList.contains("showed")) {
     projectsList.classList.remove("showed");
     projectsListArrow.classList.remove("rotated");
-    hideContent();
   }
   modalContainer.classList.add("modal-open");
   pageBody.classList.add("locked");
+  hideContent();
 }
 
 document.addEventListener('keydown', function(e) {
   let keyCode = e.keyCode;
-  // document.getElementById("result").innerHTML = "Key Code: "+keyCode+"<br/> Key: "+e.key+"<br/>";
-  if (keyCode === 27) {//keycode is an Integer, not a String
+  if (keyCode === 27) {
     modalClose();
   }
 });
