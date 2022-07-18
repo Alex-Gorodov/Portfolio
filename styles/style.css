@@ -171,7 +171,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   transform-origin: center center 0;
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2.5px) scale(3.5);
   
   z-index: -1;
   content: "";
