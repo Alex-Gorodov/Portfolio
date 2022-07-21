@@ -122,40 +122,7 @@
     }
   }
   
-  @media (max-width: 880px) {
-    .services-buttons-list {
-      border: none;
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-  
-    .service-btn {
-      min-width: 140px;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      
-    }
-
-    .service-btn-active {
-      transform: translateY(25px);
-    }
-  
-    .service-indicators {
-      right: -20px;
-      bottom: 10px;
-      left:unset;
-      flex-direction: row;
-    }
-  
-    .service-item::after {
-      right: 0;
-    }
-  }
-  
-  @media (min-width: 661px) {
+  @media (min-width: 901px) {
     .page-header .container:first-child {
       margin: 0;
       max-width: 100%;
@@ -171,7 +138,7 @@
     }
   }
   
-  @media (max-width: 660px) {
+  @media (max-width: 900px) {
     .main-navigation .nav-list {
       display: none;
     }
@@ -226,8 +193,8 @@
     
     .burger-nav-list .nav-projects-list {
       width: 50vw;
-      height: 60vh;
-      top: 25vh;
+      height: 80vh;
+      top: 30vh;
       right: 0;
       display: flex;
       justify-content: space-around;
@@ -376,6 +343,46 @@
 
     .footer-link-label {
       display: none;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .services-buttons-list {
+      border: none;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .service-btn {
+      min-width: 140px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      
+    }
+
+    .service-btn-active {
+      transform: translateY(25px);
+    }
+  
+    .service-indicators {
+      right: -20px;
+      bottom: 10px;
+      left:unset;
+      flex-direction: row;
+    }
+  
+    .service-item::after {
+      right: 0;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .burger-nav-list .nav-projects-list {
+      height: 60vh;
+      top: 25vh;
     }
   }
   
