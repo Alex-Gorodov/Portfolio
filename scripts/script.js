@@ -71,10 +71,16 @@ function modalClose() {
 }
 
 menuLinks[0].onmouseenter = function () {
+  projectsList.style.display = 'flex';
   hideContent();
 };
 
+menuLinks[0].onclick = function () {
+  projectsList.style.display = 'none';
+};
+
 menuLinks[0].onmouseleave = function () {
+  projectsList.style.display = 'none';
   hideContent();
 };
 
