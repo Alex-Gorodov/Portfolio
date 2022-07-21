@@ -77,11 +77,14 @@ menuLinks[0].onmouseenter = function () {
 
 menuLinks[0].onclick = function () {
   projectsList.style.display = 'none';
+  hideContent();
 };
 
 menuLinks[0].onmouseleave = function () {
   projectsList.style.display = 'none';
-  hideContent();
+  if (developerText.style.pointerEvents === 'none') {
+    hideContent();
+  }
 };
 
 document.querySelector(".nav-projects-wrapper").addEventListener('focus', (e) => {
