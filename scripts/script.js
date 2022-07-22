@@ -22,6 +22,7 @@ let thirdLine = document.querySelector(".burger-line:nth-of-type(3)");
 let developerText = document.querySelector(".developer");
 
 // projects submenu
+let projectsDropDown = document.querySelector(".nav-projects-wrapper");
 let projectsLink = document.querySelector(".projects-opener");
 let projectsLinkBurger = document.querySelector(".nav-list-burger .projects-opener");
 let projectsListLink = document.querySelectorAll('.nav-projects-list .nav-project-item');
@@ -91,6 +92,7 @@ menuLinks[0].onmouseleave = function () {
 document.querySelector(".nav-projects-wrapper").addEventListener('focus', (e) => {
   e = developerText.style.filter = 'blur(10px)';
   e = developerText.style.pointerEvents = 'none';
+  projectsDropDown.style.display = 'flex';
 }, true);
 
 document.querySelector(".nav-projects-wrapper").addEventListener('focusout', (e) => {
