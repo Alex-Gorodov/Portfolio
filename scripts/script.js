@@ -77,7 +77,7 @@ menuLinks[0].onmouseenter = function () {
 };
 
 menuLinks[0].onclick = function () {
-  projectsList.style.display = projectsList.style.display == 'none'? 'block' : 'none';
+  projectsList.style.display = projectsList.style.display == 'none'? 'flex' : 'none';
   hideContent();
 };
 
