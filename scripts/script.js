@@ -77,7 +77,7 @@ menuLinks[0].onmouseenter = function () {
 };
 
 menuLinks[0].onclick = function () {
-  projectsList.style.display = 'none';
+  projectsList.style.display = projectsList.style.display == 'none'? 'block' : 'none';
   hideContent();
 };
 
@@ -99,7 +99,7 @@ document.querySelector(".nav-projects-wrapper").addEventListener('focusout', (e)
 
 projectsListLink.onclick = function() {
   hideContent();
-}
+};
 
 
 // Burger menu opening function
