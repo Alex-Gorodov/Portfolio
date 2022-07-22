@@ -191,7 +191,7 @@
       transform: translateX(-50%) rotate(90deg);
     }
     
-    .burger-nav-list .nav-projects-list {
+    .burger-nav-projects-list {
       width: 50vw;
       height: 80vh;
       top: 30vh;
@@ -343,6 +343,13 @@
 
     .footer-link-label {
       display: none;
+    }
+  }
+
+  @media (max-width: 900px) and (min-width: 660px) and (max-height: 585px) {
+    .burger-nav-projects-list {
+      height: 40vh;
+      flex-wrap: wrap;
     }
   }
 
