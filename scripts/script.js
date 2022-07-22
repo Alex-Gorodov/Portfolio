@@ -24,6 +24,7 @@ let developerText = document.querySelector(".developer");
 // projects submenu
 let projectsLink = document.querySelector(".projects-opener");
 let projectsLinkBurger = document.querySelector(".nav-list-burger .projects-opener");
+let projectsListLink = document.querySelectorAll('.nav-projects-list .nav-project-item');
 let projectsList = document.querySelector(".nav-projects-list");
 let projectsListBurger = document.querySelector(".burger-nav-projects-list");
 
@@ -96,6 +97,9 @@ document.querySelector(".nav-projects-wrapper").addEventListener('focusout', (e)
   hideContent();
 }, true);
 
+projectsListLink.onclick = function() {
+  hideContent();
+}
 
 
 // Burger menu opening function
