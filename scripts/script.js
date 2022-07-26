@@ -202,13 +202,13 @@ agreeBtn.onclick = function () {
 // Portfolio slider
 next.addEventListener("click", moveRight);
 function moveRight() {
-  if (ww <= 660) {
+  if (ww <= 900) {
     if(i == arLength-1){
-            portfolio[0].style.display = "block";
+            portfolio[0].style.display = "grid";
             portfolio[i].style.display = "none";
             i = 0;
         } else{
-            portfolio[i+1].style.display = "block";
+            portfolio[i+1].style.display = "grid";
             portfolio[i].style.display = "none";
             i++;
         }
@@ -216,13 +216,13 @@ function moveRight() {
 }
 prev.addEventListener("click", moveLeft);
 function moveLeft() {
-  if (ww <= 660) {
+  if (ww <= 900) {
     if(i == 0){
-        portfolio[arLength-1].style.display = "block";
+        portfolio[arLength-1].style.display = "grid";
         portfolio[i].style.display = "none";
         i = arLength-1;
     } else{
-        portfolio[i-1].style.display = "block";
+        portfolio[i-1].style.display = "grid";
         portfolio[i].style.display = "none";
         i--;
     }

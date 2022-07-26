@@ -492,15 +492,17 @@ body {
   justify-items: center;
 }
 
+.portfolio-item {
+  display: grid;
+  min-height: 490px;
+  align-content: start;
+  margin-bottom: auto;
+}
+
 .portfolio-image-container {
   display: block;
   width: 221px;
   height: 300px;
-}
-
-.portfolio-item {
-  display: grid;
-  grid-template-rows: 1fr 0.2fr 0.1fr 0.6fr;
 }
 
 .portfolio-image-link {
@@ -524,6 +526,8 @@ body {
 
 .portfolio-item-description {
   max-width: 220px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .portfolio-links-wrapper {

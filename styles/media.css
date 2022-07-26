@@ -156,12 +156,12 @@
       display: none;
     }
 
-    .portfolio-item {
-      height: 480px;
-    }
-  
     .portfolio-item:not(:first-child) {
       display: none;
+    }
+
+    .portfolio-item-description {
+      margin-bottom: 0;
     }
 
     .burger-nav-list {
@@ -315,17 +315,19 @@
       border: none;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
-  
-    .service-indicators {
-      right: -20px;
-      bottom: 10px;
-      left:unset;
-      flex-direction: row;
-    }
-  
+
     .service-btn {
       min-width: 140px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .service-btn-active {
+      transform: translateY(25px);
     }
   
     .skills .container {
@@ -354,32 +356,7 @@
   }
 
   @media (max-width: 880px) {
-    .services-buttons-list {
-      border: none;
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-  
-    .service-btn {
-      min-width: 140px;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      
-    }
 
-    .service-btn-active {
-      transform: translateY(25px);
-    }
-  
-    .service-indicators {
-      right: -20px;
-      bottom: 10px;
-      left:unset;
-      flex-direction: row;
-    }
   
     .service-item::after {
       right: 0;
@@ -429,10 +406,6 @@
       font-size: 2rem;
     }
   
-    .portfolio-item-description {
-      margin: 0 0 20px;
-    }
-  
     .services-buttons-list {
       border: none;
       grid-template-rows: 1fr;
@@ -451,12 +424,6 @@
     .service-item::after {
       top: 0;
       right: 15px;
-    }
-  
-    .service-indicators {
-      flex-direction: column;
-      bottom: 30px;
-      right: -130px;
     }
   
     .skills .container {
