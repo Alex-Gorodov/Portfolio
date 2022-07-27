@@ -188,9 +188,13 @@ function termsOpener() {
   hideContent();
 }
 
+if (modalContainer.classList.contains("modal-open")) {
+  agreeBtn.starter.focus();
+}
+
 document.addEventListener('keydown', function(e) {
   let keyCode = e.keyCode;
-  if (keyCode === 27) {
+  if (modalContainer.classList.contains("modal-open") && keyCode === 27) {
     modalClose();
   }
 });
@@ -202,30 +206,26 @@ agreeBtn.onclick = function () {
 // Portfolio slider
 next.addEventListener("click", moveRight);
 function moveRight() {
-  if (ww <= 900) {
-    if(i == arLength-1){
-            portfolio[0].style.display = "grid";
-            portfolio[i].style.display = "none";
-            i = 0;
-        } else{
-            portfolio[i+1].style.display = "grid";
-            portfolio[i].style.display = "none";
-            i++;
-        }
-  }   
+  if (i == arLength-1) {
+      portfolio[0].style.display = "grid";
+      portfolio[i].style.display = "none";
+      i = 0;
+  } else {
+      portfolio[i+1].style.display = "grid";
+      portfolio[i].style.display = "none";
+      i++;
+  }
 }
 prev.addEventListener("click", moveLeft);
 function moveLeft() {
-  if (ww <= 900) {
-    if(i == 0){
-        portfolio[arLength-1].style.display = "grid";
-        portfolio[i].style.display = "none";
-        i = arLength-1;
-    } else{
-        portfolio[i-1].style.display = "grid";
-        portfolio[i].style.display = "none";
-        i--;
-    }
+  if (i == 0) {
+      portfolio[arLength-1].style.display = "grid";
+      portfolio[i].style.display = "none";
+      i = arLength-1;
+  } else {
+      portfolio[i-1].style.display = "grid";
+      portfolio[i].style.display = "none";
+      i--;
   }
 }
 
