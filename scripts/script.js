@@ -186,10 +186,7 @@ function termsOpener() {
   modalContainer.classList.add("modal-open");
   pageBody.classList.add("locked");
   hideContent();
-}
-
-if (modalContainer.classList.contains("modal-open")) {
-  agreeBtn.starter.focus();
+  agreeBtn.focus();
 }
 
 document.addEventListener('keydown', function(e) {
