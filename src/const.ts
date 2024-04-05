@@ -28,6 +28,7 @@ export enum AppRoute {
   About = "#about",
   Skills = "#skills",
   Contacts = "#contacts",
+  PageNotFound = "*",
 }
 
 export enum HeroNav {
