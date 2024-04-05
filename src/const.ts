@@ -22,7 +22,7 @@ export enum LetterColors {
 }
 
 export enum AppRoute {
-  Root = "/portfolio",
+  Root = "/Portfolio",
   Works = "#works",
   PortfolioItem = "#works/:id",
   About = "#about",
