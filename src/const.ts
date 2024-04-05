@@ -23,11 +23,11 @@ export enum LetterColors {
 
 export enum AppRoute {
   Root = "/portfolio",
-  Works = "/portfolio#works",
-  PortfolioItem = "/portfolio#works/:id",
-  About = "/portfolio#about",
-  Skills = "/portfolio#skills",
-  Contacts = "/portfolio#contacts",
+  Works = "#works",
+  PortfolioItem = "#works/:id",
+  About = "#about",
+  Skills = "#skills",
+  Contacts = "#contacts",
 }
 
 export enum HeroNav {
