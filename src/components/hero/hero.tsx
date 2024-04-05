@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import { Letter } from "./letter";
 import React from "react";
 
+window.alert('System\'s taking a breather for maintenance. Time for a digital makeover! Hang tight, grab a coffee, and let\'s wait for the upgrade!')
+
 export function Hero(): JSX.Element {
   const text = Array.from(HERO_TEXT);
 
