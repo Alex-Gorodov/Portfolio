@@ -2,7 +2,7 @@
   "name": "developer-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alex-gorodov.github.io/portfolio/",
+  "homepage": "https://alex-gorodov.github.io/Portfolio/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
