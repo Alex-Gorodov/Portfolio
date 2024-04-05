@@ -1,0 +1,63 @@
+$white: #ffffff
+$black: #000000
+$main-color: #000c24
+
+$mobile-only: 420px
+
+$link-transition: 0.3s
+
+$hover-opacity: 0.6
+$active-opacity: 0.3
+
+@keyframes letter 
+  0% 
+    transform: scale(1, 1)
+  25% 
+    transform: scale(0.8, 1.2)
+  50% 
+    transform: scale(1.3, 0.7)
+  75% 
+    transform: scale(0.9, 1.1)
+  100% 
+    transform: scale(1, 1)
+
+@mixin list-reset
+  padding: 0
+  margin: 0
+  list-style-type: none
+
+@mixin link-reset
+  color: $main-color
+  text-decoration: none
+  transition: $link-transition
+  
+*,
+*::after,
+*::before
+  box-sizing: border-box
+
+html
+  max-width: 1140px
+  padding: 0 40px
+  scroll-behavior: smooth
+
+.page-container
+  display: flex
+  flex-direction: column
+
+.main
+  flex-grow: 1
+
+.visually-hidden
+  position: absolute
+
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+
+  basic-extra-light-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden

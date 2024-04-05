@@ -1,0 +1,32 @@
+.hero
+  padding: 40px
+  @media (max-width: $mobile-only) 
+    padding-top: 76px
+    padding-left: 40px
+    padding-bottom: 80px
+    padding-right: 0
+
+  &__title
+    display: inline-block
+    margin: 0
+    font-size: 60px
+    font-family: "Source Code Pro", "Arial", sans-serif
+    letter-spacing: -5px
+    cursor: default
+    @media (max-width: $mobile-only) 
+      font-size: 40px
+
+  &__letter 
+    display: inline-block
+    cursor: default
+    color: $main-color
+    &--animated
+      color: lighten($main-color, 30%)
+      animation: letter 0.75s cubic-bezier(0.47, 0.82, 0.17, 1) forwards
+
+  &__description
+    text-transform: capitalize
+    font-size: 24px
+
+  &__navigation
+    @include list-reset
