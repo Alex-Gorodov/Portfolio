@@ -1,0 +1,25 @@
+<svg width="154" height="152" viewBox="0 0 154 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M33 54V81C33 84.866 36.134 88 40 88H69C72.866 88 76 84.866 76 81V54C76 50.134 72.866 47 69 47H40C36.134 47 33 50.134 33 54Z" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M33 72L39.697 70.5191C41.2183 70.1827 42.8082 70.3634 44.2152 71.0326L56.196 76.7312C57.9015 77.5424 59.8624 77.6301 61.6335 76.9742L67.0487 74.969C67.8268 74.6808 68.6499 74.5333 69.4795 74.5333H76" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M39.9247 13.3958L33.9025 23.4876C33.5048 24.1541 33.985 25 34.7613 25H47.1819C47.9703 25 48.4486 24.1303 48.0265 23.4645L41.6279 13.3727C41.2289 12.7434 40.3065 12.7559 39.9247 13.3958Z" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M144.197 23H145C148.866 23 152 26.134 152 30V116C152 119.866 148.866 123 145 123H33" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M152 97H2" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M23 96V9C23 5.13401 26.134 2 30 2H124C127.866 2 131 5.13401 131 9V96" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M62 14H103" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M62 23H80" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M23 35H35" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M49 35H131" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M88 47H121" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M88 58H121" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M88 66H123" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M88 78H121" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M88 88H103" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="61.5" cy="59.5" r="4.5" stroke="black" stroke-width="4"/>
+  <circle cx="78" cy="111" r="5.5" stroke="black" stroke-width="5"/>
+  <path d="M49 150H103" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M103 150V147C103 143.134 99.866 140 96 140H56C52.134 140 49 143.134 49 147V150" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M94 125V140" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 125V140" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M23 123H9C5.13401 123 2 119.866 2 116V30C2 26.134 5.13401 23 9 23H23" stroke="black" stroke-width="4" stroke-linecap="round"/>
+  <path d="M131 23H138" stroke="black" stroke-width="4" stroke-linecap="round"/>
+</svg>  
