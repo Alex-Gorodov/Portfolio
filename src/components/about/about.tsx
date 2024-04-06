@@ -1,7 +1,6 @@
 export function About(): JSX.Element {
   return (
-    <p style={{color: 'red'}} id="about">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eveniet laudantium, illo veniam explicabo dignissimos reprehenderit totam non, voluptas deleniti possimus vel rerum minima cupiditate temporibus incidunt. Nulla dolor architecto fuga placeat perferendis ea ut hic ex alias cum pariatur repudiandae modi ratione voluptatum exercitationem, corporis numquam quam minima in tenetur dolorem laudantium repellat! Iusto aut vel fugiat minima delectus id deleniti nesciunt quam odio, voluptatibus sed dolorem modi, reprehenderit libero labore eligendi harum, ipsam dicta? Placeat dolorem explicabo odio debitis harum soluta voluptatem nisi ipsa numquam eius. Pariatur, suscipit! Aut harum iure voluptate labore voluptatem doloribus veritatis, et commodi tempore nemo ad, ullam mollitia animi illo unde minus, odit nisi molestias. Praesentium architecto eum sunt assumenda quos ab consequuntur optio, eveniet doloremque ad, iste explicabo facere? Dolore accusamus dignissimos neque. Exercitationem ratione illum, totam vel velit, explicabo ad, quod architecto obcaecati ea nostrum voluptate nemo doloremque hic ut repellendus quaerat esse voluptatum possimus? Rerum facere cupiditate iste temporibus tenetur id cumque modi! Eveniet aut mollitia quia doloribus corporis hic labore delectus maxime earum quos ab autem, eius odio optio soluta maiores reiciendis! Sequi hic dolores, ratione id laborum ullam illo harum eius quae nulla, modi impedit facere blanditiis error.
+    <p id="about">
     </p>
   );
 }

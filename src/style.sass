@@ -2,7 +2,7 @@ $white: #ffffff
 $black: #000000
 $main-color: #000c24
 
-$mobile-only: 420px
+$mobile-only: 580px
 
 $link-transition: 0.3s
 
@@ -11,6 +11,7 @@ $active-opacity: 0.3
 
 $cursor-default: url('img/cursors/cursor.svg'), auto
 $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
+
 
 @keyframes letter 
   0% 
@@ -23,6 +24,13 @@ $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
     transform: scale(0.9, 1.1)
   100% 
     transform: scale(1, 1)
+
+@mixin burger-line
+  display: block
+  width: 30px
+  height: 3px
+  background-color: $main-color
+  border-radius: 4px
 
 @mixin list-reset
   padding: 0
