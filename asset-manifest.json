@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c2205d98.css",
-    "main.js": "/Portfolio/static/js/main.fafd46be.js",
+    "main.js": "/Portfolio/static/js/main.fc1579fb.js",
     "static/media/alex_gorodov_cv.pdf": "/Portfolio/static/media/alex_gorodov_cv.5fc4aa6ef2ff339a8296.pdf",
     "static/media/bright-lights.svg": "/Portfolio/static/media/bright-lights.d628b77e86493caaa3893a52bc099be7.svg",
     "static/media/gllacy.svg": "/Portfolio/static/media/gllacy.985d3e7741769c781a24feaf93e009b9.svg",
@@ -17,10 +17,10 @@
     "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.c574108e77137ef113a3c25ca7e8c233.svg",
     "static/media/telegram.svg": "/Portfolio/static/media/telegram.6af9f7ee9383c2ca95e38ce71e8df81e.svg",
     "main.c2205d98.css.map": "/Portfolio/static/css/main.c2205d98.css.map",
-    "main.fafd46be.js.map": "/Portfolio/static/js/main.fafd46be.js.map"
+    "main.fc1579fb.js.map": "/Portfolio/static/js/main.fc1579fb.js.map"
   },
   "entrypoints": [
     "static/css/main.c2205d98.css",
-    "static/js/main.fafd46be.js"
+    "static/js/main.fc1579fb.js"
   ]
 }
