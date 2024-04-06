@@ -1,0 +1,22 @@
+.portfolio-item
+  display: grid
+  grid-template-rows: 240px auto min-content
+  gap: 16px
+  filter: grayscale(1)
+  transition: $link-transition
+  @media (min-width: $desktop)
+    grid-template-rows: 320px auto min-content
+    
+  &:hover
+    filter: grayscale(0)
+  &__image
+    transition: 0.3s
+  &__description
+    margin-top: 0
+    cursor: text
+  &__technologies
+    @include list-reset
+    display: flex
+    gap: 8px
+    justify-content: center
+    align-items: center

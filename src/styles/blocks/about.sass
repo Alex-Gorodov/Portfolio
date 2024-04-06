@@ -1,23 +1,58 @@
 .about
+  position: relative
   display: flex
   justify-content: center
-  align-items: flex-start
+  align-items: center
   gap: 40px
-  @media (max-width: $mobile-only)
-    flex-direction: column
+  flex-direction: column
   &__text
-    max-width: 720px
+    max-width: 620px
     &:first-of-type
       margin-top: 0
 
+  &__parallax
+    position: absolute
+    opacity: 0.5
+    @media (max-width: $mobile-only)
+      opacity: 0.2
+
+  &__parallax--left
+    top: 300px
+    left: 50px
+    @media (max-width: $mobile-only)
+      left: -150px
+
+  &__parallax--right
+    top: 600px
+    right: 50px
+    @media (max-width: $mobile-only)
+      top: 900px
+      right: -150px
+
   &__cv-btn
     @include link-reset
+    position: relative
     margin: 0 auto
     padding: 8px 16px
     border-radius: 4px
-    background-color: tomato
+    background-color: $main-color
+    color: $white
     white-space: nowrap
     transition: $link-transition
+    overflow: hidden
     cursor: $cursor-hover
-    &:hover
-      background-color: rgba(tomato, 70%)
+    &:active
+      background-color: rgba($main-color, 50%)
+    &::after
+      position: absolute
+      top: -10px
+      left: -30px
+      display: block
+      width: 10px
+      height: 50px
+      background: linear-gradient(45deg, rgba($white, 0.5), rgba($white, 0.8), rgba($white, 0.5))
+      transform: rotate(30deg)
+      content: ''
+    &:hover::after
+      animation-name: button-effect
+      animation-duration: 0.7s

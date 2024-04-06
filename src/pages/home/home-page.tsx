@@ -1,8 +1,9 @@
 import { Hero } from "../../components/hero/hero";
 import { Layout } from "../../components/layout/layout";
 import { Helmet } from "react-helmet-async";
-import { Works } from "../../components/works/works";
+import { Portfolio } from "../../components/portfolio/portfolio";
 import { About } from "../../components/about/about";
+import { Contact } from "../../components/contact/contact";
 
 export function HomePage(): JSX.Element {
 
@@ -13,8 +14,9 @@ export function HomePage(): JSX.Element {
       </Helmet>
       <main className="main">
         <Hero/>
-        <Works/>
+        <Portfolio/>
         <About/>
+        <Contact/>
       </main>
     </Layout>
   );

@@ -1,5 +1,3 @@
-import { PortfolioItem } from "./types/portfolio-item";
-
 export const HERO_TEXT = "Hello,I'm Alex,web developer";
 
 export enum LetterColors {
@@ -25,8 +23,8 @@ export enum LetterColors {
 
 export enum AppRoute {
   Root = "/Portfolio",
-  Works = "#works",
-  PortfolioItem = "#works/:id",
+  Works = "#portfolio",
+  PortfolioItem = "#portfolio/:id",
   About = "#about",
   Skills = "#skills",
   Contacts = "#contacts",

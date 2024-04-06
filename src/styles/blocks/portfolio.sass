@@ -1,21 +1,23 @@
-.works
+.portfolio
   display: flex
   flex-direction: column
+  transition: 0.3s
   &__list
     @include list-reset
     display: grid
-    padding: 40px
+    padding: 20px
     grid-template-columns: repeat(auto-fit, minmax(80px, 320px))
     justify-content: center
+    transition: 0.3s
     gap: 40px
+    @media (min-width: $desktop)
+      padding: 20px 60px
+      gap: 60px 140px
   &__link
     @include link-reset
     display: flex
     flex-direction: column
     gap: 16px
     align-items: center
-    filter: grayscale(1)
     transition: $link-transition
-    &:hover
-      filter: grayscale(0)
-      cursor: $cursor-hover
+    cursor: $cursor-hover
