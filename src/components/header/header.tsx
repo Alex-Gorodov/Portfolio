@@ -36,19 +36,19 @@ export function Header(): JSX.Element {
         }
         <ul className={menuClassName}>
           <li className="navigation__item">
-            <a href={AppRoute.Root} className="navigation__link" onClick={() => setOpened(false)}>Home</a>
+            <a href={AppRoute.Root} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Home</a>
           </li>
           <li className="navigation__item">
-            <a href={AppRoute.Works} className="navigation__link" onClick={() => setOpened(false)}>Works</a>
+            <a href={AppRoute.Works} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Works</a>
           </li>
           <li className="navigation__item">
-            <a href={AppRoute.About} className="navigation__link" onClick={() => setOpened(false)}>About</a>
+            <a href={AppRoute.About} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>About</a>
           </li>
           <li className="navigation__item">
-            <a href={AppRoute.Skills} className="navigation__link" onClick={() => setOpened(false)}>Skills</a>
+            <a href={AppRoute.Skills} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Skills</a>
           </li>
           <li className="navigation__item">
-            <a href={AppRoute.Contacts} className="navigation__link" onClick={() => setOpened(false)}>Contacts</a>
+            <a href={AppRoute.Contacts} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Contacts</a>
           </li>
         </ul>
       </nav>

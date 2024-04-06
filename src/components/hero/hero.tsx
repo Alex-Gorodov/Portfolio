@@ -34,25 +34,25 @@ export function Hero(): JSX.Element {
       <p className="hero__description">Junior frontend developer</p>
       <ul className="hero__navigation hero-nav">
         <li className="hero-nav__item">
-          <Link className="hero-nav__link" to={HeroNav.Github} target="_blank">
+          <Link className="hero-nav__link" to={HeroNav.Github} rel="noreferrer nofollow" target="_blank">
             <span className="visually-hidden">to github profile</span>
             <Github/>
           </Link>
         </li>
         <li className="hero-nav__item">
-          <Link className="hero-nav__link" to={HeroNav.Linkedin} target="_blank">
+          <Link className="hero-nav__link" to={HeroNav.Linkedin} rel="noreferrer nofollow" target="_blank">
             <span className="visually-hidden">to linkedin profile</span>
             <Linkedin/>
           </Link>
         </li>
         <li className="hero-nav__item">
-          <Link className="hero-nav__link" to={HeroNav.Telegram} target="_blank">
+          <Link className="hero-nav__link" to={HeroNav.Telegram} rel="noreferrer nofollow" target="_blank">
             <span className="visually-hidden">send message in Telegram</span>
             <Telegram/>
           </Link>
         </li>
         <li className="hero-nav__item">
-          <Link className="hero-nav__link" to={HeroNav.Email} target="_blank">
+          <Link className="hero-nav__link" to={HeroNav.Email} rel="noreferrer nofollow" target="_blank">
             <span className="visually-hidden">send email</span>
             <Email/>
           </Link>

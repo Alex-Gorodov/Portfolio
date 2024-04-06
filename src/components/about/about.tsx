@@ -22,7 +22,7 @@ export function About(): JSX.Element {
           Recently, I've been diving deeper into React, TypeScript, and Redux. These tools allow me to build even better and more scalable web applications.
         </p>
       </div>
-      <a className="about__cv-btn" href={Pdf} target="_black" download>Download CV</a>
+      <a className="about__cv-btn" href={Pdf} rel="noreferrer nofollow" target="_blank" download>Download CV</a>
     </section>
   );
 }
