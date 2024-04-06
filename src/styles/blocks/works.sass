@@ -1,0 +1,19 @@
+.works
+  &__list
+    @include list-reset
+    display: grid
+    padding: 40px
+    grid-template-columns: repeat(auto-fit, minmax(80px, 320px))
+    justify-content: center
+    gap: 40px
+  &__link
+    @include link-reset
+    display: flex
+    flex-direction: column
+    gap: 16px
+    align-items: center
+    filter: grayscale(1)
+    transition: $link-transition
+    &:hover
+      filter: grayscale(0)
+      cursor: $cursor-hover

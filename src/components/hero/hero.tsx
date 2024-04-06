@@ -5,9 +5,9 @@ import { ReactComponent as Email} from '../../img/icons/email.svg';
 import { HeroNav, HERO_TEXT } from "../../const";
 import { Link } from "react-router-dom";
 import { Letter } from "./letter";
-import React from "react";
+import React, { Fragment } from "react";
 
-window.alert('System\'s taking a breather for maintenance. Time for a digital makeover! Hang tight, grab a coffee, and let\'s wait for the upgrade!')
+// window.alert('System\'s taking a breather for maintenance. Time for a digital makeover! Hang tight, grab a coffee, and let\'s wait for the upgrade!')
 
 export function Hero(): JSX.Element {
   const text = Array.from(HERO_TEXT);
@@ -18,7 +18,7 @@ export function Hero(): JSX.Element {
       {text.map((char, index) => {
         switch (char) {
           case " ":
-            return <>&nbsp;</>;
+            return <Fragment key={`space-${Math.random() * 10}`}>&nbsp;</Fragment>;
           case ",":
             return (
               <React.Fragment key={char + '-' + index}>
