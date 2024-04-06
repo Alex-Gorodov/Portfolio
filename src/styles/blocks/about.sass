@@ -1,0 +1,23 @@
+.about
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  gap: 40px
+  @media (max-width: $mobile-only)
+    flex-direction: column
+  &__text
+    max-width: 720px
+    &:first-of-type
+      margin-top: 0
+
+  &__cv-btn
+    @include link-reset
+    margin: 0 auto
+    padding: 8px 16px
+    border-radius: 4px
+    background-color: tomato
+    white-space: nowrap
+    transition: $link-transition
+    cursor: $cursor-hover
+    &:hover
+      background-color: rgba(tomato, 70%)

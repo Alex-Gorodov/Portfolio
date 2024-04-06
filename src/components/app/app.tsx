@@ -17,6 +17,7 @@ export function App() {
           <Routes>
             <Route path={AppRoute.Root} element={<HomePage/>}/>
             <Route path={AppRoute.PageNotFound} element={<PageNotFound/>}/>
+            <Route path={AppRoute.CV} element={<HomePage/>}/>
             {/* <Route path={AppRoute.Works} element={<CatalogPage/>}>
               <Route path={AppRoute.CatalogCreamy} element={<CatalogPage/>}></Route>
               <Route path={AppRoute.CatalogSorbet} element={<CatalogPage/>}></Route>

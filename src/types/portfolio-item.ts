@@ -5,4 +5,5 @@ export type PortfolioItem = {
   description: string,
   technologies: string[],
   img: string,
+  isAdaptive?: boolean,
 }

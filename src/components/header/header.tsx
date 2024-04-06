@@ -3,7 +3,7 @@ import { AppRoute } from "../../const";
 import cn from 'classnames';
 
 export function Header(): JSX.Element {
-  const isMobile = window.innerWidth <= 580;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 580);
   const [isOpened, setOpened] = useState(false);
   const menuClassName = cn('navigation__list', {
     'navigation__list--mobile' : isMobile,
@@ -12,6 +12,15 @@ export function Header(): JSX.Element {
   const burgerClassName = cn('navigation__toggler', {
     'navigation__toggler--opened' : isOpened
   })
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 580);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <header>

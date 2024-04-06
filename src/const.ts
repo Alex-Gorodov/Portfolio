@@ -30,6 +30,7 @@ export enum AppRoute {
   About = "#about",
   Skills = "#skills",
   Contacts = "#contacts",
+  CV = "/alex_gorodov_cv.pdf",
   PageNotFound = "*",
 }
 
@@ -39,46 +40,3 @@ export enum HeroNav {
   Telegram = "https://t.me/a_gorodov",
   Email = "mailto: a.gorodov.22@gmail.com",
 }
-
-export const PROJECTS: PortfolioItem[] = [
-  {
-    id: "gllacy",
-    name: "Gllacy",
-    path: "https://alex-gorodov.github.io/gllacy",
-    description: "",
-    technologies: ["", ""],
-    img: process.env.PUBLIC_URL + "/img/portfolio/gllacy.png",
-  },
-  {
-    id: "bright-lights",
-    name: "Bright Lights",
-    path: "https://alex-gorodov.github.io/bright-lights/",
-    description: "",
-    technologies: ["", ""],
-    img: process.env.PUBLIC_URL + "/img/portfolio/bright-lights.png",
-  },
-  {
-    id: "createx",
-    name: "CreateX",
-    path: "https://alex-gorodov.github.io/CreateX/",
-    description: "",
-    technologies: ["", ""],
-    img: "Portfolio/img/portfolio/createx.png",
-  },
-  {
-    id: "cat-energy",
-    name: "Cat Energy",
-    path: "https://alex-gorodov.github.io/Cat-Energy/",
-    description: "",
-    technologies: ["", ""],
-    img: process.env.PUBLIC_URL + "/img/portfolio/cat-energy.png",
-  },
-  {
-    id: "sedona",
-    name: "Sedona",
-    path: "https://htmlacademy-adaptive.github.io/590651-sedona-26/11/",
-    description: "",
-    technologies: ["", ""],
-    img: process.env.PUBLIC_URL + "/img/portfolio/sedona.png",
-  }
-]
