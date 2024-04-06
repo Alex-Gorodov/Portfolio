@@ -47,7 +47,7 @@ export const PROJECTS: PortfolioItem[] = [
     path: "https://alex-gorodov.github.io/gllacy",
     description: "",
     technologies: ["", ""],
-    img: "Portfolio/img/portfolio/gllacy.png",
+    img: process.env.PUBLIC_URL + "/img/portfolio/gllacy.png",
   },
   {
     id: "bright-lights",
@@ -55,7 +55,7 @@ export const PROJECTS: PortfolioItem[] = [
     path: "https://alex-gorodov.github.io/bright-lights/",
     description: "",
     technologies: ["", ""],
-    img: "Portfolio/img/portfolio/bright-lights.png",
+    img: process.env.PUBLIC_URL + "/img/portfolio/bright-lights.png",
   },
   {
     id: "createx",
@@ -71,7 +71,7 @@ export const PROJECTS: PortfolioItem[] = [
     path: "https://alex-gorodov.github.io/Cat-Energy/",
     description: "",
     technologies: ["", ""],
-    img: "Portfolio/img/portfolio/cat-energy.png",
+    img: process.env.PUBLIC_URL + "/img/portfolio/cat-energy.png",
   },
   {
     id: "sedona",
@@ -79,6 +79,6 @@ export const PROJECTS: PortfolioItem[] = [
     path: "https://htmlacademy-adaptive.github.io/590651-sedona-26/11/",
     description: "",
     technologies: ["", ""],
-    img: "Portfolio/img/portfolio/sedona.png",
+    img: process.env.PUBLIC_URL + "/img/portfolio/sedona.png",
   }
 ]
