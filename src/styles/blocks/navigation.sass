@@ -1,35 +1,55 @@
 .navigation
   @include centralize
+  max-width: unset
+  width: 100%
   &__list
     @include list-reset
+    position: fixed
     width: 100%
-    padding: 40px
     display: flex
     flex-wrap: wrap
-    gap: 40px
+    border-bottom: 1px solid $main-color
     transition: 0.3s
+    z-index: 10
+    box-shadow: 0px 5px 10px 5px rgba($main-color, 50%)
     background-color: $white
     @media (max-width: $mobile-only)
       flex-direction: column
     &--mobile
-      position: fixed
       left: 0
       top: 50px
       transform: translateY(-100%)
-      box-shadow: 0px 5px 10px 5px rgba($main-color, 50%)
       z-index: 5
       &-opened
         position: fixed
         transform: translateY(0)
 
+  &__item
+    position: relative
+    text-align: center
+    @media (max-width: $mobile-only)
+      &:not(:last-of-type)::after
+        position: absolute
+        bottom: 0
+        left: 0
+        display: block
+        height: 1px
+        width: 100%
+        background-color: $main-color
+        content: ''
+
   &__link
     @include link-reset
+    display: block
     font-size: 24px
+    padding: 11px 40px
     cursor: $cursor-hover
     &:hover
-      opacity: $hover-opacity
+      background-color: $main-color
+      color: $white
     &:active
-      opacity: $active-opacity
+      background-color: $main-color
+      color: $white
 
   &__toggler
     width: 40px
@@ -44,6 +64,7 @@
       right: 0
       display: flex
       padding: 0 20px
+      border-bottom: 1px solid $main-color
       align-items: center
       justify-content: flex-end
       width: 100%
