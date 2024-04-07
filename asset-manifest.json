@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.aed19114.css",
-    "main.js": "/Portfolio/static/js/main.571c2309.js",
+    "main.css": "/Portfolio/static/css/main.d83e3cc2.css",
+    "main.js": "/Portfolio/static/js/main.73c70234.js",
     "static/media/alex_gorodov_cv.pdf": "/Portfolio/static/media/alex_gorodov_cv.5fc4aa6ef2ff339a8296.pdf",
     "static/media/bright-lights.svg": "/Portfolio/static/media/bright-lights.d628b77e86493caaa3893a52bc099be7.svg",
     "static/media/gllacy.svg": "/Portfolio/static/media/gllacy.985d3e7741769c781a24feaf93e009b9.svg",
@@ -26,11 +26,11 @@
     "static/media/ts.svg": "/Portfolio/static/media/ts.b515362ad2bdd9d2911af2f3d9047f32.svg",
     "static/media/css.svg": "/Portfolio/static/media/css.683563aae41322a7b00dfbc08a0caab8.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.dcec69b208e28160b0ee1eb5d1b77cc2.svg",
-    "main.aed19114.css.map": "/Portfolio/static/css/main.aed19114.css.map",
-    "main.571c2309.js.map": "/Portfolio/static/js/main.571c2309.js.map"
+    "main.d83e3cc2.css.map": "/Portfolio/static/css/main.d83e3cc2.css.map",
+    "main.73c70234.js.map": "/Portfolio/static/js/main.73c70234.js.map"
   },
   "entrypoints": [
-    "static/css/main.aed19114.css",
-    "static/js/main.571c2309.js"
+    "static/css/main.d83e3cc2.css",
+    "static/js/main.73c70234.js"
   ]
 }
