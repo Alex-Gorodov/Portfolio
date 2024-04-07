@@ -19,10 +19,13 @@
     @media (max-width: $mobile-only) 
       font-size: 20px
     
-  &__form 
+  &__form
+    position: relative
     display: grid
+    width: 100%
     grid-template-columns: repeat(2, 1fr)
     gap: 20px
+    transition: 0.3s
     &-wrapper
       display: flex
       justify-content: center
@@ -45,7 +48,7 @@
       left: 0
       display: block
       height: 3px
-      background-color: #ff0000
+      background-color: $error-red
       animation: error cubic-bezier(0.93, 0.02, 0.04, 1.01) 1s forwards
       content: ""
 
@@ -69,7 +72,7 @@
     &:focus 
       background-color: lighten($main-color, 80%)
     &--error
-      border: 2px solid red
+      border: 2px solid $error-red
 
   &__submit 
     @include link-reset
@@ -108,3 +111,17 @@
     padding: 40px
     outline: 2px solid $main-color
     text-align: center
+
+  &__error-message
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    margin: 0 auto
+    grid-column: 1/-1
+    color: $error-red
+    transition: 0.3s
+    z-index: -1
+    &--opened
+      bottom: -20px

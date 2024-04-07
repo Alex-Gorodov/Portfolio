@@ -21,8 +21,6 @@ export function Contact(): JSX.Element {
 
   const sendForm = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-
-    // Проверяем, есть ли ошибки в полях name или email
     if (formData.name === '' || formData.email === '') {
       setError(true);
       return;
@@ -81,12 +79,13 @@ export function Contact(): JSX.Element {
                 </label>
                 <label className="contact__item contact__item--email contact__item--required" htmlFor="email">
                   <input
-                    className={`contact__field ${isError && formData.email.length < 5 && 'contact__field--error'}`}
+                    className={`contact__field ${isError && !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email) && 'contact__field--error'}`}
                     type="email"
                     name="email"
                     id="email"
                     placeholder="Email"
-                    minLength={5}
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    // minLength={5}
                     required
                     value={formData.email}
                     onChange={handleInputChange}
@@ -116,12 +115,11 @@ export function Contact(): JSX.Element {
                     onChange={handleInputChange}
                   ></textarea>
                 </label>
-                {isError && (formData.name === '' || formData.email === '') && (
-                  <p className="contact__error-message">Please fill in the required fields.</p>
-                )}
                 <button className="contact__submit" type="submit" onClick={sendForm}>
                   Send message!
                 </button>
+                <p className={`contact__error-message ${isError && (formData.name.length < 2 || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email)) && 'contact__error-message--opened'}`}>Please fill in the required fields.</p>
+                {/* <p className={`contact__error-message ${isError && (formData.name.length < 2 || formData.email.length < 5) && 'contact__error-message--opened'}`}>Please fill in the required fields.</p> */}
               </form>
             )}
           </div>
