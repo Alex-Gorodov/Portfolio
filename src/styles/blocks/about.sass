@@ -1,12 +1,15 @@
 .about
   position: relative
   display: flex
+  padding: 40px
   justify-content: center
   align-items: center
   gap: 40px
   flex-direction: column
+  background-color: rgba($main-color, 50%)
+  box-shadow: 0px 0px 10px 10px rgba($main-color, 70%)
   &__text
-    max-width: 620px
+    max-width: 760px
     &:first-of-type
       margin-top: 0
 
@@ -14,20 +17,21 @@
     position: absolute
     opacity: 0.5
     @media (max-width: $mobile-only)
-      opacity: 0.2
+      opacity: 0.1
 
   &__parallax--left
-    top: 300px
+    top: 600px
     left: 50px
     @media (max-width: $mobile-only)
-      left: -150px
+      top: 800px
+      left: -50px
 
   &__parallax--right
     top: 600px
     right: 50px
     @media (max-width: $mobile-only)
-      top: 900px
-      right: -150px
+      top: 1100px
+      right: -50px
 
   &__cv-btn
     @include link-reset

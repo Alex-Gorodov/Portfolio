@@ -46,7 +46,7 @@ export function Contact(): JSX.Element {
 
   return (
     <section className="section contact" id="contact">
-      <h2 className="title contact__title">Contact me</h2>
+      <h2>Contact me</h2>
       <div className="contact__wrapper">
         <p className="description contact__description">
           I'm interested in freelance opportunities - landing pages and small sites, for now. However, if you have other request of question, don't hesitate to use the form.

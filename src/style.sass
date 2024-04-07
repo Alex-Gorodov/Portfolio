@@ -57,6 +57,10 @@ $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
   color: $main-color
   text-decoration: none
   transition: $link-transition
+
+@mixin centralize
+  max-width: 1440px
+  margin-inline: auto
   
 *,
 *::after,
@@ -64,8 +68,6 @@ $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
   box-sizing: border-box
 
 html
-  max-width: 1440px
-  margin: 0 auto
   padding: 0
   scroll-behavior: smooth
   overflow-x: hidden
@@ -73,7 +75,6 @@ html
 
 body
   overflow-x: hidden
-  padding: 0 40px
 
 .page-container
   display: flex
@@ -97,7 +98,10 @@ body
   overflow: hidden
 
 .section
+  width: 100%
   margin-bottom: 60px
+  padding: 0 40px
+  overflow: hidden
 
 .appearance
   animation-name: appearance

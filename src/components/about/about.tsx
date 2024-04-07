@@ -39,10 +39,11 @@ export function About(): JSX.Element {
       <div className="about__parallax about__parallax--left" data-speed={0.3} ref={parallaxLeftRef}>
         <ParallaxA/>
       </div>
-      <div className="about__parallax about__parallax--right" data-speed={0.5} ref={parallaxRightRef}>
+      <div className="about__parallax about__parallax--right" data-speed={0.6} ref={parallaxRightRef}>
         <ParallaxB/>
       </div>
       <div>
+        <h2>About</h2>
         <p className='about__text'>
           I'm a highly motivated front-end developer. I've been writing pet projects using React with TypeScript for over a year now. I'm all about crafting clean, efficient, and easy-to-maintain code. I follow two important principles: DRY and KISS.
         </p>
