@@ -1,7 +1,75 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+
 export function Contact(): JSX.Element {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const [isSuccess, setSuccess] = useState(false);
+  const [isError, setError] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const sendForm = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('https://formspree.io/f/mgebwvrj', formData);
+      setSuccess(true);
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+      setError(false);
+      setTimeout(() => {
+        setSuccess(false);
+      }, 2000);
+    } catch (error) {
+      setError(true);
+      console.error(error);
+    }
+  };
+
   return (
-    <section className="section contact">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur accusantium ipsum nisi laborum ex quibusdam inventore ducimus possimus officia, cum, debitis veritatis a ipsam. Fugit facilis quidem cumque obcaecati, odit tempora, nulla reprehenderit repellat libero ipsa vitae consequuntur eligendi iure quam culpa delectus accusantium ipsam illo laborum fuga deleniti ab aperiam sint. Sed laudantium necessitatibus consequatur rerum adipisci eaque illum sapiente nesciunt! Voluptatibus alias debitis quas soluta expedita accusamus necessitatibus nemo suscipit nulla temporibus quidem eum quo, veniam nostrum dicta, sunt laborum laboriosam impedit atque animi natus laudantium, voluptatem pariatur. Iusto sapiente laudantium provident eum similique non saepe! Nulla, debitis. Expedita accusamus doloribus earum quam aspernatur molestiae harum sapiente officiis nisi! Modi tempora maxime at debitis aperiam sunt eveniet, ratione excepturi totam minima voluptate veniam voluptatem adipisci sapiente cupiditate iure consectetur ipsam assumenda id impedit omnis repudiandae! Inventore, libero reprehenderit maiores sunt eligendi minus modi natus accusamus explicabo facilis pariatur eveniet placeat velit dicta officia cum necessitatibus veniam nostrum in, officiis rem! Aut corporis numquam temporibus corrupti, nostrum nesciunt laborum sint maxime a eos voluptate iure, placeat, nobis voluptatibus tempora. Illum minima molestias reiciendis iure mollitia laboriosam molestiae adipisci consectetur voluptates aspernatur non itaque quod esse sint architecto, veritatis odit consequuntur iste sed unde eum maiores vero? Dolorem suscipit dignissimos quam vitae assumenda ut. Numquam voluptatum magnam vitae, minima qui voluptates dolore! Ullam sapiente ratione iste voluptatem illo, quia corporis doloribus deleniti provident enim nam voluptatum pariatur vero eius natus dicta ipsa! Natus quas maxime non vitae nisi laboriosam reiciendis molestias totam voluptates pariatur, tenetur placeat tempora hic atque delectus temporibus earum, iusto ratione itaque praesentium? Rem recusandae quibusdam ut veritatis reprehenderit, facere, a dolorem assumenda error, laudantium vel neque! Amet architecto recusandae quas voluptates suscipit! Neque delectus ipsa doloribus a numquam eum quae ducimus dolor tempora exercitationem, nostrum assumenda at expedita eveniet nulla eius, hic reiciendis debitis sit laudantium quis nobis veniam? Odio nostrum accusamus magnam soluta ex doloribus exercitationem sequi, impedit deserunt molestias laudantium corporis. Nulla sed inventore eos voluptatibus! Accusantium consequatur magni porro cumque deserunt vitae! Eos beatae delectus est quos ad nemo, a quidem, non praesentium dolorem enim rerum nisi, molestiae dicta fuga consectetur! Qui cupiditate, veritatis quia dolor suscipit quas nulla amet totam vel molestiae expedita dolore fugiat sit! Ipsa sapiente non porro, dolorem, ex aut magni magnam impedit fugit soluta voluptates molestias quis totam, tempore et voluptate quas quasi? Ipsum adipisci repellat quod fugit reiciendis optio velit corporis eos, veniam numquam illum nam facere quidem qui earum quas et cum doloremque possimus recusandae asperiores tempora, minus quam! Laborum aliquam quis, a sint dolores adipisci quos soluta, harum laudantium tempora eius quo quam, voluptates magni placeat. Fugit, quae laborum officiis hic ipsa dolore corporis repudiandae minima aliquid alias totam. Iure similique libero, dolor ipsa nostrum impedit excepturi necessitatibus aspernatur repellendus! Explicabo vitae facilis dicta id quas numquam fugiat voluptates. Tempore illum, dignissimos nostrum hic quibusdam, deleniti voluptas dolorem enim assumenda praesentium neque corrupti sit consequuntur! Cupiditate in harum delectus! Quis ipsam vero at asperiores dolores?
+    <section className="section contact" id="contact">
+      <h2 className="title contact__title">Contact me</h2>
+      <div className="contact__wrapper">
+        <p className="description contact__description">
+          I'm interested in freelance opportunities - landing pages and small sites, for now. However, if you have other request of question, don't hesitate to use the form.
+        </p>
+        {
+          isSuccess
+            ?
+            <p className="contact__success-message">
+              Successfully sent!
+            </p>
+            :
+            <form className="contact__form" action="https://formspree.io/f/mgebwvrj" method="POST">
+              <label className="contact__item contact__item--name contact__item--required" htmlFor="name">
+                <input className={`contact__field ${isError && formData.name.length < 2 && 'contact__field--error'}`} type="text" name="name" id="name" placeholder="Name" minLength={2} required value={formData.name} onChange={handleInputChange} />
+              </label>
+              <label className="contact__item contact__item--email contact__item--required" htmlFor="email">
+                <input className={`contact__field ${isError && formData.email.length < 5 && 'contact__field--error'}`} type="email" name="email" id="email" placeholder="Email" minLength={5} required value={formData.email} onChange={handleInputChange} />
+              </label>
+              <label className="contact__item contact__item--subject" htmlFor="subject">
+                <input className="contact__field" type="text" name="subject" id="subject" placeholder="Subject" value={formData.subject} onChange={handleInputChange} />
+              </label>
+              <label className="contact__item contact__item--message contact__item--required" htmlFor="message">
+                <textarea className="contact__field contact__field--message" name="message" id="message" cols={30} rows={5} placeholder="Message" required value={formData.message} onChange={handleInputChange}></textarea>
+              </label>
+              <button className="contact__submit" type="submit" onClick={sendForm}>Send message!</button>
+            </form>
+        }
+      </div>
     </section>
   )
 }

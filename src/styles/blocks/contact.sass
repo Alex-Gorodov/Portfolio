@@ -1,0 +1,95 @@
+.contact 
+  max-width: 1240px
+  margin: auto
+  padding-bottom: 80px
+
+  &__wrapper 
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px
+    @media (max-width: $mobile-only) 
+      grid-template-columns: 1fr
+      gap: 20px
+
+  &__description 
+    margin: 0
+    font-size: 22px
+    line-height: 1.4em
+    text-align: justify
+    @media (max-width: $mobile-only) 
+      font-size: 20px
+    
+  &__form 
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 20px
+
+    @media (max-width: $mobile-only) 
+      grid-template-columns: 1fr
+      gap: 10px
+
+  &__item 
+    position: relative
+    justify-self: stretch
+    transition: 0.8s
+    &--subject 
+      grid-column: 1/-1
+    &--message 
+      grid-column: 1/-1
+    &--invalid::after 
+      position: absolute
+      bottom: 0
+      left: 0
+      display: block
+      height: 3px
+      background-color: #ff0000
+      animation: error cubic-bezier(0.93, 0.02, 0.04, 1.01) 1s forwards
+      content: ""
+
+  &__field 
+    display: block
+    width: 100%
+    padding: 10px
+    margin: 0
+    background-color: $white
+    border: none
+    border-radius: 0
+    outline: 2px solid $main-color
+    font-family: "Coolvetica", "Arial", sans-serif
+    font-size: 20px
+    transition: 0.4s
+    &--message 
+      resize: vertical
+    &::placeholder 
+      color: fade($main-color, 50%)
+    &:hover 
+      background-color: lighten($main-color, 90%)
+    &:focus 
+      background-color: lighten($main-color, 80%)
+    &--error
+      outline: 2px solid red
+
+  &__submit 
+    padding: 10px
+    margin: 0
+    border: none
+    outline: 2px solid $main-color
+    border-radius: 0
+    grid-column: 1/-1
+    background-color: transparent
+    color: $main-color
+    cursor: $cursor-hover
+    transition: $link-transition
+    font-weight: 700
+    &:hover 
+      background-color: $main-color
+      color: $white
+    &:focus-visible 
+      background-color: $main-color
+      color: $white
+  
+  &__success-message
+    padding: 40px
+    outline: 2px solid $main-color
+    border-radius: 8px
+    text-align: center
