@@ -28,9 +28,11 @@ export function Header(): JSX.Element {
         {
           isMobile
             ?
-            <button className={burgerClassName} onClick={() => setOpened(!isOpened)}>
-              <span></span>
-            </button>
+            <div className="navigation__toggler-wrapper">
+              <button className={burgerClassName} onClick={() => setOpened(!isOpened)}>
+                <span></span>
+              </button>
+            </div>
             :
             ''
         }

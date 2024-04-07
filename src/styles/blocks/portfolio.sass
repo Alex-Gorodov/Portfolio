@@ -1,21 +1,20 @@
 .portfolio
   @include centralize
+  overflow: visible
   display: flex
   flex-direction: column
   transition: 0.3s
   &__list
     @include list-reset
     display: grid
-    padding: 20px
-    grid-template-columns: repeat(auto-fit, minmax(80px, 320px))
-    justify-content: center
+    grid-template-columns: repeat(auto-fit, minmax(80px, 420px))
+    justify-content: space-between
     transition: 0.3s
     gap: 40px
     @media (max-width: $mobile-only)
       padding: 0
     @media (min-width: $desktop)
-      padding: 20px 60px
-      gap: 60px 140px
+      gap: 120px 40px
   &__link
     @include link-reset
     display: flex
