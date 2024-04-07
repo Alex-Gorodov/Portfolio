@@ -89,19 +89,6 @@
     cursor: $cursor-hover
     &:active
       background-color: rgba($main-color, 50%)
-    &::after
-      position: absolute
-      top: -10px
-      left: -30px
-      display: block
-      width: 10px
-      height: 50px
-      background: linear-gradient(45deg, rgba($white, 0.5), rgba($white, 0.8), rgba($white, 0.5))
-      transform: rotate(30deg)
-      content: ''
-    &:hover::after
-      animation-name: button-effect
-      animation-duration: 0.7s
     &:focus-visible 
       background-color: $main-color
       color: $white
