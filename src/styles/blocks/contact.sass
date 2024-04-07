@@ -23,6 +23,10 @@
     display: grid
     grid-template-columns: repeat(2, 1fr)
     gap: 20px
+    &-wrapper
+      display: flex
+      justify-content: center
+      align-items: center
 
     @media (max-width: $mobile-only) 
       grid-template-columns: 1fr
@@ -89,7 +93,7 @@
       color: $white
   
   &__success-message
+    width: 100%
     padding: 40px
     outline: 2px solid $main-color
-    border-radius: 8px
     text-align: center

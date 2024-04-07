@@ -5,13 +5,14 @@ import { ReactComponent as Email} from '../../img/icons/email.svg';
 import { HeroNav, HERO_TEXT } from "../../const";
 import { Link } from "react-router-dom";
 import { Letter } from "./letter";
-import React, { Fragment } from "react";
-
-// window.alert('System\'s taking a breather for maintenance. Time for a digital makeover! Hang tight, grab a coffee, and let\'s wait for the upgrade!')
+import React, { Fragment, useState } from "react";
 
 export function Hero(): JSX.Element {
   const text = Array.from(HERO_TEXT);
-
+  const [isLoaded, setLoaded] = useState(false);
+  setTimeout(() => {
+    setLoaded(true);
+  }, 2000);
   return (
     <div className="hero">
       <h1 className="hero__title">
@@ -31,8 +32,8 @@ export function Hero(): JSX.Element {
         }
       })}
       </h1>
-      <p className="hero__description">Junior frontend developer</p>
-      <ul className="hero__navigation hero-nav">
+      <p className={`hero__description ${isLoaded ? '' : 'appearance'}`}>Junior frontend developer</p>
+      <ul className={`hero__navigation hero-nav ${isLoaded ? '' : 'appearance'}`}>
         <li className="hero-nav__item">
           <Link className="hero-nav__link" to={HeroNav.Github} rel="noreferrer nofollow" target="_blank">
             <span className="visually-hidden">to github profile</span>

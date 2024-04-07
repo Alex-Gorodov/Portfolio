@@ -44,9 +44,6 @@ export function Header(): JSX.Element {
           <li className="navigation__item">
             <a href={AppRoute.About} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>About</a>
           </li>
-          {/* <li className="navigation__item">
-            <a href={AppRoute.Skills} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Skills</a>
-          </li> */}
           <li className="navigation__item">
             <a href={AppRoute.Contacts} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Contact</a>
           </li>

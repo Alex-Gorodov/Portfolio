@@ -32,6 +32,15 @@ $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
   100% 
     left: calc(100% + 30px)
 
+@keyframes appearance
+  0%
+    transform: translateY(500px)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1
+    
+
 @mixin burger-line
   display: block
   width: 30px
@@ -89,3 +98,8 @@ body
 
 .section
   margin-bottom: 60px
+
+.appearance
+  animation-name: appearance
+  animation-duration: 1.4s
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 0.99)
