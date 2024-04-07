@@ -1,0 +1,29 @@
+.effect-button
+  @include link-reset
+  position: relative
+  width: 100%
+  max-width: 760px
+  text-align: center
+  margin: 0 auto
+  padding: 8px 40px
+  background-color: $main-color
+  color: $white
+  white-space: nowrap
+  transition: $link-transition
+  overflow: hidden
+  cursor: $cursor-hover
+  &:active
+    background-color: rgba($main-color, 50%)
+  &:hover
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2)
+  &::after 
+    content: ""
+    position: absolute
+    height: 200px
+    width: 20px
+    background: rgba(255, 255, 255, .6)
+    transform: translate(-50%, -30%) rotate(45deg)
+    transition: .7s all cubic-bezier(0.2, 1, 0.25, 1)
+    left: -35%
+  &:hover::after 
+    left: 135%

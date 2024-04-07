@@ -49,16 +49,16 @@
     cursor: $cursor-hover
     &:active
       background-color: rgba($main-color, 50%)
-    &::after
+    &:hover
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2)
+    &::after 
+      content: ""
       position: absolute
-      top: -10px
-      left: -30px
-      display: block
-      width: 10px
-      height: 50px
-      background: linear-gradient(45deg, rgba($white, 0.5), rgba($white, 0.8), rgba($white, 0.5))
-      transform: rotate(30deg)
-      content: ''
-    &:hover::after
-      animation-name: button-effect
-      animation-duration: 0.7s
+      height: 200px
+      width: 20px
+      background: rgba(255, 255, 255, .6)
+      transform: translate(-50%, -30%) rotate(45deg)
+      transition: .7s all cubic-bezier(0.2, 1, 0.25, 1)
+      left: -35%
+    &:hover::after 
+      left: 135%

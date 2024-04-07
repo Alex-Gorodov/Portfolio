@@ -85,7 +85,7 @@ export function Contact(): JSX.Element {
                     id="email"
                     placeholder="Email"
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                    // minLength={5}
+                    minLength={5}
                     required
                     value={formData.email}
                     onChange={handleInputChange}
@@ -115,7 +115,7 @@ export function Contact(): JSX.Element {
                     onChange={handleInputChange}
                   ></textarea>
                 </label>
-                <button className="contact__submit" type="submit" onClick={sendForm}>
+                <button className="effect-button contact__submit" type="submit" onClick={sendForm}>
                   Send message!
                 </button>
                 <p className={`contact__error-message ${isError && (formData.name.length < 2 || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email)) && 'contact__error-message--opened'}`}>Please fill in the required fields.</p>
