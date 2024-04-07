@@ -9,7 +9,6 @@
     gap: 40px
     transition: 0.3s
     background-color: $white
-    // background-color: red
     @media (max-width: $mobile-only)
       flex-direction: column
     &--mobile
@@ -17,20 +16,11 @@
       left: 0
       top: 50px
       transform: translateY(-100%)
-      box-shadow: 0px 15px 10px 5px rgba($main-color, 50%)
+      box-shadow: 0px 5px 10px 5px rgba($main-color, 50%)
       z-index: 5
       &-opened
         position: fixed
         transform: translateY(0)
-      // &::after
-      //   display: block
-      //   width: 100%
-      //   height: 20px
-      //   position: absolute
-      //   bottom: -20px
-      //   left: 0
-      //   background-color: $white
-      //   content: ''
 
   &__link
     @include link-reset
@@ -53,13 +43,12 @@
       top: 0
       right: 0
       display: flex
+      padding: 0 20px
       align-items: center
       justify-content: flex-end
       width: 100%
-      position: fixed
       height: 50px
       background-color: white
-      // box-shadow: 0px 10px 10px 5px rgba($main-color, 50%)
       z-index: 10
     & span
       @include burger-line
