@@ -7,6 +7,7 @@
     display: grid
     grid-template-columns: repeat(2, 1fr)
     gap: 40px
+    align-items: start
     @media (max-width: $mobile-only) 
       grid-template-columns: 1fr
       gap: 20px
@@ -88,7 +89,6 @@
     font-size: 16px
     font-family: inherit
     overflow: hidden
-    cursor: $cursor-hover
     &:active
       background-color: rgba($main-color, 50%)
     &:focus-visible 

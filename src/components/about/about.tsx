@@ -22,7 +22,7 @@ export function About(): JSX.Element {
           const speedRight = parseFloat(speedRightAttr);
 
           const offsetYLeft = -scrollY * speedLeft;
-          const offsetYRight = -scrollY * speedRight;
+          const offsetYRight = scrollY * speedRight;
 
           parallaxLeftRef.current.style.transform = `translateY(${offsetYLeft / 2}px) rotate(${offsetYLeft / 8}deg)`;
           parallaxRightRef.current.style.transform = `translateY(${offsetYRight / 2}px) rotate(${offsetYRight / 8}deg)`;
@@ -47,10 +47,10 @@ export function About(): JSX.Element {
   }, []);
   return (
     <section className='section about' id="about" ref={aboutRef}>
-      <div className={`about__parallax about__parallax--left ${isAboutSectionInView && 'design'}`} data-speed={0.3} ref={parallaxLeftRef}>
+      <div className={`about__parallax about__parallax--left ${isAboutSectionInView && 'design'}`} data-speed={0.5} ref={parallaxLeftRef}>
         <ParallaxA/>
       </div>
-      <div className={`about__parallax about__parallax--right ${isAboutSectionInView && 'nothing'}`} data-speed={0.6} ref={parallaxRightRef}>
+      <div className={`about__parallax about__parallax--right ${isAboutSectionInView && 'nothing'}`} data-speed={0.8} ref={parallaxRightRef}>
         <ParallaxB/>
       </div>
       <div>
