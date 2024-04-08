@@ -14,10 +14,15 @@ import { ReactComponent as HTML } from "../../img/icons/html.svg"
 import { ReactComponent as Less } from "../../img/icons/less.svg"
 import { ReactComponent as JS } from "../../img/icons/js.svg"
 import { ReactComponent as CSS } from "../../img/icons/css.svg"
+import { AppRoute } from "../../const";
 
 type PortfolioItemProps = {
   item: PortfolioItemType;
 }
+
+// const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, cupiditate?";
+// console.log(text.endsWith("Vero, cupiditate?") && text.replace("Vero, cupiditate?", <Link to={AppRoute.Contacts}>Cone</Link>));
+
 
 export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
   return (
@@ -51,9 +56,17 @@ export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
       </Link>
       <p className="portfolio-item__description">
         {
-          item.description
+          item.description.endsWith('HTML Academy.')
+            ?
+              <>
+                {item.description.replace('HTML Academy.', '')}
+                <Link className="portfolio-item__description--link" to={"https://htmlacademy.ru"}>{" HTML Academy"}</Link>
+              </>
+            :
+              item.description
         }
       </p>
+
       <ul className="portfolio-item__technologies">
         {
           item.technologies.map((item) => {
