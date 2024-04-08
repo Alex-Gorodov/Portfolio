@@ -60,7 +60,7 @@ export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
             ?
               <>
                 {item.description.replace('HTML Academy.', '')}
-                <Link className="portfolio-item__description--link" to={"https://htmlacademy.ru"}>{" HTML Academy"}</Link>
+                <Link className="portfolio-item__description--link" rel="noreferrer nofollow" target="_blank" to={"https://htmlacademy.ru"}>{" HTML Academy"}</Link>
               </>
             :
               item.description
