@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AppRoute } from "../../const";
 import cn from 'classnames';
+import { useOutsideClick } from "../../hooks/useClickOutside";
 
 export function Header(): JSX.Element {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 580);
@@ -22,6 +23,10 @@ export function Header(): JSX.Element {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const ref = useOutsideClick(() => {
+    setOpened(false)
+  }) as React.RefObject<HTMLUListElement>
+
   return (
     <header>
       <nav className="navigation">
@@ -36,7 +41,7 @@ export function Header(): JSX.Element {
             :
             ''
         }
-        <ul className={menuClassName}>
+        <ul className={menuClassName} ref={ref}>
           <li className="navigation__item">
             <a href={AppRoute.Root} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Home</a>
           </li>
