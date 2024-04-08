@@ -1,0 +1,147 @@
+@keyframes path-anim 
+  to
+    stroke-dashoffset: 0
+
+@keyframes path-page-anim 
+  from 
+    transform: translateY(100%)
+  to 
+    stroke-dashoffset: 0
+    transform: translateY(0)
+
+.nothing  
+  & path:nth-child(1)
+    @include svg-about-animation
+    stroke-dasharray: 449px
+    stroke-dashoffset: 449px
+
+  & path:nth-child(2)
+    @include svg-about-animation
+    stroke-dasharray: 82px
+    stroke-dashoffset: 82px
+
+  & path:nth-child(3) 
+    @include svg-about-animation
+    stroke-dasharray: 145px
+    stroke-dashoffset: 145px
+
+  & path:nth-child(4) 
+    @include svg-about-animation
+    stroke-dasharray: 33px
+    stroke-dashoffset: 33px
+
+  & path:nth-child(5) 
+    @include svg-about-animation
+    stroke-dasharray: 13px
+    stroke-dashoffset: 13px
+
+  & path:nth-child(6) 
+    @include svg-about-animation
+    stroke-dasharray: 201px
+    stroke-dashoffset: 201px
+
+  & path:nth-child(7) 
+    @include svg-about-animation
+    stroke-dasharray: 55px
+    stroke-dashoffset: 55px
+
+  & path:nth-child(8) 
+    @include svg-about-animation
+    stroke-dasharray: 104px
+    stroke-dashoffset: 104px
+
+  & path:nth-child(9)
+    @include svg-page-animation
+    stroke-dasharray: 243px
+    stroke-dashoffset: 243px
+
+.design
+  & path:nth-child(1) 
+    @include svg-page-animation
+    stroke-dasharray: 156px
+    stroke-dashoffset: 156px
+
+  & path:nth-child(2) 
+    @include svg-page-animation
+    stroke-dasharray: 46px
+    stroke-dashoffset: 46px
+
+  & path:nth-child(3) 
+    @include svg-page-animation
+    stroke-dasharray: 43px
+    stroke-dashoffset: 43px
+
+  & path:nth-child(4) 
+    @include svg-about-animation
+    stroke-dasharray: 221px
+    stroke-dashoffset: 221px
+
+  & path:nth-child(5) 
+    @include svg-about-animation
+    stroke-dasharray: 150px
+    stroke-dashoffset: 150px
+
+  & path:nth-child(6) 
+    @include svg-page-animation
+    stroke-dasharray: 290px
+    stroke-dashoffset: 290px
+
+  & path:nth-child(7) 
+    @include svg-page-animation
+    stroke-dasharray: 41px
+    stroke-dashoffset: 41px
+
+  & path:nth-child(8) 
+    @include svg-page-animation
+    stroke-dasharray: 18px
+    stroke-dashoffset: 18px
+
+  & path:nth-child(9) 
+    @include svg-page-animation
+    stroke-dasharray: 12px
+    stroke-dashoffset: 12px
+
+  & path:nth-child(10) 
+    @include svg-page-animation
+    stroke-dasharray: 82px
+    stroke-dashoffset: 82px
+
+  & path:nth-child(11) 
+    @include svg-page-animation
+    stroke-dasharray: 33px
+    stroke-dashoffset: 33px
+
+  & path:nth-child(12) 
+    @include svg-page-animation
+    stroke-dasharray: 33px
+    stroke-dashoffset: 33px
+
+  & path:nth-child(13) 
+    @include svg-page-animation
+    stroke-dasharray: 35px
+    stroke-dashoffset: 35px
+
+  & path:nth-child(14) 
+    @include svg-page-animation
+    stroke-dasharray: 33px
+    stroke-dashoffset: 33px
+
+  & path:nth-child(15) 
+    @include svg-page-animation
+    stroke-dasharray: 15px
+    stroke-dashoffset: 15px
+
+  & circle:nth-child(16) 
+    @include svg-page-animation
+    stroke-dasharray: 30px
+    stroke-dashoffset: 30px
+
+  & circle:nth-child(17) 
+    @include svg-about-animation
+    stroke-dasharray: 35px
+    stroke-dashoffset: 35px
+
+  & circle:nth-child(18) 
+    @include svg-page-animation
+    stroke-dasharray: 35x
+    stroke-dashoffset: 35x

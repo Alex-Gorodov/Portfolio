@@ -62,6 +62,17 @@ $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
 @mixin centralize
   max-width: 1440px
   margin-inline: auto
+
+@mixin svg-about-animation
+  animation: path-anim 2.6s ease
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+
+@mixin svg-page-animation
+  animation: path-page-anim 2.6s ease
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+  animation-delay: 0.4s
   
 *,
 *::after,

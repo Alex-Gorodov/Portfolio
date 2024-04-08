@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Pdf from '../../alex_gorodov_cv.pdf';
 import { ReactComponent as ParallaxA} from '../../img/parallax/parallax-1.svg'
 import { ReactComponent as ParallaxB} from '../../img/parallax/parallax-2.svg'
@@ -6,6 +6,8 @@ import { ReactComponent as ParallaxB} from '../../img/parallax/parallax-2.svg'
 export function About(): JSX.Element {
   const parallaxLeftRef = useRef<HTMLDivElement>(null);
   const parallaxRightRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const [isAboutSectionInView, setAboutSectionInView] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,15 @@ export function About(): JSX.Element {
 
           parallaxLeftRef.current.style.transform = `translateY(${offsetYLeft / 2}px) rotate(${offsetYLeft / 8}deg)`;
           parallaxRightRef.current.style.transform = `translateY(${offsetYRight / 2}px) rotate(${offsetYRight / 8}deg)`;
+
+          const aboutRect = aboutRef.current?.getBoundingClientRect();
+          const aboutTop = aboutRect?.top;
+
+          const windowHeight = window.innerHeight;
+
+          if (aboutTop && aboutTop < windowHeight) {
+            setAboutSectionInView(true)
+          }
         }
       }
     };
@@ -35,11 +46,11 @@ export function About(): JSX.Element {
     };
   }, []);
   return (
-    <section className='section about' id="about">
-      <div className="about__parallax about__parallax--left" data-speed={0.3} ref={parallaxLeftRef}>
+    <section className='section about' id="about" ref={aboutRef}>
+      <div className={`about__parallax about__parallax--left ${isAboutSectionInView && 'design'}`} data-speed={0.3} ref={parallaxLeftRef}>
         <ParallaxA/>
       </div>
-      <div className="about__parallax about__parallax--right" data-speed={0.6} ref={parallaxRightRef}>
+      <div className={`about__parallax about__parallax--right ${isAboutSectionInView && 'nothing'}`} data-speed={0.6} ref={parallaxRightRef}>
         <ParallaxB/>
       </div>
       <div>
