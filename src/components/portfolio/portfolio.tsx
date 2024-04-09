@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { PROJECTS } from "../../mocks/portfolio-items";
 import { PortfolioItem } from "./portfolio-item";
+import { useState } from "react";
 
 export function Portfolio(): JSX.Element {
   const [isLoaded, setLoaded] = useState(false);

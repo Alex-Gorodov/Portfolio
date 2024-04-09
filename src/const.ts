@@ -24,9 +24,7 @@ export enum LetterColors {
 export enum AppRoute {
   Root = "/Portfolio",
   Works = "#portfolio",
-  // PortfolioItem = "#portfolio/:id",
   About = "#about",
-  // Skills = "#skills",
   Contacts = "#contact",
   CV = "/alex_gorodov_cv.pdf",
   PageNotFound = "*",

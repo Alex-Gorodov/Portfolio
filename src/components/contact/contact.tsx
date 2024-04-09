@@ -1,6 +1,6 @@
+import { Spinner } from '../spinner/spinner';
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Spinner } from '../spinner/spinner';
 
 export function Contact(): JSX.Element {
   const [formData, setFormData] = useState({
@@ -119,7 +119,6 @@ export function Contact(): JSX.Element {
                   Send message!
                 </button>
                 <p className={`contact__error-message ${isError && (formData.name.length < 2 || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email)) && 'contact__error-message--opened'}`}>Please fill in the required fields.</p>
-                {/* <p className={`contact__error-message ${isError && (formData.name.length < 2 || formData.email.length < 5) && 'contact__error-message--opened'}`}>Please fill in the required fields.</p> */}
               </form>
             )}
           </div>

@@ -2,10 +2,10 @@ import { ReactComponent as Linkedin} from '../../img/icons/linkedin.svg';
 import { ReactComponent as Telegram} from '../../img/icons/telegram.svg';
 import { ReactComponent as Github} from '../../img/icons/github.svg';
 import { ReactComponent as Email} from '../../img/icons/email.svg';
+import React, { Fragment, useState } from "react";
 import { HeroNav, HERO_TEXT } from "../../const";
 import { Link } from "react-router-dom";
 import { Letter } from "./letter";
-import React, { Fragment, useState } from "react";
 
 export function Hero(): JSX.Element {
   const text = Array.from(HERO_TEXT);

@@ -1,7 +1,9 @@
+import { useOutsideClick } from "../../hooks/useClickOutside";
 import { useEffect, useState } from "react";
 import { AppRoute } from "../../const";
 import cn from 'classnames';
-import { useOutsideClick } from "../../hooks/useClickOutside";
+import { Link } from "react-router-dom";
+import { PROJECTS } from "../../mocks/portfolio-items";
 
 export function Header(): JSX.Element {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 580);
@@ -13,6 +15,8 @@ export function Header(): JSX.Element {
   const burgerClassName = cn('navigation__toggler', {
     'navigation__toggler--opened' : isOpened
   })
+
+  const [isWorksListOpened, setWorksListOpened] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,16 +47,30 @@ export function Header(): JSX.Element {
         }
         <ul className={menuClassName} ref={ref}>
           <li className="navigation__item">
-            <a href={AppRoute.Root} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Home</a>
+            <Link to={AppRoute.Root} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Home</Link>
+          </li>
+          <li className="navigation__item navigation__item--dropdown-trigger">
+            <Link to={AppRoute.Works} className="navigation__link" rel="noreferrer nofollow" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)} onClick={() => setOpened(false)}>Works</Link>
+            {
+              isWorksListOpened &&
+              <ul className="navigation__dropdown-list" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)}>
+                {
+                  PROJECTS.map((project) => {
+                    return (
+                      <li className="navigation__item">
+                        <Link to={project.path} className="navigation__link navigation__link--dropdown">{project.name}</Link>
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            }
           </li>
           <li className="navigation__item">
-            <a href={AppRoute.Works} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Works</a>
+            <Link to={AppRoute.About} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>About</Link>
           </li>
           <li className="navigation__item">
-            <a href={AppRoute.About} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>About</a>
-          </li>
-          <li className="navigation__item">
-            <a href={AppRoute.Contacts} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Contact</a>
+            <Link to={AppRoute.Contacts} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Contact</Link>
           </li>
         </ul>
       </nav>

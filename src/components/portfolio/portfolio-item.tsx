@@ -1,28 +1,23 @@
 import { Link } from "react-router-dom";
 import { PortfolioItemType } from "../../types/portfolio-item";
-import { ReactComponent as CatEnergy } from "../../img/portfolio/logos/cat-energy.svg"
-import { ReactComponent as Gllacy } from "../../img/portfolio/logos/gllacy.svg"
-import { ReactComponent as Createx } from "../../img/portfolio/logos/createx.svg"
-import { ReactComponent as Sedona } from "../../img/portfolio/logos/sedona.svg"
 import { ReactComponent as BrightLights } from "../../img/portfolio/logos/bright-lights.svg"
+import { ReactComponent as CatEnergy } from "../../img/portfolio/logos/cat-energy.svg"
+import { ReactComponent as Createx } from "../../img/portfolio/logos/createx.svg"
+import { ReactComponent as Gllacy } from "../../img/portfolio/logos/gllacy.svg"
+import { ReactComponent as Sedona } from "../../img/portfolio/logos/sedona.svg"
 import { ReactComponent as Device } from "../../img/portfolio/logos/device.svg"
 import { ReactComponent as React } from "../../img/icons/react.svg"
-import { ReactComponent as TS } from "../../img/icons/ts.svg"
 import { ReactComponent as Redux } from "../../img/icons/redux.svg"
 import { ReactComponent as Sass } from "../../img/icons/sass.svg"
 import { ReactComponent as HTML } from "../../img/icons/html.svg"
 import { ReactComponent as Less } from "../../img/icons/less.svg"
-import { ReactComponent as JS } from "../../img/icons/js.svg"
 import { ReactComponent as CSS } from "../../img/icons/css.svg"
-import { AppRoute } from "../../const";
+import { ReactComponent as JS } from "../../img/icons/js.svg"
+import { ReactComponent as TS } from "../../img/icons/ts.svg"
 
 type PortfolioItemProps = {
   item: PortfolioItemType;
 }
-
-// const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, cupiditate?";
-// console.log(text.endsWith("Vero, cupiditate?") && text.replace("Vero, cupiditate?", <Link to={AppRoute.Contacts}>Cone</Link>));
-
 
 export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
   return (
@@ -81,13 +76,13 @@ export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
                         return <TS/>
                       case 'Redux':
                         return <Redux/>
-                      case 'CSS(SASS)':
+                      case 'SASS(CSS)':
                         return <Sass/>
-                      case 'CSS(Less)':
+                      case 'Less(CSS)':
                         return <Less/>
                       case 'HTML':
                         return <HTML/>
-                      case '"Vanilla" JS':
+                      case 'JavaScript':
                         return <JS/>
                       case 'CSS':
                         return <CSS/>
