@@ -16,7 +16,7 @@ export function Header(): JSX.Element {
     'navigation__toggler--opened' : isOpened
   })
 
-  const [isWorksListOpened, setWorksListOpened] = useState(true);
+  const [isWorksListOpened, setWorksListOpened] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,10 +47,10 @@ export function Header(): JSX.Element {
         }
         <ul className={menuClassName} ref={ref}>
           <li className="navigation__item">
-            <Link to={AppRoute.Root} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Home</Link>
+            <a href={AppRoute.Root} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Home</a>
           </li>
           <li className="navigation__item navigation__item--dropdown-trigger">
-            <Link to={AppRoute.Works} className="navigation__link" rel="noreferrer nofollow" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)} onClick={() => setOpened(false)}>Works</Link>
+            <a href={AppRoute.Works} className="navigation__link" rel="noreferrer nofollow" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)} onClick={() => {setOpened(false); setWorksListOpened(false)}}>Works</a>
             {
               isWorksListOpened &&
               <ul className="navigation__dropdown-list" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)}>
@@ -58,7 +58,7 @@ export function Header(): JSX.Element {
                   PROJECTS.map((project) => {
                     return (
                       <li className="navigation__item">
-                        <Link to={project.path} className="navigation__link navigation__link--dropdown">{project.name}</Link>
+                        <Link to={project.path} className="navigation__link navigation__link--dropdown" rel="noreferrer nofollow" target="_blank">{project.name}</Link>
                       </li>
                     )
                   })
@@ -67,10 +67,10 @@ export function Header(): JSX.Element {
             }
           </li>
           <li className="navigation__item">
-            <Link to={AppRoute.About} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>About</Link>
+            <a href={AppRoute.About} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>About</a>
           </li>
           <li className="navigation__item">
-            <Link to={AppRoute.Contacts} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Contact</Link>
+            <a href={AppRoute.Contacts} className="navigation__link" rel="noreferrer nofollow" onClick={() => setOpened(false)}>Contact</a>
           </li>
         </ul>
       </nav>
