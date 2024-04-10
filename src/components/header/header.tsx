@@ -1,9 +1,9 @@
 import { useOutsideClick } from "../../hooks/useClickOutside";
+import { PROJECTS } from "../../mocks/portfolio-items";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { AppRoute } from "../../const";
 import cn from 'classnames';
-import { Link } from "react-router-dom";
-import { PROJECTS } from "../../mocks/portfolio-items";
 
 export function Header(): JSX.Element {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 580);

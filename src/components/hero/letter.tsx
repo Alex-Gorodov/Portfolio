@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { LetterColors } from "../../const";
 import cn from 'classnames';
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../store/RootState";
+import { setLastLetterIndex } from "../../store/hero/hero-actions";
 
 type LetterProps = {
   letter: string;
@@ -14,20 +17,24 @@ export function Letter({ letter, index }: LetterProps) {
     return colors[randomIndex];
   }
 
+  const dispatch = useDispatch();
+  const lastIndex = useSelector((state: RootState) => state.hero.lastIndex);
+
   const [isHovered, setHovered] = useState(false);
   const [isLoaded, setLoaded] = useState(false);
 
   const letterClassName = cn('hero__letter', {
-    'hero__letter--animated': isHovered
+    'hero__letter--animated': isHovered,
+    'hero__letter--last': lastIndex === index
   });
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
-    }, 50 * index);
-
+      dispatch(setLastLetterIndex({index}))
+    }, 55 * index);
     return () => clearTimeout(timer);
-  }, [index]);
+  }, [index, dispatch]);
 
   return (
     <span

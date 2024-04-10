@@ -10,9 +10,11 @@ import { Letter } from "./letter";
 export function Hero(): JSX.Element {
   const text = Array.from(HERO_TEXT);
   const [isLoaded, setLoaded] = useState(false);
+
   setTimeout(() => {
     setLoaded(true);
   }, 2000);
+
   return (
     <div className="hero">
       <h1 className="hero__title">
@@ -20,14 +22,14 @@ export function Hero(): JSX.Element {
         switch (char) {
           case " ":
             return <Fragment key={`space-${Math.random() * 10}`}>&nbsp;</Fragment>;
-          case ",":
-            return (
-              <React.Fragment key={char + '-' + index}>
-                <Letter key={char + '-' + index} letter={char} index={index}/>
+            case ",":
+              return (
+                <React.Fragment key={char + '-' + index}>
+                  <Letter key={char + '-' + index} letter={char} index={index}/>
                 <br/>
               </React.Fragment>
             );
-          default:
+            default:
             return <Letter key={char + '-' + index} letter={char} index={index}/>;
         }
       })}
