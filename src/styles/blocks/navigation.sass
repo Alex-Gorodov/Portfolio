@@ -45,16 +45,16 @@
     padding: 11px 40px
     cursor: $cursor-hover
     white-space: nowrap
-    &--dropdown::after
-      position: absolute
-      bottom: 0
-      left: 0
-      display: block
-      height: 1px
-      width: 100%
-      background-color: $main-color
-      content: ''
-
+    &--dropdown
+      &::after
+        position: absolute
+        bottom: 0
+        left: 0
+        display: block
+        height: 1px
+        width: 100%
+        background-color: $main-color
+        content: ''
     &:hover
       background-color: $main-color
       color: $white

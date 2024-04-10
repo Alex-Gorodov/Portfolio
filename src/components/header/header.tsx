@@ -52,12 +52,12 @@ export function Header(): JSX.Element {
           <li className="navigation__item navigation__item--dropdown-trigger">
             <a href={AppRoute.Works} className="navigation__link" rel="noreferrer nofollow" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)} onClick={() => {setOpened(false); setWorksListOpened(false)}}>Works</a>
             {
-              isWorksListOpened &&
+              !isMobile && isWorksListOpened &&
               <ul className="navigation__dropdown-list" onMouseEnter={() => setWorksListOpened(true)} onMouseLeave={() => setWorksListOpened(false)}>
                 {
                   PROJECTS.map((project) => {
                     return (
-                      <li className="navigation__item">
+                      <li className="navigation__item" key={`works-${project.name}`}>
                         <Link to={project.path} className="navigation__link navigation__link--dropdown" rel="noreferrer nofollow" target="_blank">{project.name}</Link>
                       </li>
                     )
