@@ -50,13 +50,23 @@ $cursor-hover: url('/img/cursors/cursor-hover.svg'), auto
     transform: translateY(0)
     opacity: 1
     
-@keyframes error-animation 
+@keyframes error-animation-first
   0%
     transform: translateX(0)
   10%, 30%, 50%, 70%, 90%
     transform: translateX(-3px)
   20%, 40%, 60%, 80%
     transform: translateX(3px)
+  100%
+    transform: translateX(0)
+    
+@keyframes error-animation-second
+  0%
+    transform: translateX(0)
+  10%, 30%, 50%, 70%, 90%
+    transform: translateX(3px)
+  20%, 40%, 60%, 80%
+    transform: translateX(-3px)
   100%
     transform: translateX(0)
 

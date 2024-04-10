@@ -42,8 +42,11 @@
     &--wide
       grid-column: 1/-1
     &--error
-      animation-name: error-animation
       animation-duration: 0.5s
+      &:first-of-type
+        animation-name: error-animation-first
+      &:nth-of-type(2)
+        animation-name: error-animation-second
 
   &__field 
     display: block

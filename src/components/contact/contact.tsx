@@ -1,5 +1,5 @@
 import { Spinner } from '../spinner/spinner';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 export function Contact(): JSX.Element {
