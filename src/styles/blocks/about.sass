@@ -8,33 +8,35 @@
   flex-direction: column
   background-color: rgba($main-color, 30%)
   box-shadow: inset 0px 10px 10px 0px rgba($main-color, 40%), inset 0px -10px 10px 0px rgba($main-color, 40%)
-  background-image: url("/img/about-bg.png")
-  // background-size: 60px 140px
-  // background-position: center
-  // background-repeat: round
-  background-attachment: fixed
+  @media (min-width: $desktop)
+    text-shadow: 0px 0px 5px $white
+    background-image: url("/img/about-bg.png")
+    background-attachment: fixed
+    background-position: center
+    background-size: cover
   &__text
     max-width: 760px
     text-align: justify
     font-weight: 600
+    cursor: text
 
-  // &__parallax
-  //   position: absolute
-  //   opacity: 0.3
-  //   @media (max-width: $mobile-only)
-  //     opacity: 0.05
+  &__parallax
+    position: absolute
+    opacity: 0.1
+    @media (max-width: $mobile-only)
+      opacity: 0.05
 
-  // &__parallax--left
-  //   top: 500px
-  //   left: 5%
-  //   @media (max-width: $mobile-only)
-  //     display: none
+  &__parallax--left
+    top: 500px
+    left: 5%
+    @media (max-width: $mobile-only)
+      // display: none
 
-  // &__parallax--right
-  //   top: -300px
-  //   right: 5%
-  //   @media (max-width: $mobile-only)
-  //     display: none
+  &__parallax--right
+    top: -300px
+    right: 5%
+    @media (max-width: $mobile-only)
+      // display: none
 
   &__cv-btn
     @include link-reset
