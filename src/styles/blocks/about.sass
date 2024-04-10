@@ -7,30 +7,34 @@
   gap: 40px
   flex-direction: column
   background-color: rgba($main-color, 30%)
-  box-shadow: 0px 0px 10px 10px rgba($main-color, 40%)
+  box-shadow: inset 0px 10px 10px 0px rgba($main-color, 40%), inset 0px -10px 10px 0px rgba($main-color, 40%)
+  background-image: url("/img/about-bg.png")
+  // background-size: 60px 140px
+  // background-position: center
+  // background-repeat: round
+  background-attachment: fixed
   &__text
     max-width: 760px
     text-align: justify
-    &:first-of-type
-      margin-top: 0
+    font-weight: 600
 
-  &__parallax
-    position: absolute
-    opacity: 0.3
-    @media (max-width: $mobile-only)
-      opacity: 0.05
+  // &__parallax
+  //   position: absolute
+  //   opacity: 0.3
+  //   @media (max-width: $mobile-only)
+  //     opacity: 0.05
 
-  &__parallax--left
-    top: 500px
-    left: 5%
-    @media (max-width: $mobile-only)
-      display: none
+  // &__parallax--left
+  //   top: 500px
+  //   left: 5%
+  //   @media (max-width: $mobile-only)
+  //     display: none
 
-  &__parallax--right
-    top: -300px
-    right: 5%
-    @media (max-width: $mobile-only)
-      display: none
+  // &__parallax--right
+  //   top: -300px
+  //   right: 5%
+  //   @media (max-width: $mobile-only)
+  //     display: none
 
   &__cv-btn
     @include link-reset

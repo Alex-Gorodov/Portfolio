@@ -64,7 +64,7 @@ export function Contact(): JSX.Element {
               </div>
             ) : (
               <form className="contact__form" action="https://formspree.io/f/mgebwvrj" method="POST">
-                <label className="contact__item contact__item--name contact__item--required" htmlFor="name">
+                <label className={`contact__item ${isError && 'contact__item--error'}`} htmlFor="name">
                   <input
                     className={`contact__field ${isError && formData.name.length < 2 && 'contact__field--error'}`}
                     type="text"
@@ -77,7 +77,7 @@ export function Contact(): JSX.Element {
                     onChange={handleInputChange}
                   />
                 </label>
-                <label className="contact__item contact__item--email contact__item--required" htmlFor="email">
+                <label className={`contact__item ${isError && 'contact__item--error'}`} htmlFor="email">
                   <input
                     className={`contact__field ${isError && !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email) && 'contact__field--error'}`}
                     type="email"
@@ -91,7 +91,7 @@ export function Contact(): JSX.Element {
                     onChange={handleInputChange}
                   />
                 </label>
-                <label className="contact__item contact__item--subject" htmlFor="subject">
+                <label className="contact__item contact__item--wide" htmlFor="subject">
                   <input
                     className="contact__field"
                     type="text"
@@ -102,7 +102,7 @@ export function Contact(): JSX.Element {
                     onChange={handleInputChange}
                   />
                 </label>
-                <label className="contact__item contact__item--message contact__item--required" htmlFor="message">
+                <label className="contact__item contact__item--wide" htmlFor="message">
                   <textarea
                     className="contact__field contact__field--message"
                     name="message"
