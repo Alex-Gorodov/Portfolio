@@ -73,19 +73,19 @@ export function About(): JSX.Element {
       <div>
         <h2>About</h2>
         <p className='about__text'>
-          I'm a highly motivated front-end developer. I've been writing pet projects using React with TypeScript for over a year now. I'm all about crafting clean, efficient, and easy-to-maintain code. I follow two important principles: DRY and KISS.
+          I'm a highly motivated front-end developer with over a year of experience crafting pet projects using React and TypeScript. My focus is on writing clean, efficient, and maintainable code, adhering to principles like DRY (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid).
         </p>
         <p className='about__text'>
-          I believe in simplicity and elegance in design. I aim to create user interfaces that are intuitive, accessible, and responsive across all devices and platforms.
+          I prioritize simplicity and elegance in design, striving to create intuitive, accessible, and responsive user interfaces across various devices and platforms.
         </p>
         <p className='about__text'>
-          Semantic correctness is key for me. I make sure that my code is well-organized and easy to understand, both for humans and machines.
+          Ensuring semantic correctness is essential to me. I take care to organize my code in a way that's easily understandable for both humans and machines.
         </p>
         <p className='about__text'>
-          With a solid foundation in HTML, CSS, and JavaScript, I'm excited to continue learning and growing. I'm eager to contribute to innovative projects that push the boundaries of what's possible on the web.
+          With a strong foundation in HTML, CSS, and JavaScript, I'm eager to continue expanding my skills and knowledge. I'm particularly interested in contributing to innovative projects that challenge the limits of web development.
         </p>
         <p className='about__text'>
-          Recently, I've been diving deeper into React, TypeScript, and Redux. These tools allow me to build even better and more scalable web applications.
+          Recently, I've been delving deeper into React, TypeScript, and Redux, enabling me to develop even more robust and scalable web applications. I'm actively seeking a full-time opportunity where I can apply my expertise and contribute to meaningful projects.
         </p>
       </div>
       <a className="effect-button" href={Pdf} rel="noreferrer nofollow" target="_blank" download>Download CV</a>
