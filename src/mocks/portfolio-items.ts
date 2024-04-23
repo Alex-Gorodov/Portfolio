@@ -11,6 +11,15 @@ export const PROJECTS: PortfolioItemType[] = [
     isAdaptive: true,
   },
   {
+    id: "divesea",
+    name: "DiveSea",
+    path: "https://alex-gorodov.github.io/divesea",
+    description: "Explore our dynamic NFT marketplace to discover, create, and sell thousands of artworks. Join now for a $20 bonus and unleash your creativity!",
+    technologies: ["React", "TypeScript", "Redux", "SASS(CSS)"],
+    img: process.env.PUBLIC_URL + "/img/portfolio/divesea",
+    isAdaptive: true,
+  },
+  {
     id: "bright-lights",
     name: "Bright Lights",
     path: "https://alex-gorodov.github.io/bright-lights/",
