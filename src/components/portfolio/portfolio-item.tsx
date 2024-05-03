@@ -15,7 +15,7 @@ import { ReactComponent as Less } from "../../img/icons/less.svg"
 import { ReactComponent as CSS } from "../../img/icons/css.svg"
 import { ReactComponent as JS } from "../../img/icons/js.svg"
 import { ReactComponent as TS } from "../../img/icons/ts.svg"
-
+import { ReactComponent as Firebase } from "../../img/icons/firebase.svg"
 type PortfolioItemProps = {
   item: PortfolioItemType;
 }
@@ -89,6 +89,8 @@ export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
                         return <JS/>
                       case 'CSS':
                         return <CSS/>
+                      case 'Firebase':
+                        return <Firebase/>
                       default:
                         return item;
                     }

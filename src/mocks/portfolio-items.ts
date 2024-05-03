@@ -15,7 +15,7 @@ export const PROJECTS: PortfolioItemType[] = [
     name: "DiveSea",
     path: "https://alex-gorodov.github.io/divesea",
     description: "Explore our dynamic NFT marketplace to discover, create, and sell thousands of artworks. Join now for a $20 bonus and unleash your creativity!",
-    technologies: ["React", "TypeScript", "Redux", "SASS(CSS)"],
+    technologies: ["React", "TypeScript", "Redux", "SASS(CSS)", "Firebase"],
     img: process.env.PUBLIC_URL + "/img/portfolio/divesea",
     isAdaptive: true,
   },
