@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2af483e4.css",
-    "main.js": "/Portfolio/static/js/main.1ff9b732.js",
+    "main.js": "/Portfolio/static/js/main.50765f13.js",
     "static/media/about-bg.png": "/Portfolio/static/media/about-bg.d9fe2dcbbeef78114528.png",
     "static/media/alex_gorodov_cv.pdf": "/Portfolio/static/media/alex_gorodov_cv.5fc4aa6ef2ff339a8296.pdf",
     "static/media/bright-lights.svg": "/Portfolio/static/media/bright-lights.d628b77e86493caaa3893a52bc099be7.svg",
@@ -26,13 +26,14 @@
     "static/media/js.svg": "/Portfolio/static/media/js.d1b48c44a06f579fe056ff54f6bf4d86.svg",
     "static/media/telegram.svg": "/Portfolio/static/media/telegram.6af9f7ee9383c2ca95e38ce71e8df81e.svg",
     "static/media/ts.svg": "/Portfolio/static/media/ts.b515362ad2bdd9d2911af2f3d9047f32.svg",
+    "static/media/firebase.svg": "/Portfolio/static/media/firebase.7e910046f7b0de58268d6d359f56395a.svg",
     "static/media/css.svg": "/Portfolio/static/media/css.683563aae41322a7b00dfbc08a0caab8.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.dcec69b208e28160b0ee1eb5d1b77cc2.svg",
     "main.2af483e4.css.map": "/Portfolio/static/css/main.2af483e4.css.map",
-    "main.1ff9b732.js.map": "/Portfolio/static/js/main.1ff9b732.js.map"
+    "main.50765f13.js.map": "/Portfolio/static/js/main.50765f13.js.map"
   },
   "entrypoints": [
     "static/css/main.2af483e4.css",
-    "static/js/main.1ff9b732.js"
+    "static/js/main.50765f13.js"
   ]
 }
