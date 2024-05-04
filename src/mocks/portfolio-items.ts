@@ -2,21 +2,21 @@ import { PortfolioItemType } from "../types/portfolio-item";
 
 export const PROJECTS: PortfolioItemType[] = [
   {
-    id: "gllacy",
-    name: "Gllacy",
-    path: "https://alex-gorodov.github.io/gllacy",
-    description: "Gllacy store offers a delightful selection of homemade ice cream flavors. Enjoy natural ingredients, free delivery, and exclusive gifts with every purchase. The design belongs to HTML Academy.",
-    technologies: ["React", "TypeScript", "Redux", "SASS(CSS)"],
-    img: process.env.PUBLIC_URL + "/img/portfolio/gllacy",
-    isAdaptive: true,
-  },
-  {
     id: "divesea",
     name: "DiveSea",
     path: "https://alex-gorodov.github.io/divesea",
     description: "Explore our dynamic NFT marketplace to discover, create, and sell thousands of artworks. Join now for a $20 bonus and unleash your creativity!",
     technologies: ["React", "TypeScript", "Redux", "SASS(CSS)", "Firebase"],
     img: process.env.PUBLIC_URL + "/img/portfolio/divesea",
+    isAdaptive: true,
+  },
+  {
+    id: "gllacy",
+    name: "Gllacy",
+    path: "https://alex-gorodov.github.io/gllacy",
+    description: "Gllacy store offers a delightful selection of homemade ice cream flavors. Enjoy natural ingredients, free delivery, and exclusive gifts with every purchase. The design belongs to HTML Academy.",
+    technologies: ["React", "TypeScript", "Redux", "SASS(CSS)"],
+    img: process.env.PUBLIC_URL + "/img/portfolio/gllacy",
     isAdaptive: true,
   },
   {
