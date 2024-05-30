@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { LetterColors } from "../../const";
 import cn from 'classnames';
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../store/RootState";
-import { setLastLetterIndex } from "../../store/hero/hero-actions";
+import { useDispatch } from "react-redux";
 
 type LetterProps = {
   letter: string;
@@ -18,20 +16,17 @@ export function Letter({ letter, index }: LetterProps) {
   }
 
   const dispatch = useDispatch();
-  const lastIndex = useSelector((state: RootState) => state.hero.lastIndex);
 
   const [isHovered, setHovered] = useState(false);
   const [isLoaded, setLoaded] = useState(false);
 
   const letterClassName = cn('hero__letter', {
     'hero__letter--animated': isHovered,
-    'hero__letter--last': lastIndex === index
   });
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoaded(true);
-      dispatch(setLastLetterIndex({index}))
     }, 55 * index);
     return () => clearTimeout(timer);
   }, [index, dispatch]);
@@ -40,12 +35,12 @@ export function Letter({ letter, index }: LetterProps) {
     <span
       className={letterClassName}
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => 
+      onMouseLeave={() =>
         setTimeout(() => {
           setHovered(false)
         }, 750)
       }
-      style={{color: isHovered ? getRandomColor() : LetterColors.Default, opacity: isLoaded ? '1' : '0'}}
+      style={{color: isHovered ? getRandomColor() : LetterColors.Default, opacity: isLoaded ? '1' : '0', transform: isLoaded ? 'translateX(0)' : 'translateX(-16px)'}}
     >
       {letter}
     </span>

@@ -1,15 +1,29 @@
 import { PROJECTS } from "../../mocks/portfolio-items";
 import { PortfolioItem } from "./portfolio-item";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Portfolio(): JSX.Element {
   const [isLoaded, setLoaded] = useState(false);
-  setTimeout(() => {
-    setLoaded(true);
-  }, 2000);
+
+  useEffect(() => {
+    const onPageLoad = () => {
+      setTimeout(() => {
+        setLoaded(true);
+      }, 1600);
+    };
+
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad, false);
+      return () => {
+        window.removeEventListener('load', onPageLoad);
+      };
+    }
+  }, []);
 
   return (
-    <section className={`section portfolio ${isLoaded ? '' : 'appearance'}`} id="portfolio">
+    <section className={`section portfolio ${isLoaded ? 'loaded' : ''}`} id="portfolio">
       <ul className="portfolio__list">
         {
           PROJECTS.map((item) => {
