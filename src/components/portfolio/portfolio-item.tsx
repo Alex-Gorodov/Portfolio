@@ -7,6 +7,7 @@ import { ReactComponent as Gllacy } from "../../img/portfolio/logos/gllacy.svg"
 import { ReactComponent as Sedona } from "../../img/portfolio/logos/sedona.svg"
 import { ReactComponent as Device } from "../../img/portfolio/logos/device.svg"
 import { ReactComponent as Divesea } from "../../img/portfolio/logos/divesea.svg"
+import { ReactComponent as Braga } from "../../img/portfolio/logos/braga.svg"
 import { ReactComponent as React } from "../../img/icons/react.svg"
 import { ReactComponent as Redux } from "../../img/icons/redux.svg"
 import { ReactComponent as Sass } from "../../img/icons/sass.svg"
@@ -46,6 +47,8 @@ export function PortfolioItem({item}: PortfolioItemProps): JSX.Element {
                 return <Device/>;
               case "divesea":
                 return <Divesea/>;
+                case "braga":
+                  return <Braga/>;
               default:
                 return null;
             }
