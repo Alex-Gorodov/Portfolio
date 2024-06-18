@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b3523ef1.css",
+    "main.css": "/Portfolio/static/css/main.01f26aff.css",
     "main.js": "/Portfolio/static/js/main.f5956bcb.js",
     "static/media/about-bg.png": "/Portfolio/static/media/about-bg.d9fe2dcbbeef78114528.png",
     "static/media/alex_gorodov_cv.pdf": "/Portfolio/static/media/alex_gorodov_cv.5c01d56100ddefe49cbf.pdf",
@@ -30,11 +30,11 @@
     "static/media/firebase.svg": "/Portfolio/static/media/firebase.7e910046f7b0de58268d6d359f56395a.svg",
     "static/media/css.svg": "/Portfolio/static/media/css.683563aae41322a7b00dfbc08a0caab8.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.dcec69b208e28160b0ee1eb5d1b77cc2.svg",
-    "main.b3523ef1.css.map": "/Portfolio/static/css/main.b3523ef1.css.map",
+    "main.01f26aff.css.map": "/Portfolio/static/css/main.01f26aff.css.map",
     "main.f5956bcb.js.map": "/Portfolio/static/js/main.f5956bcb.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3523ef1.css",
+    "static/css/main.01f26aff.css",
     "static/js/main.f5956bcb.js"
   ]
 }
