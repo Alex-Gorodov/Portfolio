@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.01f26aff.css",
-    "main.js": "/Portfolio/static/js/main.f5956bcb.js",
+    "main.js": "/Portfolio/static/js/main.82883749.js",
     "static/media/about-bg.png": "/Portfolio/static/media/about-bg.d9fe2dcbbeef78114528.png",
     "static/media/alex_gorodov_cv.pdf": "/Portfolio/static/media/alex_gorodov_cv.5c01d56100ddefe49cbf.pdf",
     "static/media/braga.svg": "/Portfolio/static/media/braga.6634162d3ac7033c47e9ee54d3011ff2.svg",
@@ -31,10 +31,10 @@
     "static/media/css.svg": "/Portfolio/static/media/css.683563aae41322a7b00dfbc08a0caab8.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.dcec69b208e28160b0ee1eb5d1b77cc2.svg",
     "main.01f26aff.css.map": "/Portfolio/static/css/main.01f26aff.css.map",
-    "main.f5956bcb.js.map": "/Portfolio/static/js/main.f5956bcb.js.map"
+    "main.82883749.js.map": "/Portfolio/static/js/main.82883749.js.map"
   },
   "entrypoints": [
     "static/css/main.01f26aff.css",
-    "static/js/main.f5956bcb.js"
+    "static/js/main.82883749.js"
   ]
 }
