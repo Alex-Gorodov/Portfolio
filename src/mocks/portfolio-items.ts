@@ -5,7 +5,7 @@ export const PROJECTS: PortfolioItemType[] = [
     id: "braga",
     name: "Braga",
     path: "https://alex-gorodov.github.io/braga",
-    description: "Discover our craft microbrewery, offering 100% natural, handcrafted beers. Enjoy a 10% discount on 6 or more bottles. Explore our shop for unique flavors and subscribe for exclusive updates.",
+    description: "My own website, my own beer, my own production.",
     technologies: ["React", "TypeScript", "Redux", "SASS(CSS)", "Firebase"],
     img: process.env.PUBLIC_URL + "/img/portfolio/braga",
     isAdaptive: true,
