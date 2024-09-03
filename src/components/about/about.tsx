@@ -1,7 +1,7 @@
 import { ReactComponent as ParallaxA} from '../../img/parallax/parallax-1.svg'
 import { ReactComponent as ParallaxB} from '../../img/parallax/parallax-2.svg'
 import { useEffect, useRef, useState } from 'react';
-import Pdf from '../../alex_gorodov_cv.pdf';
+import Pdf from '../../alexandr_gorodov_cv.pdf';
 
 export function About(): JSX.Element {
   const parallaxLeftRef = useRef<HTMLDivElement>(null);

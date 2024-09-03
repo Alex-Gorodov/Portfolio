@@ -26,7 +26,7 @@ export enum AppRoute {
   Works = "#portfolio",
   About = "#about",
   Contacts = "#contact",
-  CV = "/alex_gorodov_cv.pdf",
+  CV = "/alexandr_gorodov_cv.pdf",
   PageNotFound = "*",
 }
 
