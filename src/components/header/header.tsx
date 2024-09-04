@@ -32,7 +32,7 @@ export function Header(): JSX.Element {
   }) as React.RefObject<HTMLUListElement>
 
   return (
-    <header>
+    <header className="header">
       <nav className="navigation">
         {
           isMobile
